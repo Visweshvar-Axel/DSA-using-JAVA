@@ -10,18 +10,18 @@ public class BubbleSort {
     }
     public void sort(int[] num){
         for(int i=0;i<num.length;i++){
-            for(int j=i;j<num.length;j++){
+            for(int j=0;j<num.length-1;j++){
                 if(num[j]>num[j+1]){
-                    int temp=num[i];
-                    num[i] = num[j];
-                    num[j] = temp;
+                    int temp=num[j];
+                    num[j] = num[j+1];
+                    num[j+1] = temp;
                 }
             }
         }
     }
     public void sBubbleSort(int[] num){
         for(int i=0;i<num.length;i++){
-            for(int j=i;j<num.length;j++){
+            for(int j=0;j<num.length-1;j++){
                 if(num[j]>num[j+1]){
                     swap(num, j,j+1);
                 }
@@ -33,9 +33,12 @@ public class BubbleSort {
         boolean swapOccured = true;
         while (swapOccured){
             swapOccured = false;
+            i++;
             for (int j=0;j< num.length-i;j++){
-                swap(num, j, j+1);
-                swapOccured = true;
+                if (num[j] > num[j + 1]) {
+                    swap(num, j, j + 1);
+                    swapOccured = true;
+                }
             }
         }
     }
@@ -48,7 +51,7 @@ public class BubbleSort {
         bubbleSort.sBubbleSort(num1);
         bubbleSort.sortImproved(num2);
         System.out.println(Arrays.toString(num));
-        System.out.println(Arrays.toString(num));
-        System.out.println(Arrays.toString(num));
+        System.out.println(Arrays.toString(num1));
+        System.out.println(Arrays.toString(num2));
     }
 }
