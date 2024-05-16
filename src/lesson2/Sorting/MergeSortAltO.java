@@ -26,7 +26,10 @@ public class MergeSortAltO {
         while (j <= end) {
             temp[x++] = num[j++];
         }
-        System.arraycopy(temp,0,num,beg,temp.length);
+        for (int l = 0; l < temp.length; l++) {
+            num[beg + l] = temp[l];
+        }
+//        System.arraycopy(temp,0,num,beg,temp.length);
     }
     public static void main(String[] args) {
         MergeSortAltO mergeSortAltO = new MergeSortAltO();
