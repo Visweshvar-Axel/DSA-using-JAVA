@@ -16,11 +16,16 @@ public class MergeSortAltO {
         int i=beg;
         int j=mid+1;
         int[] temp = new int[end-beg+1];
-        while(i<=mid && j<end){
+        while(i<=mid && j<=end){
             if(num[i] <= num[j]) temp[x++] = num[i++];
             else temp[x++] = num[j++];
         }
-        while ()
+        while (i <= mid) {
+            temp[x++] = num[i++];
+        }
+        while (j <= end) {
+            temp[x++] = num[j++];
+        }
         System.arraycopy(temp,0,num,beg,temp.length);
     }
     public static void main(String[] args) {
