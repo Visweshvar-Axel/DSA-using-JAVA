@@ -11,7 +11,6 @@ public class MergeSort {
             merge(num,beg,m,end);
         }
     }
-
     public void merge(int[] num,int beg,int mid,int end){
         int i=beg;
         int j=mid+1;
