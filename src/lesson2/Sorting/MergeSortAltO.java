@@ -12,24 +12,21 @@ public class MergeSortAltO {
         }
     }
     public void merge(int[] num,int beg,int mid,int end){
+        int x=0;
         int i=beg;
         int j=mid+1;
         int[] temp = new int[end-beg+1];
-        for (int k = 0; k < temp.length; k++){
-            if(i <= mid && (j > end || num[i] <= num[j])){
-                temp[k] = num[i];
-                i++;
-            }
-            else {
-                temp[k] = num[j];
-                j++;
-            }
+        while(i<=mid && j<end){
+            if(num[i] <= num[j]) temp[x++] = num[i++];
+            else temp[x++] = num[j++];
         }
+        while ()
         System.arraycopy(temp,0,num,beg,temp.length);
     }
     public static void main(String[] args) {
+        MergeSortAltO mergeSortAltO = new MergeSortAltO();
         int[] num = new int[]{2,5,7,2,4,2,8,1,0,9,3,6};
-        mergeSort(num,0,num.length-1);
+        mergeSortAltO.mergeSort(num,0,num.length-1);
         System.out.println(Arrays.toString(num));
     }
 }
