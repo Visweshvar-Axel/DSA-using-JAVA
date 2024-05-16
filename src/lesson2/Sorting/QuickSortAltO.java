@@ -12,9 +12,9 @@ public class QuickSortAltO {
         }
     }
     public int partition(int[] num,int p,int q){
+        int v = num[(p+q) / 2];
         int i = p;
         int j = q;
-        int v = num[(p+q) / 2];
         while(i <= j){
             while (num[i] < v)
                 i++;
