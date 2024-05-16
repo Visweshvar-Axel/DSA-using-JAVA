@@ -29,7 +29,6 @@ public class MergeSortAltO {
         for (int l = 0; l < temp.length; l++) {
             num[beg + l] = temp[l];
         }
-
 //        System.arraycopy(temp,0,num,beg,temp.length);
     }
     public static void main(String[] args) {
