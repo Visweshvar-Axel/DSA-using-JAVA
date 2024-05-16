@@ -29,7 +29,7 @@ public class MergeSortAltO {
     }
     public static void main(String[] args) {
         int[] num = new int[]{2,5,7,2,4,2,8,1,0,9,3,6};
-        .mergeSort(num,0,num.length-1);
+        mergeSort(num,0,num.length-1);
         System.out.println(Arrays.toString(num));
     }
 }
