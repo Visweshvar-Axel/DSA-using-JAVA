@@ -26,7 +26,7 @@ public class QuickSortAltO {
                 j--;
             }
         }
-        return j;
+        return i;
     }
 
     private void swap(int[] num,int i,int j){
@@ -36,7 +36,7 @@ public class QuickSortAltO {
     }
     public static void main(String[] args) {
         QuickSortAltO quickSortAltO = new QuickSortAltO();
-        int[] num = new int[]{7,2,7,2,4};
+        int[] num = new int[]{2,5,7,2,4,2,8,1,0,9,3,6};
         quickSortAltO.QuickSort(num);
         System.out.println(Arrays.toString(num));
     }
