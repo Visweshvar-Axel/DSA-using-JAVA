@@ -9,9 +9,8 @@ public class Stack<V> {
         head=null;
     }
     public void push(V item){
-        LinkedListNode<V> node = new LinkedListNode<>(item, head);
-//        if(head != null) Optional.ofNullable(head).ifPresent(n -> n.setNext(node));
-        head = node;
+        //        if(head != null) Optional.ofNullable(head).ifPresent(n -> n.setNext(node));
+        head = new LinkedListNode<>(item, head);
     }
     public Optional<V> pop(){
         if (head == null) {
@@ -26,8 +25,7 @@ public class Stack<V> {
     }
 
     public boolean isEmpty(){
-        if (head==null) return true;
-        return false;
+        return head == null;
     }
     public static void main(String[] args) {
         Stack<String> s = new Stack<>();
