@@ -4,27 +4,29 @@ import lesson2.LinkedList.LinkedListNode;
 import java.util.Optional;
 
 public class Stack<V> {
-    private LinkedListNode<V> head;
+    public LinkedListNode<V> head;
     public Stack(){
         head=null;
     }
     public void push(V item){
-        LinkedListNode<V> node = new LinkedListNode<>(item, null);
-        Optional.ofNullable(head).ifPresent(n -> n.setNext(node));
+        LinkedListNode<V> node = new LinkedListNode<>(item, head);
+//        if(head != null) Optional.ofNullable(head).ifPresent(n -> n.setNext(node));
         head = node;
     }
-    public Optional<V> pop(){
-        Optional<LinkedListNode<V>> node = Optional.ofNullable(head);
-        head = node.flatMap(LinkedListNode::getNext).orElse(null);
-        Optional.ofNullable(head).ifPresent(n -> n.setNext(null));
-        return node.map(LinkedListNode::getValue);
+        public Optional<V> pop(){
+        if (head == null) {
+            return Optional.empty();
+        }
+        LinkedListNode<V> poped = head;
+        head = head.getNext().orElse(null);
+        return Optional.ofNullable(poped.getValue());
     }
-    public String peek(){
-        return head.toString();
+    public Optional<V> peek(){
+        return Optional.ofNullable(head).map(LinkedListNode::getValue);
     }
+
     public boolean isEmpty(){
-        if (head == null) return true;
-        else return false;
+        return head == null;
     }
     public static void main(String[] args) {
         Stack<String> s = new Stack<>();
@@ -38,7 +40,12 @@ public class Stack<V> {
         System.out.println(s.isEmpty());
         System.out.println(s.pop());
         System.out.println(s.pop());
+        System.out.println(s.pop());
+        System.out.println(s.pop());
+        System.out.println(s.pop());
+        System.out.println(s.peek());
         s.push("7");
+        System.out.println(s.peek());
         System.out.println(s.pop());
     }
 }
