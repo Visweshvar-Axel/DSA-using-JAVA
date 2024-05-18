@@ -13,7 +13,7 @@ public class Stack<V> {
 //        if(head != null) Optional.ofNullable(head).ifPresent(n -> n.setNext(node));
         head = node;
     }
-        public Optional<V> pop(){
+    public Optional<V> pop(){
         if (head == null) {
             return Optional.empty();
         }
@@ -26,7 +26,8 @@ public class Stack<V> {
     }
 
     public boolean isEmpty(){
-        return head == null;
+        if (head==null) return true;
+        return false;
     }
     public static void main(String[] args) {
         Stack<String> s = new Stack<>();
@@ -47,5 +48,9 @@ public class Stack<V> {
         s.push("7");
         System.out.println(s.peek());
         System.out.println(s.pop());
+        System.out.println(s.isEmpty());
+        System.out.println(s.pop());
+        System.out.println(s.pop());
+        System.out.println(s.isEmpty());
     }
 }
