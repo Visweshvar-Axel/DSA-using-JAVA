@@ -1,8 +1,6 @@
 package lesson2.stack;
 import lesson2.LinkedList.LinkedListNode;
-
 import java.util.Optional;
-
 public class Stack<V> {
     public LinkedListNode<V> head;
     public Stack(){
