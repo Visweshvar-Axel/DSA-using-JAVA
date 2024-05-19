@@ -1,6 +1,8 @@
 package lesson3.binarytree;
 
+import java.util.Optional;
+
 public interface BinaryTree<K, V> {
-    private BinaryTree<V,K> left;
-    private BinaryTree<V,K> left;
+    void put(K key, V value);
+    Optional<V> get(K key);
 }
