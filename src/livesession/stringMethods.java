@@ -10,7 +10,10 @@ public class stringMethods {
         System.out.println(name+lastName);
         System.out.println(name.contains("v"));
         System.out.println(name.replace("a","eshvar"));
+        System.out.println(name.substring(3,5));
         System.out.println(name.concat(lastName));
+        System.out.println(name.toLowerCase());
+        System.out.println(name.toUpperCase());
         System.out.print("Enter a string to compare:");
         String inp = sc.nextLine();
         String val = "abc";
