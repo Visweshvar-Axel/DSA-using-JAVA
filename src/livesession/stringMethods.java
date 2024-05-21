@@ -19,7 +19,7 @@ public class stringMethods {
         System.out.println(cap.compareToIgnoreCase(inp));
         String sen = sc.nextLine();
         String[] word = sen.split(" ");
-        for(String s: word) System.out.println(": count : "+word.length);
-        System.out.println(": count : "+word.length);
+        for(String s: word) System.out.print(word+" ");
+        System.out.println(": count : "+word.length+" : sen length : "+sen.length());
     }
 }
