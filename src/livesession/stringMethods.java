@@ -8,6 +8,8 @@ public class stringMethods {
         String name = "viswa";
         String lastName = new String(new char[]{'a','x','e','l'});
         System.out.println(name+lastName);
+        System.out.println(name.contains("v"));
+        System.out.println(name.replace("a","eshvar"));
         System.out.println(name.concat(lastName));
         System.out.print("Enter a string to compare:");
         String inp = sc.nextLine();
@@ -19,7 +21,7 @@ public class stringMethods {
         System.out.println(cap.compareToIgnoreCase(inp));
         String sen = sc.nextLine();
         String[] word = sen.split(" ");
-        for(String s: word) System.out.print(word+" ");
+        for(String s: word) System.out.print(s+" ");
         System.out.println(": count : "+word.length+" : sen length : "+sen.length());
     }
 }
