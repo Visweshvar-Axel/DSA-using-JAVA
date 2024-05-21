@@ -14,6 +14,9 @@ public class stringMethods {
         System.out.println(name.concat(lastName));
         System.out.println(name.toLowerCase());
         System.out.println(name.toUpperCase());
+        System.out.println(name.charAt(0));
+        System.out.println(name.charAt(0));
+        for(char c: name.toCharArray()) System.out.print(c+" ");
         System.out.print("Enter a string to compare:");
         String inp = sc.nextLine();
         String val = "abc";
