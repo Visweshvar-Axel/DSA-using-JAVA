@@ -13,5 +13,17 @@ public class Palindrome {
         }
         if(inp.equals(rev)) System.out.println("the given string is palindrome");
         else System.out.println("the given string is not a palindrome");
+        //alt one
+        char arr[] = inp.toCharArray();
+        int size = arr.length;
+        boolean f=true;
+        for(int i = 0; i<size/2;i++){
+            if(arr[i]!=arr[size-1-i]){
+                f=false;
+                break;
+            }
+        }
+        if(f) System.out.println("the given string is palindrome");
+        else System.out.println("the given string is not a palindrome");
     }
 }
