@@ -11,5 +11,10 @@ public class lexo {
         for(int i=0;i<str2.length();i++){
             alp[(int) str2.indexOf(i)]--;
         }
+        for(int i=0;i<str2.length();i++){
+            alp[(int) str2.indexOf(i)]--;
+        }
+
+        if()
     }
 }
