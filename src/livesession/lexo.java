@@ -15,7 +15,6 @@ public class lexo {
         for(int i=0;i<26;i++){
             sum+=alp[i];
         }
-
-        if()
+        if(sum!=0) System.out.println("yes");
     }
 }
