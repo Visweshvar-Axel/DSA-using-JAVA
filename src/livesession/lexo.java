@@ -11,8 +11,9 @@ public class lexo {
         for(int i=0;i<str2.length();i++){
             alp[(int) str2.indexOf(i)]--;
         }
-        for(int i=0;i<str2.length();i++){
-            alp[(int) str2.indexOf(i)]--;
+        int sum=0;
+        for(int i=0;i<26;i++){
+            sum+=alp[i];
         }
 
         if()
