@@ -16,5 +16,6 @@ public class lexo {
             sum+=alp[i];
         }
         if(sum!=0) System.out.println("yes");
+        else System.out.println("not");
     }
 }
