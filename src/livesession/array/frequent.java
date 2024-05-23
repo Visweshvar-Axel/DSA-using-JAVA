@@ -16,6 +16,6 @@ public class frequent {
                 maxc = c;
             }
         }
-        if(max)
+        if(maxc != 0)
     }
 }
