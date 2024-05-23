@@ -13,6 +13,7 @@ public class frequent {
             }
             if(c > maxc) {
                 max = marks[i];
+                maxc = c;
             }
         }
     }
