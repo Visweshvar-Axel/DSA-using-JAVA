@@ -11,6 +11,7 @@ public class frequent {
             for (int j = 0;j<=n;j++){
                 if(i != j && marks[i] == marks[j]) c++;
             }
+            if(c > maxc)
         }
     }
 }
