@@ -19,5 +19,20 @@ public class frequent {
         }
         if(maxc != 0) System.out.println(max+": frequency:"+(maxc+1));
 
+        int givenarry[]={3,4,5,6,4,4,6};
+        int max = 0;
+        int mostFreq = givenarry[0];
+        int[] count = new int[givenarry.length + 1];
+
+        for (int num : givenarry) {
+            count[num]++;
+            if (count[num] > max)
+            {
+                max = count[num];
+                mostFreq = num;
+            }
+        }
+
+        System.out.println(mostFreq);
     }
 }
