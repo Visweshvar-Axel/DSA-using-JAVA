@@ -12,7 +12,7 @@ public class frequent {
                 if(i != j && marks[i] == marks[j]) c++;
             }
             if(c > maxc) {
-
+                max = marks[i];
             }
         }
     }
