@@ -17,6 +17,6 @@ public class frequent {
                 maxc = c;
             }
         }
-        if(maxc != 0) System.out.println(max+": frequency:"+maxc+1);
+        if(maxc != 0) System.out.println(max+": frequency:"+(maxc+1));
     }
 }
