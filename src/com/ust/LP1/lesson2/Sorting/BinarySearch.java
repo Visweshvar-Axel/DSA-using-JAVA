@@ -1,4 +1,4 @@
-package lesson2.Sorting;
+package com.ust.LP1.lesson2.Sorting;
 
 public class BinarySearch {
     public boolean binarySearch(int x, int[] num){
