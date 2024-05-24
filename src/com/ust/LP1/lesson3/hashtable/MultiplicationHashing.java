@@ -1,4 +1,4 @@
-package lesson3.hashtable;
+package com.ust.LP1.lesson3.hashtable;
 
 public class MultiplicationHashing {
     private Double k;
