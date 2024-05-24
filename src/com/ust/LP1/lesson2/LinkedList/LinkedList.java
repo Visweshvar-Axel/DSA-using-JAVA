@@ -1,4 +1,4 @@
-package lesson2.LinkedList;
+package com.ust.LP1.lesson2.LinkedList;
 
 import java.util.Optional;
 
