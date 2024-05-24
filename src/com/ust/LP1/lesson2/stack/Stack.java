@@ -1,5 +1,5 @@
-package lesson2.stack;
-import lesson2.LinkedList.LinkedListNode;
+package com.ust.LP1.lesson2.stack;
+import com.ust.LP1.lesson2.LinkedList.LinkedListNode;
 import java.util.Optional;
 public class Stack<V> {
     public LinkedListNode<V> head;
