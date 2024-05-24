@@ -1,4 +1,4 @@
-package lesson3.binarytree;
+package com.ust.LP1.lesson3.binarytree;
 
 public class SimpleBinaryTree{
 //public class SimpleBinaryTree<K, V> implements BinaryTree<K, V>{
