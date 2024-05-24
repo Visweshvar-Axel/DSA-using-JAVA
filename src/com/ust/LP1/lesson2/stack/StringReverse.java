@@ -1,4 +1,4 @@
-package lesson2.stack;
+package com.ust.LP1.lesson2.stack;
 
 import java.util.Optional;
 
