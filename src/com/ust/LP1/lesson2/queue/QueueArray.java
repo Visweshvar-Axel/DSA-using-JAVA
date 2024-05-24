@@ -1,4 +1,4 @@
-package lesson2.queue;
+package com.ust.LP1.lesson2.queue;
 
 public class QueueArray {
 
