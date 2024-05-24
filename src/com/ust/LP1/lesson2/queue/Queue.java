@@ -1,6 +1,6 @@
-package lesson2.queue;
+package com.ust.LP1.lesson2.queue;
 
-import lesson2.LinkedList.DbLinkedList;
+import com.ust.LP1.lesson2.LinkedList.DbLinkedList;
 
 import java.util.Optional;
 
