@@ -28,11 +28,13 @@ public class Hierarchical {
     }
 
     public static void main(String[] args) {
-        MultiLevel.Vehicle vehicle = new MultiLevel.Vehicle();
-        MultiLevel.Bike bike = new MultiLevel.Bike("Honda");
-        MultiLevel.Cycle cycle = new MultiLevel.Cycle("FF");
+        Vehicle vehicle = new Vehicle();
+        Bike bike = new Bike("Honda");
+        Cycle cycle = new Cycle("FF");
+
         System.out.println("bike:"+bike.name);
         System.out.println("cycle:"+cycle.name);
+
         vehicle.Sound();
         bike.Sound();
         cycle.Sound();
