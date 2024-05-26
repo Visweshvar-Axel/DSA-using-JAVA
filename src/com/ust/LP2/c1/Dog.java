@@ -8,5 +8,7 @@ public class Dog {
         Dog dog = new Dog();  //craeting object
         dog.name = "rick";
         dog.color = "black";
+        System.out.println("pet: "+ dog.name);
+        System.out.println("pet color: "+ dog.color);
     }
 }
