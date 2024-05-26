@@ -1,4 +1,4 @@
-package com.ust.LP2.c1;
+package com.ust.LP2.c1.classes;
 
 public class Dog {
     String name; //instance variable
