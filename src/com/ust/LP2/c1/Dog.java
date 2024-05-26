@@ -10,7 +10,7 @@ public class Dog {
     }
 
     public static void main(String[] args) {
-        Dog dog = new Dog();  //craeting object
+        Dog dog = new Dog();  //creating object
         dog.name = "rick";
         dog.color = "black";
         System.out.println("pet: "+ dog.name);
