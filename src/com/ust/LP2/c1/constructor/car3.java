@@ -8,6 +8,6 @@ public class car3 {
     }
     public static void main(String[] args) {
         car3 car3 = new car3("BMW");
-        System.out.println("car2: "+car3.name);
+        System.out.println("car3: "+car3.name);
     }
 }
