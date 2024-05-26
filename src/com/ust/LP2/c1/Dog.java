@@ -1,8 +1,13 @@
 package com.ust.LP2.c1;
 
 public class Dog {
-    String name;
+    String name; //instance variable
     String color;
+    static int noOtLegs = 4; //static variable
+    boolean isBarking(){
+        boolean barking = true; //local variable
+        return barking;
+    }
 
     public static void main(String[] args) {
         Dog dog = new Dog();  //craeting object
