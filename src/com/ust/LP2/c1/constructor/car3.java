@@ -9,5 +9,8 @@ public class car3 {
     public static void main(String[] args) {
         car3 car3 = new car3("BMW");
         System.out.println("car3: "+car3.name);
+
+        car3 car4 = new car3("Honda");
+        System.out.println("car4: "+car3.name);
     }
 }
