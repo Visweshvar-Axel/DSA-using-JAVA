@@ -1,5 +1,7 @@
 package livesession.array;
-
+/* *
+* key finding by pair
+* */
 import java.util.Arrays;
 
 public class arraysort {
