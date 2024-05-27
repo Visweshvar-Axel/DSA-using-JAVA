@@ -201,5 +201,24 @@ class StudentMarks extends StudentDetails {
     }
 }
 public class College {
+    public static void main(String[] args) {
+        Department dep1 = new Department("MCA","Master of Computer Applications","Green Building","1990");
+        Department dep2 = new Department("IT","Information Technology","Main Building","1995");
 
+        TeachingStaff Staff1 = new TeachingStaff("T01","Patma","PhD","12/05/1980","MCA");
+        TeachingStaff Staff2 = new TeachingStaff("T03","aruna","PhD","19/05/1983","IT");
+
+        StudentDetails student1 = new StudentDetails("S01","Viswa","6345378901","viswa@gmail.com","MCA",new String[]{"T01"});
+        StudentDetails student2 = new StudentDetails("S02","Axel","1234567891","axel@gmail.com","IT",new String[]{"T01","T02"});
+
+        StudentMarks[] studentMarks = new StudentMarks[]{
+                new StudentMarks("S01","Viswa","6345378901","viswa@gmail.com","MCA",new String[]{"T01"}, 3,new int[]{45,56,89,67}),
+                new StudentMarks("S02","Axel","1234567891","axel@gmail.com","IT",new String[]{"T01","T02"}, 3,new int[]{78,56,76,78}),
+                new StudentMarks("S03","anu","1245982776","anu1233@gmail.com","MCA",new String[]{"T02"}, 3,new int[]{47,67,72,73}),
+                new StudentMarks("S04","banu","9876543210","banu@gmail.com","MCA",new String[]{"T03"}, 3,new int[]{50,56,90,67})
+        };
+        for (StudentMarks mark: studentMarks) {
+            System.out.println(mark.toString());
+        }
+    }
 }
