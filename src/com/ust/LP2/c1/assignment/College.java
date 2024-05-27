@@ -164,7 +164,42 @@ class StudentDetails{
                 '}';
     }
 }
+class StudentMarks extends StudentDetails {
+    private int semNumber;
+    private int[] marks;
 
+    public StudentMarks(String studentId, String name, String mobileNumber, String email, String department, String[] teacherCode, int semNumber, int[] marks) {
+        super(studentId, name, mobileNumber, email, department, teacherCode);
+        this.semNumber = semNumber;
+        this.marks = marks;
+    }
+
+    public int getTotal(){
+        int total =  0;
+        for (int mark: marks) total += mark;
+        return total;
+    }
+    public double getAverage(){
+        return (double) getTotal() /marks.length;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentDetails{" +
+                "studentId='" + studentId + '\'' +
+                ", name='" + name + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", department='" + department + '\'' +
+                ", teacherCode=" + Arrays.toString(teacherCode) +'}'+
+                "StudentMarks{" +
+                "getTotal" + getTotal() +
+                ", getAverage" + getAverage() +
+                ", semNumber=" + semNumber +
+                ", marks=" + Arrays.toString(marks) +
+                '}';
+    }
+}
 public class College {
 
 }
