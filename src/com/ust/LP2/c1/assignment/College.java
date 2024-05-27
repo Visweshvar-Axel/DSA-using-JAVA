@@ -45,6 +45,57 @@ class Department {
         return foundedYear;
     }
 }
+class TeachingStaff {
+    private String ID;
+    private String name;
+    private String qualification;
+    private String dateOfJoining;
+    private String deptCode;
+    public TeachingStaff(String ID, String name, String qualification, String dateOfJoining, String deptCode) {
+        this.ID = ID;
+        this.name = name;
+        this.qualification = qualification;
+        this.dateOfJoining = dateOfJoining;
+        this.deptCode = deptCode;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public void setDateOfJoining(String dateOfJoining) {
+        this.dateOfJoining = dateOfJoining;
+    }
+
+    public void setDeptCode(String deptCode) {
+        this.deptCode = deptCode;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDateOfJoining() {
+        return dateOfJoining;
+    }
+
+    public String getDeptCode() {
+        return deptCode;
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public String getID() {
+        return ID;
+    }
+}
 
 public class College {
 
