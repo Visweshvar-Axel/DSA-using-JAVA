@@ -96,6 +96,74 @@ class TeachingStaff {
         return ID;
     }
 }
+class StudentDetails{
+    protected String studentId;
+    protected String name;
+    protected String mobileNumber;
+    protected String email;
+    protected String department;
+    protected String[] teacherCode;
+
+    public StudentDetails(String studentId, String name, String mobileNumber, String email, String department, String[] teacherCode) {
+        this.studentId = studentId;
+        this.name = name;
+        this.mobileNumber = mobileNumber;
+        this.email = email;
+        this.department = department;
+        this.teacherCode = teacherCode;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setTeacherCode(String[] teacherCode) {
+        this.teacherCode = teacherCode;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getStudentId() {
+        return studentId;
+    }
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getDepartment() {
+        return department;
+    }
+    public String[] getTeacherCode() {
+        return teacherCode;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentDetails{" +
+                "studentId='" + studentId + '\'' +
+                ", name='" + name + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", department='" + department + '\'' +
+                ", teacherCode=" + Arrays.toString(teacherCode) +
+                '}';
+    }
+}
 
 public class College {
 
