@@ -32,11 +32,11 @@ public class AdventureGame {
      * }
      *
      * three character that we want to save.
-     * 01: power: 200, type : vis, weapons: bare, bomb
+     * o1: power: 200, type : vis, weapons: bare, bomb
      *
-     * 02: power: 50, type : axel, weapons: bow, arrow, bomb
+     * o2: power: 50, type : axel, weapons: bow, arrow, bomb
      *
-     * 03: power: 120, type: anu, weapons: knife, rope
+     * o3: power: 120, type: anu, weapons: knife, rope
      * */
 
 }
