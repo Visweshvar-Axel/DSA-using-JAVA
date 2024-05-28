@@ -26,4 +26,11 @@ public class WritingSerializedObject {
     }
     // the good oop design says:
     //each class does one thing well!! I
+
+    // Object:-->>
+    // when we perform os.write:
+    // object is wrSteen to:
+    // object is flattened(serialized)
+    // ObjectOutputStream
+
 }
