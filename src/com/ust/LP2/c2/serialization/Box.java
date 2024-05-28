@@ -38,7 +38,7 @@ public class Box implements Serializable {
         // create the object of FileOutputStream
         ObjectOutputStream objStr = null;
         try {
-            FileOutputStream file = new FileOutputStream("box.ser"); // connection
+            FileOutputStream file = new FileOutputStream("com/ust/LP2/c2/serialization/box.ser"); // connection
             objStr = new ObjectOutputStream(file);  // chain stream
             // it would provide the api to write the objects to file
             objStr.writeObject(box);
