@@ -7,14 +7,23 @@ import java.io.ObjectOutputStream;
 
 public class WritingSerializedObject {
     public static void main(String[] args) throws FileNotFoundException, IOException {
+        // 1 ) Make a FileOutputStream
         FileOutputStream file = new FileOutputStream("GameCharacter.ser");
 
+        // 2 make an ObjectOutputStream
         ObjectOutputStream objstr = new ObjectOutputStream(file);
 
+        // ObjectOutputStream lets us write objects but it cant t directly
+        // connect to file
+        // so we have to do stream chaining
+        // 3 write the object
         objstr.writeObject(characterOne);
         objstr.writeObject(characterTwo);
         objstr.writeObject(characterThree);
 
+        //4 close the ObjectOutputStream
         objstr.close();
     }
+    // the good oop design says:
+    //each class does one thing well!! I
 }
