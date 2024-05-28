@@ -20,11 +20,11 @@ public class AdventureGame {
     // application could use.
     // ---------------------------------------------------------------------------
     /* *
-     * fanatsy avdenture game:game program it take more than one session to
-     * complete. as the game progresses, character in the game becomes
-     * stronger, weaker, smarter etc. ------ we don't want to start the game from
-     * scratch every time we launches it. we need a way to save the state of
-     * characters and a way to restore the state when we resume the game.
+     * fanatsy avdenture game:game program it take more than one session to complete.
+     * as the game progresses, character in the game becomes stronger, weaker, smarter etc.
+     * ---------
+     * we don't want to start the game from scratch every time we launches it.
+     * we need a way to save the state of characters and a way to restore the state when we resume the game.
      *
      * GameCharacter{
      * int power, String type, Weapon[] weapons
