@@ -39,7 +39,7 @@ public class Box implements Serializable {
         ObjectOutputStream objStr = null;
         try {
             FileOutputStream file = new FileOutputStream("com/ust/LP2/c2/serialization/box.ser"); // connection
-            objStr = new ObjectOutputStream(file);
+            objStr = new ObjectOutputStream(file);  // chain stream
             objStr.writeObject(box);
         } catch (Exception e) {
             e.printStackTrace();
