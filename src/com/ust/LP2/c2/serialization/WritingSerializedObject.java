@@ -25,6 +25,25 @@ public class WritingSerializedObject {
         //4 close the ObjectOutputStream
         objstr.close();
     }
+    // the good oop design says:
+    //each class does one thing well!! I
+
+    /**
+     * next
+     * */
+    // Object:-->>
+    // when we perform os.write:
+    // object is wrSteen to:
+    // object is flattened(serialized)
+    // ObjectOutputStream
+    // so after flattened, is chained to FileOutputStream:
+    // so it converts objects into bytes.
+    /**
+     * next
+     * */
+    /**
+     * next
+     * */
     /* *
     * 1) object on the heap:
     * object has state: represented by value of instance variables
@@ -47,15 +66,24 @@ public class WritingSerializedObject {
     * the instance variable values for width and height are saved to the file "f. ser"
     * along with a little more information the JVM needs to restore the object(like what's its class type)
     * */
-
-    // the good oop design says:
-    //each class does one thing well!! I
-
-    // Object:-->>
-    // when we perform os.write:
-    // object is wrSteen to:
-    // object is flattened(serialized)
-    // ObjectOutputStream
-    // so after flattened, is chained to FileOutputStream:
-    // so it converts objects into bytes.
+    /**
+     * next
+     * */
+    /* *
+    * class car{
+    * engine e;
+    * tire t;
+    * }
+    * class engine{
+    * }
+    * class tire{
+    * }
+    * when an object is serialized, ail the objects it refers from instance variables are also serilaized.
+    * and ail the objects those objects refers are also serialized.
+    * and all the objects those objects refer are also serialized,
+    * and the best part is it happens automatically
+    * */
+    /**
+     * next
+     * */
 }
