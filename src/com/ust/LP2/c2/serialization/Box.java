@@ -1,6 +1,6 @@
 package com.ust.LP2.c2.serialization;
 
-import java.io.Serializable;
+import java.io.*;
 
 public class Box implements Serializable {
 
@@ -30,9 +30,23 @@ public class Box implements Serializable {
         this.height = height;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        // 1 create instance of Box class
         Box box = new Box();
         box.setHeight(100);
         box.setWidth(200);
+        // create the object of FileOutputStream
+        ObjectOutputStream objStr = null;
+        try {
+            FileOutputStream file = new FileOutputStream("com/ust/LP2/c2/serialization/box.ser"); // connection
+            objStr = new ObjectOutputStream(file);
+            objStr.writeObject(box);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            objStr.close();
+        }
+
+
     }
 }
