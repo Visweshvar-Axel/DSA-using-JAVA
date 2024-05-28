@@ -39,4 +39,17 @@ public class AdventureGame {
      * o3: power: 120, type: anu, weapons: knife, rope
      * */
 
+    /*
+    * Option one:
+    * write the three serialized character objects to a file:
+    *
+    * create a file and write three serialized character objects. (serialized file)
+    * the file won't make any sense it we try to read it.
+    *
+    * Option two:
+    * write a plain text:
+    * create a file and write three lines of text, one per characters, spec—ung the pieces of state with comma.
+    *
+    * */
+
 }
