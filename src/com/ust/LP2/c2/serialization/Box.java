@@ -47,7 +47,5 @@ public class Box implements Serializable {
         } finally {
             objStr.close();
         }
-
-
     }
 }
