@@ -29,7 +29,6 @@ public class Box implements Serializable {
     public void setHeight(int height) {
         this.height = height;
     }
-
     public static void main(String[] args) throws IOException {
         // 1 create instance of Box class
         Box box = new Box();
