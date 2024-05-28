@@ -86,4 +86,15 @@ public class WritingSerializedObject {
     /**
      * next
      * */
+    /* *
+    * The serializable interface is known as a marker or a tag interface,
+    * because the interface doesn't have any methods to implement
+    * its sole purpose is to announce that the class implementing it is, serializable.
+    *
+    * in other words, objects of that type are savable through the serialization mechanism
+    * if any superclass is seriaizabie,the subicass is automatically serializable even if the subclass doesn't explicitly declare implements Serializable
+    *
+    * objectOutputStream. writeObject (anObject) ;
+    * anObject must implement serializable or it, would fail at runtime
+    * */
 }
