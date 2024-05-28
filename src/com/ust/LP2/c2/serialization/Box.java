@@ -29,4 +29,10 @@ public class Box implements Serializable {
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public static void main(String[] args) {
+        Box box = new Box();
+        box.setHeight(100);
+        box.setWidth(200);
+    }
 }
