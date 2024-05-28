@@ -17,10 +17,10 @@ public class WritingSerializedObject {
         // so, we have to do stream chaining
         // 3 write the object
 
-
-        objstr.writeObject(characterOne);
-        objstr.writeObject(characterTwo);
-        objstr.writeObject(characterThree);
+// try it
+//        objstr.writeObject(characterOne);
+//        objstr.writeObject(characterTwo);
+//        objstr.writeObject(characterThree);
 
         //4 close the ObjectOutputStream
         objstr.close();
