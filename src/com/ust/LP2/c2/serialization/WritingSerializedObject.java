@@ -32,5 +32,6 @@ public class WritingSerializedObject {
     // object is wrSteen to:
     // object is flattened(serialized)
     // ObjectOutputStream
-
+    // so after flattened, is chained to FileOutputStream:
+    // so it converts objects into bytes.
 }
