@@ -1,12 +1,11 @@
 package com.ust.LP2.c2.serialization;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 public class WritingSerializedObject {
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws IOException {
         // 1 ) Make a FileOutputStream
         FileOutputStream file = new FileOutputStream("GameCharacter.ser");
 
@@ -15,8 +14,10 @@ public class WritingSerializedObject {
 
         // ObjectOutputStream lets us write objects but it cant t directly
         // connect to file
-        // so we have to do stream chaining
+        // so, we have to do stream chaining
         // 3 write the object
+
+
         objstr.writeObject(characterOne);
         objstr.writeObject(characterTwo);
         objstr.writeObject(characterThree);
