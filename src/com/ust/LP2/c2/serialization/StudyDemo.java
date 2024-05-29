@@ -55,8 +55,10 @@ public class StudyDemo {
     * or you might have an object that makes no sense to save, because its key instances are not serializable, so there is no useful way for you to make your class serializable
     *
     * if a class i'm using isn't serializable, but there's no good reason except the designer forgot to implement, can i subclass the bad class and make the subclass serializable.?
+    * yes! ! if the class is extendable(not final), you can make a serializable subclass, and just substitute the subclass everywhere your code is expecting the
+    * super class!!
+    *
     *
     * */
-
 
 }
