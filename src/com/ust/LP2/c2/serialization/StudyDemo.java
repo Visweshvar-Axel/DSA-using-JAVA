@@ -21,6 +21,16 @@ public class StudyDemo {
     * Mark the instance variable as transient, if if can't be saved
     * if you have an instance variable that can't be saved because it isn't serializable, you can mark that
     * variable with the transient keyword and the serialization process will skip right over it.
+    *
+    * why would a variable not be serialized. ?
+    *
+    * 1) it could be that the class designer simply forgot to make the class serializable
+    * 2) it might be because the object relies on runtime-specific information that simply can't be saved.
+    * Although most of the things in java class libraries are serializable, but you can't save things like network connection.
+    * threads or file objects
+    * they all are dependent on a particular run time experience
+    * in other words, they are instantiated in a way that's unique to a particular run of your program, on a particular platform,
+    * in a particular JVM
     * */
 
 
