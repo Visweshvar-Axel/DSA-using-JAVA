@@ -17,5 +17,11 @@ public class StudyDemo {
 
     //Either the entire object graph would be serialized correctly or serialization fails
 
+    /* *
+    * Mark the instance variable as transient, if if can't be saved
+    * if you have an instance variable that can't be saved because it isn't serializable, you can mark that
+    * variable with the transient keyword and the serialization process will skip right over it.
+    * */
+
 
 }
