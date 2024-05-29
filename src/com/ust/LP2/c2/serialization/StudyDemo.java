@@ -31,6 +31,10 @@ public class StudyDemo {
     * they all are dependent on a particular run time experience
     * in other words, they are instantiated in a way that's unique to a particular run of your program, on a particular platform,
     * in a particular JVM
+    * once the program shuts down, there is no way to bring those things back to life in any meaningful way!!
+    *
+    *  they have to be created from scratch! II
+    *
     * */
 
 
