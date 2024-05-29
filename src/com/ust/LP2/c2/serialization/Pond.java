@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class Pond implements Serializable {
     //pond object can be serialized
     private Duck duck = new Duck();
-
+    // class Pond has one instance variable, a Duck
     public static void main(String[] args) throws IOException {
         Pond pond = new Pond();
         ObjectOutputStream objStr = null;
