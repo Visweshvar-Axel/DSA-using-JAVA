@@ -35,6 +35,27 @@ public class StudyDemo {
     *
     *  they have to be created from scratch! II
     *
+    *
+    *
+    * -----------------------------------------------------------------------------------
+    * 1) if serialization is so important, why isn't it the default for all the classes. ?
+    * why doesn't class Object implement Serializable, and then all the subclasses will automatically Serializable. ?
+    *
+    *
+    * Even though most classes will,and should implement Serializable,you always have a choice!!
+    * and you must make a conscious decision on a class-by class basis, for each class you design,
+    * to enable serialization by implementing the interface!
+    * First of all, if serialization were the default, how could you turn it off..?
+    * interfaces indicates functionality, not a lack of functionality
+    * so the model of polymorphism would not work properly if you had to say "implements NonSerializable" to tell the world that you can't be saved! !
+    *
+    * why would you ever write a class that wasn't serializable.?
+    *
+    * there are very few reason, but you might, for example, have a security issue where you don't want a password object stored.
+    * or you might have an object that makes no sense to save, because its key instances are not serializable, so there is no useful way for you to make your class serializable
+    *
+    * if a class i'm using isn't serializable, but there's no good reason except the designer forgot to implement, can i subclass the bad class and make the subclass serializable.?
+    *
     * */
 
 
