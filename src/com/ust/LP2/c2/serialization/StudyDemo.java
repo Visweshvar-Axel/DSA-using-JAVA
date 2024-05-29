@@ -71,6 +71,16 @@ public class StudyDemo {
     * if we serialize an object, a transient reference instance variable will be brought back to life as a null
     * regardless of the value it had at the time it was saved!!
     * that means, the entire object graph connected to that particular instance variable won't be saved!!
+    * that could be bad,obviously,because you probably need anon-null value for that variable
+    *
+    * we have got two options:
+    * I) when the object is brought back, reinitialize the null instance variable back to some default state!
+    * this works if your deserialized object isn't dependent on a particular value for that transient variable.
+    * in other words, it might be important that the Dog have a collar, but perhanps all Collar objects are the same,
+    * so it doesn't matter if you give Dog a new brand collar:nobody will know the differnce!!
+    *
+    * 2) if the value of transient variable matters, then you need to save the key values of the collar and use them when the Dog is brought back to essentially
+    *
     * */
 
 }
