@@ -13,7 +13,7 @@ public class Pond implements Serializable {
         Pond pond = new Pond();
         ObjectOutputStream objStr = null;
         try {
-            FileOutputStream file = new FileOutputStream("pond.ser");
+            FileOutputStream file = new FileOutputStream("ser/pond.ser");
             objStr = new ObjectOutputStream(file);
             objStr.writeObject(pond);
         } catch (Exception e) {
