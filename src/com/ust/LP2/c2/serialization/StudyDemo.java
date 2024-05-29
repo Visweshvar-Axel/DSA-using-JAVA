@@ -80,6 +80,12 @@ public class StudyDemo {
     * so it doesn't matter if you give Dog a new brand collar:nobody will know the differnce!!
     *
     * 2) if the value of transient variable matters, then you need to save the key values of the collar and use them when the Dog is brought back to essentially
+    * re-create a brand-new collar that's identical to the original
+    *
+    * what happens if two objects in the object graph are the same object.?
+    * excellent question!!
+    * serialization is smart enough to know when two objects in the graph are the same.
+    * in that case only one Of the objects is saved and during serialization any references to that single objects are restored.
     *
     * */
 
