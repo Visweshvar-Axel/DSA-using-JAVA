@@ -13,7 +13,7 @@ public class Pond implements Serializable {
         Pond pond = new Pond();
         ObjectOutputStream objStr = null;
         try {
-            FileOutputStream file = new FileOutputStream("ser/pond.ser");
+            FileOutputStream file = new FileOutputStream("pond.ser");
             objStr = new ObjectOutputStream(file);
             objStr.writeObject(pond);
             //when we serialize pond 0b •ect, it's duck instance variable automatically gets serialized
