@@ -58,7 +58,19 @@ public class StudyDemo {
     * yes! ! if the class is extendable(not final), you can make a serializable subclass, and just substitute the subclass everywhere your code is expecting the
     * super class!!
     *
+    * what does it mean to have a serializable subclass of a non-serializable superclass..??
+    * first we have to look at what happens when a class is deserialized.
     *
+    * In a nutshell, when an object is deserialized and its super class is not serializable
+    * then the super class constructor will run just as though a new object of that type were being created!
+    *
+    *
+    * preserve an object's state:
+    *
+    * yes this is an issue, but fortunately there's a solution.
+    * if we serialize an object, a transient reference instance variable will be brought back to life as a null
+    * regardless of the value it had at the time it was saved!!
+    * that means, the entire object graph connected to that particular instance variable won't be saved!!
     * */
 
 }
