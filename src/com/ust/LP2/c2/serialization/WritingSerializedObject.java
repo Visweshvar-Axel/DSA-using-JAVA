@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 
 public class WritingSerializedObject {
     public static void main(String[] args) throws IOException {
+
         // 1 ) Make a FileOutputStream
         FileOutputStream file = new FileOutputStream("GameCharacter.ser");
 
@@ -97,4 +98,29 @@ public class WritingSerializedObject {
     * objectOutputStream. writeObject (anObject) ;
     * anObject must implement serializable or it, would fail at runtime
     * */
+    /**
+     * p4 what happening when serialized
+     * */
+    /* *
+     * 1) object on the heap:
+     * object has state: represtented by value of instace variables
+     * these values make one instance of a class different from another instances of the same class
+     *
+     * Class foo{
+     * int height;
+     * int weignt
+     * }
+     * foo f = new foo();
+     * f.setHeight(50);
+     * f.setWeight(50);
+     *
+     * 2) objects serilaized:
+     * serialized objects save the values of the instance variables, so that an identical instance can be brought back to life on the heap:
+     * FileOutputStream f = new FileOutputStream("foo.ser");
+     * ObjectOutputStream objstr = new ObjectOutputStream(f);
+     * objstr.writeObject(obj);
+     *
+     * the instance variable values for width and height are saved to the file "f. ser"
+     * along with a little more information the JVM needs to restore the object(like what's its class type)
+     * */
 }
