@@ -159,6 +159,8 @@ public class StudyDemo {
     *
     * once the constructor chaining begins, you can't stop it,which means all superclasses,begining with the first non serializable one,will reinitialize their state.
     *
+    * 6) the object's instance variable are given the values from the serialized state.
+    * transient variables are given a value null for object references and for primitives.
     * */
 
 }
