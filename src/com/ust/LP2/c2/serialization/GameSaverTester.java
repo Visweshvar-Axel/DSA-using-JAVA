@@ -9,8 +9,9 @@ public class GameSaverTester {
         GameCharacter one = new GameCharacter(50,"Viswa",new String[]{"bare", "bomb"});
         GameCharacter two = new GameCharacter(200,"axel",new String[]{"bow", "arrow","bomb"});
         GameCharacter three = new GameCharacter(120,"anu",new String[]{"knife", "rope"});
-        //serilazing the objects
+        //serializing the objects
         try {
+            // 1 create the connection stream
             FileOutputStream file = new FileOutputStream("Game.ser");
             ObjectOutputStream objSer = new ObjectOutputStream(file);
             objSer.writeObject(one);
