@@ -151,6 +151,7 @@ public class StudyDemo {
     * 3)the JVM attempts to find and load the object's class
     * if the JVM can't find and/or load the class, the JVM throws an exception and deserialization fails!!
     * 4) a new Object is given space on the heap, but the serialized object's constructor doesn't run!!
+    * Obviously, if the constructor ran, it would restore the state of the object back to it's original new state, and that's not what we want!!
     *
     *
     * */
