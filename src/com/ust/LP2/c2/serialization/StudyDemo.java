@@ -152,7 +152,12 @@ public class StudyDemo {
     * if the JVM can't find and/or load the class, the JVM throws an exception and deserialization fails!!
     * 4) a new Object is given space on the heap, but the serialized object's constructor doesn't run!!
     * Obviously, if the constructor ran, it would restore the state of the object back to it's original new state, and that's not what we want!!
+    * we want the object to be restored to the state it had when it was serialized, not when it was created!!
     *
+    * 5) if the object has a non-serializable class somewhere up in the inheritance tree, the constructor for that non-serializable class will run along with any constructor above that
+    * (even if they are serializable)
+    *
+    * once the constructor chaining begins, you can't stop it,which means all superclasses,begining with the first non serializable one,will reinitialize their state.
     *
     * */
 
