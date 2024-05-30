@@ -26,6 +26,7 @@ public class GameSaverTester {
         three = null;
         //we set them to null so we can't access them from heap
         try {
+            // 1 creating connection
             FileInputStream file = new FileInputStream("Game.ser");
             ObjectInputStream objInp = new ObjectInputStream(file);
             GameCharacter oneRestore = (GameCharacter) objInp.readObject();
