@@ -100,6 +100,10 @@ public class StudyDemo {
     *
     * FileInputStream fileStream=new FileInputStream("myGame.ser");
     *
+    * if the file "myGame. ser" doesn't exist, you will get an exception
+    *
+    *
+    *
     * */
 
 }
