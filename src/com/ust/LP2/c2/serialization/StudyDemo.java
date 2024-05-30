@@ -95,7 +95,10 @@ public class StudyDemo {
     * The whole point of seril_aizing an object is so that you can restore it back to its original state at some point later date,
     * in a different •run' of the JVM!!
     *
-    * 
+    * Deserialization is a lot like serialization in reverse!!
+    * I) Make a FileInputStream
+    *
+    * FileInputStream fileStream=new FileInputStream("myGame.ser");
     *
     * */
 
