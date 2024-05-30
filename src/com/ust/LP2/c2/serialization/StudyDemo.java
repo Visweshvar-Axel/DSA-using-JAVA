@@ -175,7 +175,7 @@ public class StudyDemo {
     *
     * what about static variables. ?Are they serialized.?
     * Nope.
-    * why. ?
+    * why.?
     * Remember, static means"one per class" not one per object.
     * Static variables are not saved, and when an object is deserialized,it will have whatever static variable class currently has.
     *
