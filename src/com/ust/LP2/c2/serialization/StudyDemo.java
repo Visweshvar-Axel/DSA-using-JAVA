@@ -172,6 +172,15 @@ public class StudyDemo {
     * for object serialized. to ship over network, through, there actually is a mechanism where the serialized object can be stamped with the URL for where the class could be found.
     * this is used in Java is Remote method invocation(RMI) so that vou can send serialized object as Dart sav. a method argument. and if the HVM receiving the call doesn't have the class. it can
     * use the URL to fetch the class from the network and load it, all automatically.
+    *
+    * what about static variables. ?Are they serialized.?
+    * Nope.
+    * why. ?
+    * Remember, static means"one per class" not one per object.
+    * Static variables are not saved, and when an object is deserialized,it will have whatever static variable class currently has.
+    *
+    * the moral:don't make serializable object's dependent on a dynamically-changing static variable
+    * it might not be same when the object's come back.
     * */
 
 }
