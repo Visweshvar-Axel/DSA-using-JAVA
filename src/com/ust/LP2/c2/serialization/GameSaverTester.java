@@ -13,7 +13,10 @@ public class GameSaverTester {
         try {
             FileOutputStream file = new FileOutputStream("Game.ser");
             ObjectOutputStream objSer = new ObjectOutputStream(file);
-
+            objSer.writeObject(one);
+            objSer.writeObject(two);
+            objSer.writeObject(three);
+            objSer.close();
         }catch (Exception e){e.printStackTrace();}
 
     }
