@@ -31,7 +31,9 @@ public class GameSaverTester {
             GameCharacter oneRestore = (GameCharacter) objInp.readObject();
             GameCharacter twoRestore = (GameCharacter) objInp.readObject();
             GameCharacter threeRestore = (GameCharacter) objInp.readObject();
-            System.out.println("one's type is");
+            System.out.println("one's type is "+oneRestore.getType());
+            System.out.println("two's type is "+twoRestore.getType());
+            System.out.println("three's type is "+threeRestore.getType());
         } catch (Exception e){e.printStackTrace();}
 
     }
