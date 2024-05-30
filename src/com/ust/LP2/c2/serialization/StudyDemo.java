@@ -167,7 +167,7 @@ public class StudyDemo {
     * sure, they could have made serialization work that way. but what a tremendous waste and overhead.
     * and while it might not be such a hardship when you are using serialization to write objects to a file on a local had drive,serialization is also used to send.
     * objects over network connection.
-    * if a class was bundled with each serialized object, bandwith would become a much larger problem than it already is.
+    * if a class was bundled with each serialized object, bandwidth would become a much larger problem than it already is.
     *
     * for object serialized. to ship over network, through, there actually is a mechanism where the serialized object can be stamped with the URL for where the class could be found.
     * this is used in Java is Remote method invocation(RMI) so that vou can send serialized object as Dart sav. a method argument. and if the HVM receiving the call doesn't have the class. it can
