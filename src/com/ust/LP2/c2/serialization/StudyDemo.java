@@ -120,7 +120,13 @@ public class StudyDemo {
     * each time we say readObject,we will get the next object in the stream. so well read them back in the same order in which they were inserted!!
     * we will get big fat exception if you try to read more objects than we wrote!!
     *
+    * 4) Cast the Object:
     *
+    * GameCharacter elf=(GameCharacter)one;
+    * GameCharacter eee=(GameCharacter)two;
+    * GameCharacter eee=(GameCharacter)three;
+    *
+    * the return value of readObject() is type object, so we have to cast it back to the type we know it really is! !
     *
     * */
 
