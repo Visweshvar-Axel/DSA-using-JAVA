@@ -148,7 +148,7 @@ public class StudyDemo {
     *
     * 1) The object is read from the stream
     * 2) the JVM determines(through the info stored with serialized object) the object's class type
-    * 3)the JVM attempts to find and load the object's class
+    * 3) the JVM attempts to find and load the object's class
     * if the JVM can't find and/or load the class, the JVM throws an exception and deserialization fails!!
     * 4) a new Object is given space on the heap, but the serialized object's constructor doesn't run!!
     * Obviously, if the constructor ran, it would restore the state of the object back to it's original new state, and that's not what we want!!
