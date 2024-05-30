@@ -87,6 +87,16 @@ public class StudyDemo {
     * serialization is smart enough to know when two objects in the graph are the same.
     * in that case only one Of the objects is saved and during serialization any references to that single objects are restored.
     *
+    *
+    * -----------------------------------------------------------------------------------------------------
+    *
+    * Deserialization: restoring an object
+    *
+    * The whole point of seril_aizing an object is so that you can restore it back to its original state at some point later date,
+    * in a different •run' of the JVM!!
+    *
+    * 
+    *
     * */
 
 }
