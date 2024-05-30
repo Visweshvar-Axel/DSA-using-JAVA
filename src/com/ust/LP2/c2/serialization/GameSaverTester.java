@@ -1,6 +1,8 @@
 package com.ust.LP2.c2.serialization;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class GameSaverTester {
@@ -19,6 +21,18 @@ public class GameSaverTester {
             objSer.writeObject(three);
             objSer.close();
         }catch (Exception e){e.printStackTrace();}
+        one = null;
+        two = null;
+        three = null;
+        //we set them to null so we can't access them from heap
+        try {
+            FileInputStream file = new FileInputStream("Game.ser");
+            ObjectInputStream objInp = new ObjectInputStream(file);
+            GameCharacter oneRestore = (GameCharacter) objInp.readObject();
+            GameCharacter twoRestore = (GameCharacter) objInp.readObject();
+            GameCharacter threeRestore = (GameCharacter) objInp.readObject();
+            System.out.println("one's type is");
+        } catch (Exception e){e.printStackTrace();}
 
     }
 }
