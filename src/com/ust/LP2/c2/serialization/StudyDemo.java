@@ -161,6 +161,17 @@ public class StudyDemo {
     *
     * 6) the object's instance variable are given the values from the serialized state.
     * transient variables are given a value null for object references and for primitives.
+    *
+    *
+    * why doesn't the class get saved as a part of the object. ?that way we don't have the problem with whether the class can be found.?
+    * sure, they could have made serialization work that way. but what a tremendous waste and overhead.
+    * and while it might not be such a hardship when you are using serialization to write objects to a file on a local had drive,serialization is also used to send.
+    * objects over network connection.
+    * if a class was bundled with each serialized object, bandwith would become a much larger problem than it already is.
+    *
+    * for object serialized. to ship over network, through, there actually is a mechanism where the serialized object can be stamped with the URL for where the class could be found.
+    * this is used in Java is Remote method invocation(RMI) so that vou can send serialized object as Dart sav. a method argument. and if the HVM receiving the call doesn't have the class. it can
+    * use the URL to fetch the class from the network and load it, all automatically.
     * */
 
 }
