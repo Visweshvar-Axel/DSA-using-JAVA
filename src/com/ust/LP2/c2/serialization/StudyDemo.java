@@ -102,7 +102,16 @@ public class StudyDemo {
     *
     * if the file "myGame. ser" doesn't exist, you will get an exception
     *
+    * Make a FileInputStreamobject,The FileInputStreamObject knows how to connect to existing file
     *
+    * 2) Make an ObjectlnputStream
+    *
+    * ObjectlnputStream os=new ObjectOutputStream(fi1eStream);
+    *
+    * ObjectlnputStream lets you read objects, but it can't directly connect to file.
+    * it needs to be chained to a connection stream, in this case it is FileInputStream
+    *
+    * 3) read the objects from file
     *
     * */
 
