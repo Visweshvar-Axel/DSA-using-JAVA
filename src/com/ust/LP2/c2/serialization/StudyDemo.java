@@ -113,6 +113,15 @@ public class StudyDemo {
     *
     * 3) read the objects from file
     *
+    * Object one=os.readObject();
+    * Object two=os.readObject();
+    * Object three=os.readObject()
+    *
+    * each time we say readObject,we will get the next object in the stream. so well read them back in the same order in which they were inserted!!
+    * we will get big fat exception if you try to read more objects than we wrote!!
+    *
+    *
+    *
     * */
 
 }
