@@ -128,6 +128,9 @@ public class StudyDemo {
     *
     * the return value of readObject() is type object, so we have to cast it back to the type we know it really is! !
     *
+    * 5) close the ObjectInputStream.
+    *
+    * closing the stream at the top closes the ones underneath, so FileInputStream will be closed automatically!!!
     * */
 
 }
