@@ -131,6 +131,28 @@ public class StudyDemo {
     * 5) close the ObjectInputStream.
     *
     * closing the stream at the top closes the ones underneath, so FileInputStream will be closed automatically!!!
+    *
+    * ------------------------------------------
+    *
+    * what happens during deserialization.. ??
+    * when an object is deserialized,the JVM attempts to bring the object back to life by making a new object on the h
+    * that has the same state the serialized object had at the time it was serialized.
+    * well, except for the transient variables,which come back either null ot as default primitive values
+    *
+    * read by--<<Fi1eInputStream(a Connection Stream, object is read as bytes)>>is chained to----<<Object Input Stream(a chain stream)
+    * class is found and loaded, saved instance variables reassigned!!
+    *
+    * This step will throw an exception if the JVM can't find or load the class!!!
+    *
+    * >>
+    *
+    * 1) The object is read from the stream
+    * 2) the JVM determines(through the info stored with serialized object) the object's class type
+    * 3)the JVM attempts to find and load the object's class
+    * if the JVM can't find and/or load the class, the JVM throws an exception and deserialization fails!!
+    * 4) a new Object is given space on the heap, but the serialized object's constructor doesn't run!!
+    *
+    *
     * */
 
 }
