@@ -1,6 +1,8 @@
 package com.ust.LP2.c2.a1;
 
-public class BankAccount {
+import java.io.Serializable;
+
+public class BankAccount implements Serializable {
     private int accNo;
     private String name;
     private Double balance;
