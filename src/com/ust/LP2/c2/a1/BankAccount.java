@@ -8,6 +8,8 @@ public class BankAccount implements Serializable {
     private Double balance;
     private String password;
 
+    public BankAccount() {}
+
     public BankAccount(int accNo, String name, Double balance, String password) {
         this.accNo = accNo;
         this.name = name;
