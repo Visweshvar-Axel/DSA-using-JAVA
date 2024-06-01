@@ -1,7 +1,5 @@
 package com.ust.LP2.c2.a1;
 
-import com.ust.LP2.c2.serialization.GameCharacter;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
