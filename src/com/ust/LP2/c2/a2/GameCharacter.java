@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 
 public class GameCharacter implements Serializable {
+    private static final long serialVersionUID = -8937627361692726189L;
     private int level;
     private String name;
     private String achievements;
