@@ -1,8 +1,9 @@
 package com.ust.LP2.c2.a2;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class GameCharacter {
+public class GameCharacter implements Serializable {
     private int level;
     private String name;
     private String achievements;
