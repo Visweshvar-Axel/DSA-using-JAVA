@@ -1,5 +1,7 @@
 package com.ust.LP2.c2.a2;
 
+import java.util.Arrays;
+
 public class GameCharacter {
     private int level;
     private String name;
@@ -45,4 +47,13 @@ public class GameCharacter {
         this.inventory = inventory;
     }
 
+    @Override
+    public String toString() {
+        return "GameCharacter{" +
+                "level=" + level +
+                ", name='" + name + '\'' +
+                ", achievements='" + achievements + '\'' +
+                ", inventory=" + Arrays.toString(inventory) +
+                '}';
+    }
 }
