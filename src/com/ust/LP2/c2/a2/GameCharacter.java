@@ -6,4 +6,10 @@ public class GameCharacter {
     private String achievements;
     private String[] inventory;
 
+    public GameCharacter(int level, String name, String achievements, String[] inventory) {
+        this.level = level;
+        this.name = name;
+        this.achievements = achievements;
+        this.inventory = inventory;
+    }
 }
