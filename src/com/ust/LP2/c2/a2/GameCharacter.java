@@ -12,4 +12,20 @@ public class GameCharacter {
         this.achievements = achievements;
         this.inventory = inventory;
     }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAchievements() {
+        return achievements;
+    }
+
+    public String[] getInventory() {
+        return inventory;
+    }
 }
