@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class GameSaverLoader {
-    public static void gameSaveM(GameCharacter[] objs){
+    public static void gameSave(GameCharacter[] objs){
         try {
             FileOutputStream file = new FileOutputStream("GameData.ser");
             ObjectOutputStream ob = new ObjectOutputStream(file);
@@ -25,7 +25,13 @@ public class GameSaverLoader {
         return objs;
     }
     public static void main(String[] args) {
-        GameCharacter Gamechar = new GameCharacter()
-        GameCharacter newGamechar =
+        GameCharacter[] gameChar = new GameCharacter[]{
+                new GameCharacter(50,"Viswa","Gold",new String[]{"bare", "bomb"}),
+                new GameCharacter(150,"Axel","Silver",new String[]{"bow", "arrow","bomb"})
+        };
+        gameSave(gameChar);
+        gameChar[0] = gameChar[1] = null;
+        GameCharacter[] newGameChar = gatGameChar(gameChar.length);
+        for (GameCharacter ch : newGameChar) System.out.println(ch.toString());
     }
 }
