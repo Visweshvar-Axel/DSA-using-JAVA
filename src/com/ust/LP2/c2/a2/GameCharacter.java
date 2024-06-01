@@ -28,4 +28,21 @@ public class GameCharacter {
     public String[] getInventory() {
         return inventory;
     }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAchievements(String achievements) {
+        this.achievements = achievements;
+    }
+
+    public void setInventory(String[] inventory) {
+        this.inventory = inventory;
+    }
+
 }
