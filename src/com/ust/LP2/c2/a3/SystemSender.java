@@ -1,18 +1,14 @@
 package com.ust.LP2.c2.a3;
 
-import java.io.ObjectInputStream;
-import java.net.ServerSocket;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class SystemSender {
     public static void main(String[] args) {
-        try (ServerSocket serverSocket = new ServerSocket(12345)) {
-            while (true){
-                try (Socket socket = serverSocket.accept()) {
-                    ObjectInputStream ob = new ObjectInputStream(socket.getInputStream());
-                    Data data = (Data) ob.readObject();
-                } catch (Exception e) {e.printStackTrace();}
-            }
+        Data data = new Data(12,"Hello Viswa");
+        try (Socket socket = new Socket("localhost",12345)){
+            ObjectOutputStream ob = new ObjectOutputStream(socket.getOutputStream());
+            ob.writeObject(data);
         } catch (Exception e) {e.printStackTrace();}
     }
 }
