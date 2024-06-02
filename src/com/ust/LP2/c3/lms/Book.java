@@ -17,4 +17,8 @@ public class Book {
         this.availability = availability;
         this.genre = genre;
     }
+
+    public String getISBN() {
+        return ISBN;
+    }
 }
