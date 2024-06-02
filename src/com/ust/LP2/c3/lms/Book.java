@@ -33,4 +33,8 @@ public class Book {
     public int getPrice() {
         return price;
     }
+
+    public int getAvailability() {
+        return availability;
+    }
 }
