@@ -39,4 +39,8 @@ public class Book {
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
