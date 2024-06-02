@@ -6,4 +6,5 @@ public class Book {
     private String author;
     private int price;
     private int availability;
+    private String genre;
 }
