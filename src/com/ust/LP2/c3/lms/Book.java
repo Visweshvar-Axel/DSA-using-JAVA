@@ -51,4 +51,8 @@ public class Book {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public void setAvailability(int availability) {
+        this.availability = availability;
+    }
 }
