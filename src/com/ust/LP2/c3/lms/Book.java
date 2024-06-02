@@ -3,6 +3,7 @@ package com.ust.LP2.c3.lms;
 import java.io.Serializable;
 
 public class Book implements Serializable {
+    private static final long serialVersionUID = -719046454259609267L;
     private String ISBN;
     private String title;
     private String author;
