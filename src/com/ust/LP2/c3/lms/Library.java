@@ -30,4 +30,8 @@ public class Library {
     public void setlName(String lName) {
         this.lName = lName;
     }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
