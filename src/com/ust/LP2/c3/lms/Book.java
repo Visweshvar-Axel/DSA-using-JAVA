@@ -1,6 +1,8 @@
 package com.ust.LP2.c3.lms;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable {
     private String ISBN;
     private String title;
     private String author;
