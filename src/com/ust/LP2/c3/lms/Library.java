@@ -22,4 +22,8 @@ public class Library {
     public String getAddress() {
         return address;
     }
+
+    public void setListBooks(List<Book> listBooks) {
+        this.listBooks = listBooks;
+    }
 }
