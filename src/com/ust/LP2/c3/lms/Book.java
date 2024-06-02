@@ -37,4 +37,8 @@ public class Book {
     public int getAvailability() {
         return availability;
     }
+
+    public String getGenre() {
+        return genre;
+    }
 }
