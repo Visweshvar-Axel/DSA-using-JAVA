@@ -13,4 +13,8 @@ public class Library {
         this.lName = lName;
         this.address = address;
     }
+
+    public List<Book> getListBooks() {
+        return listBooks;
+    }
 }
