@@ -21,4 +21,8 @@ public class Library {
     public String getlName() {
         return lName;
     }
+
+    public String getAddress() {
+        return address;
+    }
 }
