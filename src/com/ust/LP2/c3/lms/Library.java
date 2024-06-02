@@ -1,5 +1,6 @@
 package com.ust.LP2.c3.lms;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
@@ -30,5 +31,11 @@ public class Library {
     }
     public void setAddress(String address) {
         this.address = address;
+    }
+    public void addBook (Book book){
+        if (listBooks == null){
+            listBooks = new ArrayList<Book>();
+        }
+        listBooks.add(book);
     }
 }
