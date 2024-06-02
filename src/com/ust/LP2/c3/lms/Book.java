@@ -55,4 +55,8 @@ public class Book {
     public void setAvailability(int availability) {
         this.availability = availability;
     }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
 }
