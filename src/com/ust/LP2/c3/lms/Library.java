@@ -5,4 +5,5 @@ import java.util.List;
 public class Library {
     private List<Book> listBooks;
     private String lname;
+    private String address;
 }
