@@ -35,4 +35,8 @@ public class Book {
     public String getGenre() {
         return genre;
     }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
+    }
 }
