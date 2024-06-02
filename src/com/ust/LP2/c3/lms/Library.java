@@ -47,4 +47,7 @@ public class Library {
             }
         }
     }
+    public List<Book> searchByAuthor (String author){
+        System.out.println("sad");
+    }
 }
