@@ -6,4 +6,10 @@ public class Library {
     private List<Book> listBooks;
     private String lName;
     private String address;
+
+    public Library(List<Book> listBooks, String lName, String address) {
+        this.listBooks = listBooks;
+        this.lName = lName;
+        this.address = address;
+    }
 }
