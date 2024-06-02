@@ -17,4 +17,8 @@ public class Library {
     public List<Book> getListBooks() {
         return listBooks;
     }
+
+    public String getlName() {
+        return lName;
+    }
 }
