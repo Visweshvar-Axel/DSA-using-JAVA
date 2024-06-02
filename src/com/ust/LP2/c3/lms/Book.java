@@ -29,4 +29,8 @@ public class Book {
     public String getAuthor() {
         return author;
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
