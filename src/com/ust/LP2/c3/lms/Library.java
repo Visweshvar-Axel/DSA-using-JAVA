@@ -6,7 +6,6 @@ public class Library {
     private List<Book> listBooks;
     private String lName;
     private String address;
-
     public Library() {
     }
 
