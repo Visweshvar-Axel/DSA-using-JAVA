@@ -25,7 +25,6 @@ public class Library {
     public void setListBooks(List<Book> listBooks) {
         this.listBooks = listBooks;
     }
-
     public void setlName(String lName) {
         this.lName = lName;
     }
