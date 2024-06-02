@@ -38,4 +38,13 @@ public class Library {
         }
         listBooks.add(book);
     }
+    public void removeBook(String ISBN) {
+        for (Book bk : listBooks){
+            if (bk.getISBN().equals(ISBN)){
+                listBooks.remove(bk);
+                System.out.println("Successfully delete one book.");
+                break;
+            }
+        }
+    }
 }
