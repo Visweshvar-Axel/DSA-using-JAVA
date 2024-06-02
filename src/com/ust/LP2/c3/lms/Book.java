@@ -17,27 +17,21 @@ public class Book {
         this.availability = availability;
         this.genre = genre;
     }
-
     public String getISBN() {
         return ISBN;
     }
-
     public String getTitle() {
         return title;
     }
-
     public String getAuthor() {
         return author;
     }
-
     public int getPrice() {
         return price;
     }
-
     public int getAvailability() {
         return availability;
     }
-
     public String getGenre() {
         return genre;
     }
