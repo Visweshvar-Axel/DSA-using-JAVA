@@ -8,7 +8,6 @@ public class Library {
     private String address;
     public Library() {
     }
-
     public Library(List<Book> listBooks, String lName, String address) {
         this.listBooks = listBooks;
         this.lName = lName;
