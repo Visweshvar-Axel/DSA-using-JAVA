@@ -67,4 +67,7 @@ public class Library {
         }
         return ba;
     }
+    public List<Book> displayAvailableBook(){
+        return listBooks;
+    }
 }
