@@ -11,5 +11,10 @@ public class MainUtil {
         lb.addBook(obj2);
         SerializationHandler sh = new SerializationHandler();
         sh.serializeLibrary(lb,"library.txt");
+        Library dt1 = sh.deserializeLibrary("library.txt");
+        System.out.println(dt1.displayAvailableBook());
+        System.out.println("____________________________________________");
+        for (int i = 0 ; i < lb.displayAvailableBook().size(); i++)
+        System.out.println("____________________________________________");
     }
 }
