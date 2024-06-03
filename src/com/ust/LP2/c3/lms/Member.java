@@ -15,4 +15,8 @@ public class Member extends Library{
     public String getName() {
         return name;
     }
+
+    public List<Book> getBorrowedBooks() {
+        return borrowedBooks;
+    }
 }
