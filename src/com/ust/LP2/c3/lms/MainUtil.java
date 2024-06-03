@@ -51,6 +51,9 @@ public class MainUtil {
             if(mb.getQnty() < bk.getAvailability()) {
                 mb.borrowBook(bisbn);
             }
+            else {
+                throw new NotEnoughBooksException(bisbn+" not enough books");
+            }
         }
     }
 }
