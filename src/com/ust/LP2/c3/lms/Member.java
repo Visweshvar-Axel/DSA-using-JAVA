@@ -8,6 +8,9 @@ public class Member extends Library{
     private List<Book> borrowedBooks;
     private int qnty;
     public Member() {
+        Book obj1 = new Book("A-z1","Java","Viswa",100,5,"program");
+        Book obj2 = new Book("asd","python","Axel",50,3,"program");
+
     }
     public Member(int ID, String name, List<Book> borrowedBooks, int qnty) {
         this.ID = ID;
