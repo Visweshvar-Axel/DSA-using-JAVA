@@ -8,4 +8,7 @@ public class Member extends Library{
     private List<Book> borrowedBooks;
     private int qnty;
 
+    public int getID() {
+        return ID;
+    }
 }
