@@ -19,4 +19,8 @@ public class Member extends Library{
     public List<Book> getBorrowedBooks() {
         return borrowedBooks;
     }
+
+    public int getQnty() {
+        return qnty;
+    }
 }
