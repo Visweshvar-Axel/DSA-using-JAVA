@@ -7,10 +7,12 @@ public class Member extends Library{
     private String name;
     private List<Book> borrowedBooks;
     private int qnty;
+    Library lb = new Library();
     public Member() {
         Book obj1 = new Book("A-z1","Java","Viswa",100,5,"program");
         Book obj2 = new Book("asd","python","Axel",50,3,"program");
-
+        lb.addBook(obj1);
+        lb.addBook(obj2);
     }
     public Member(int ID, String name, List<Book> borrowedBooks, int qnty) {
         this.ID = ID;
