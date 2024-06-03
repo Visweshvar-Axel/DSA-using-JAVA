@@ -57,5 +57,7 @@ public class MainUtil {
         }
         //display borrow book
         System.out.println(mb.displayBorrowedBook());
+        //return book
+        mb.returnBook(bisbn);
     }
 }
