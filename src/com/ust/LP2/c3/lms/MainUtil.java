@@ -47,7 +47,10 @@ public class MainUtil {
         mb.setQnty(3);
         String bisbn = "A-z1";
         for (int i = 0; i < lb.displayAvailableBook().size(); i++) {
-
+            Book bk = lb.displayAvailableBook().get(i);
+            if(mb.getQnty() < bk.getAvailability()) {
+                mb.borrowBook(bisbn);
+            }
         }
     }
 }
