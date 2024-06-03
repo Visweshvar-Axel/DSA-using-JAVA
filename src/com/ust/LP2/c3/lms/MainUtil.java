@@ -24,5 +24,6 @@ public class MainUtil {
         //search by author
         String author = "Viswa";
         List<Book> sa = lb.searchByAuthor(author);
+        if (sa.size() <= 0 )
     }
 }
