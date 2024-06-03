@@ -46,5 +46,8 @@ public class MainUtil {
         mb.setName("viswa");
         mb.setQnty(3);
         String bisbn = "A-z1";
+        for (int i = 0; i < lb.displayAvailableBook().size(); i++) {
+
+        }
     }
 }
