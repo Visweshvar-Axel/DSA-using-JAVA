@@ -31,4 +31,8 @@ public class Member extends Library{
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setBorrowedBooks(List<Book> borrowedBooks) {
+        this.borrowedBooks = borrowedBooks;
+    }
 }
