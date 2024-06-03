@@ -14,7 +14,10 @@ public class MainUtil {
         Library dt1 = sh.deserializeLibrary("library.txt");
         System.out.println(dt1.displayAvailableBook());
         System.out.println("____________________________________________");
-        for (int i = 0 ; i < lb.displayAvailableBook().size(); i++)
+        for (int i = 0 ; i < lb.displayAvailableBook().size(); i++){
+            Book dt = lb.displayAvailableBook().get(i);
+            System.out.println(dt.toString());
+        }
         System.out.println("____________________________________________");
     }
 }
