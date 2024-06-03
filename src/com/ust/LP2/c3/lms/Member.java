@@ -54,7 +54,7 @@ public class Member extends Library{
         }
     }
     public void returnBook(String ISBN) {
-        List<Book> lbb = displayAvailableBook();
+        List<Book> lbb = displayBarrowedBook();
         for (Book b: lbb){
             if (b.getISBN().equals(ISBN)){
                 lbb.remove(b);
