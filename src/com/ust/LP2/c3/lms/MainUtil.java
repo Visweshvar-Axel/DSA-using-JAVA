@@ -44,7 +44,7 @@ public class MainUtil {
         Member mb = new Member();
         mb.setID(1);
         mb.setName("viswa");
-        mb.setQnty(3);
+        mb.setQnty(1);
         String bisbn = "asd";
         for (int i = 0; i < lb.displayAvailableBook().size(); i++) {
             Book bk = lb.displayAvailableBook().get(i);
