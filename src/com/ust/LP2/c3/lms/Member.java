@@ -53,4 +53,14 @@ public class Member extends Library{
             }
         }
     }
+    public void returnBook(String ISBN) {
+        List<Book> lbb = displayAvailableBook();
+        for (Book b: lbb){
+            if (b.getISBN().equals(ISBN)){
+                lbb.remove(b);
+                System.out.println("Successfully returned book"+ISBN);
+                break;
+            }
+        }
+    }
 }
