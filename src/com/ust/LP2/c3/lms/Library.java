@@ -1,9 +1,10 @@
 package com.ust.LP2.c3.lms;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Library {
+public class Library implements Serializable {
     private List<Book> listBooks;
     private String lName;
     private String address;
