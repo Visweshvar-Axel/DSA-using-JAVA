@@ -48,6 +48,13 @@ public class Library {
         }
     }
     public List<Book> searchByAuthor (String author){
-        System.out.println("sad");
+        List<Book> ba = new ArrayList<>();
+        for (int i = 0; i < listBooks.size(); i++){
+            Book b = listBooks.get(i);
+            if (b.getAuthor().equals(author)) {
+                ba.add(b);
+            }
+        }
+        return ba;
     }
 }
