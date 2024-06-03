@@ -23,7 +23,6 @@ public class Member extends Library{
     public int getQnty() {
         return qnty;
     }
-
     public void setID(int ID) {
         this.ID = ID;
     }
