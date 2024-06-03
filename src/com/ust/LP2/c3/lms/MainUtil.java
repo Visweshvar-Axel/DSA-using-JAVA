@@ -45,7 +45,7 @@ public class MainUtil {
         mb.setID(1);
         mb.setName("viswa");
         mb.setQnty(3);
-        String bisbn = "A-z1";
+        String bisbn = "asd";
         for (int i = 0; i < lb.displayAvailableBook().size(); i++) {
             Book bk = lb.displayAvailableBook().get(i);
             if(mb.getQnty() < bk.getAvailability()) {
