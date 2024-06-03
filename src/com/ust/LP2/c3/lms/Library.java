@@ -57,4 +57,14 @@ public class Library {
         }
         return ba;
     }
+    public List<Book> searchByGenre (String genre){
+        List<Book> ba = new ArrayList<>();
+        for (int i = 0; i < listBooks.size(); i++){
+            Book b = listBooks.get(i);
+            if (b.getAuthor().equals(genre)) {
+                ba.add(b);
+            }
+        }
+        return ba;
+    }
 }
