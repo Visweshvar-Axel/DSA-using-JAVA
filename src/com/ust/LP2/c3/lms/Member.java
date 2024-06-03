@@ -1,5 +1,6 @@
 package com.ust.LP2.c3.lms;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Member extends Library{
@@ -43,5 +44,13 @@ public class Member extends Library{
     }
     public void setQnty(int qnty) {
         this.qnty = qnty;
+    }
+    public void borrowBook(String ISBN){
+        borrowedBooks = new ArrayList<>();
+        for (Book b: lb.displayAvailableBook()){
+            if (ISBN.equals(b.getISBN())){
+                borrowedBooks.add(b);
+            }
+        }
     }
 }
