@@ -9,7 +9,6 @@ public class MainUtil {
         lb.setAddress("Salem");
         lb.addBook(obj1);
         lb.addBook(obj2);
-
         SerializationHandler sh = new SerializationHandler();
     }
 }
