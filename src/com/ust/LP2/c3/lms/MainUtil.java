@@ -55,5 +55,7 @@ public class MainUtil {
                 throw new NotEnoughBooksException(bisbn+" not enough books");
             }
         }
+        //display borrow book
+        System.out.println(mb.displayBorrowedBook());
     }
 }
