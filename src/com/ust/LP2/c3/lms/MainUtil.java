@@ -10,5 +10,6 @@ public class MainUtil {
         lb.addBook(obj1);
         lb.addBook(obj2);
         SerializationHandler sh = new SerializationHandler();
+        sh.serializeLibrary(lb,"library.txt");
     }
 }
