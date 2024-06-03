@@ -41,5 +41,7 @@ public class MainUtil {
         String isbn = "A-z1";
         lb.removeBook(isbn);
         //borrow book
+        Member mb = new Member();
+        mb.setID(3);
     }
 }
