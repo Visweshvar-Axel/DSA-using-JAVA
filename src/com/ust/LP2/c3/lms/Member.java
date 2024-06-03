@@ -35,7 +35,6 @@ public class Member extends Library{
     public void setBorrowedBooks(List<Book> borrowedBooks) {
         this.borrowedBooks = borrowedBooks;
     }
-
     public void setQnty(int qnty) {
         this.qnty = qnty;
     }
