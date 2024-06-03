@@ -1,5 +1,7 @@
 package com.ust.LP2.c3.lms;
 
+import java.util.List;
+
 public class MainUtil {
     public static void main(String[] args) {
         Book obj1 = new Book("A-z1","Java","Viswa",100,5,"program");
@@ -19,5 +21,8 @@ public class MainUtil {
             System.out.println(dt.toString());
         }
         System.out.println("____________________________________________");
+        //search by author
+        String author = "Viswa";
+        List<Book> sa = lb.searchByAuthor(author);
     }
 }
