@@ -8,5 +8,6 @@ public class MainUtil {
         lb.setlName("ViswaLib");
         lb.setAddress("Salem");
         lb.addBook(obj1);
+        lb.addBook(obj2);
     }
 }
