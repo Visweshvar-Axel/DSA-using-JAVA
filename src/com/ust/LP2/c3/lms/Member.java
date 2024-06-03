@@ -1,4 +1,4 @@
 package com.ust.LP2.c3.lms;
 
-public class Member {
+public class Member extends Library{
 }
