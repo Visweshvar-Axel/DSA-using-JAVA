@@ -27,7 +27,6 @@ public class Member extends Library{
     public void setID(int ID) {
         this.ID = ID;
     }
-
     public void setName(String name) {
         this.name = name;
     }
