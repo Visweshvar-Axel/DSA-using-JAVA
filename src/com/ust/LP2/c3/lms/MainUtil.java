@@ -7,5 +7,6 @@ public class MainUtil {
         Library lb = new Library();
         lb.setlName("ViswaLib");
         lb.setAddress("Salem");
+        lb.addBook(obj1);
     }
 }
