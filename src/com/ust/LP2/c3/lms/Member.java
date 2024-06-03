@@ -9,7 +9,6 @@ public class Member extends Library{
     private int qnty;
     public Member() {
     }
-
     public Member(int ID, String name, List<Book> borrowedBooks, int qnty) {
         this.ID = ID;
         this.name = name;
