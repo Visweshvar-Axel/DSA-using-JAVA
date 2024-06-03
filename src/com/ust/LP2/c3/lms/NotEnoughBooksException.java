@@ -1,5 +1,4 @@
 package com.ust.LP2.c3.lms;
 
-public class NotEnoughBooksException {
-
+public class NotEnoughBooksException extends Exception{
 }
