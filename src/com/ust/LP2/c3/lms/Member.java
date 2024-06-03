@@ -7,6 +7,14 @@ public class Member extends Library{
     private String name;
     private List<Book> borrowedBooks;
     private int qnty;
+
+    public Member(int ID, String name, List<Book> borrowedBooks, int qnty) {
+        this.ID = ID;
+        this.name = name;
+        this.borrowedBooks = borrowedBooks;
+        this.qnty = qnty;
+    }
+
     public int getID() {
         return ID;
     }
