@@ -11,4 +11,8 @@ public class Member extends Library{
     public int getID() {
         return ID;
     }
+
+    public String getName() {
+        return name;
+    }
 }
