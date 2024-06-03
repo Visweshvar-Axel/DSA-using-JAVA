@@ -2,4 +2,5 @@ package com.ust.LP2.c3.lms;
 
 public class Member extends Library{
     private int ID;
+    private String name;
 }
