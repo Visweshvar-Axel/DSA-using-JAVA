@@ -42,6 +42,8 @@ public class MainUtil {
         lb.removeBook(isbn);
         //borrow book
         Member mb = new Member();
-        mb.setID(3);
+        mb.setID(1);
+        mb.setName("viswa");
+        mb.setQnty(3);
     }
 }
