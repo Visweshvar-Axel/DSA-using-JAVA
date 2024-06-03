@@ -24,6 +24,19 @@ public class MainUtil {
         //search by author
         String author = "Viswa";
         List<Book> sa = lb.searchByAuthor(author);
-        if (sa.size() <= 0 )
+        if (sa.size() <= 0 ) {
+            throw new BookNotFoundException("The book is not available");
+        } else {
+            System.out.println(sa);
+        }
+        //search by genre
+        String genre = "program";
+        List<Book> lg = lb.searchByAuthor(genre);
+        if (sa.size() <= 0 ) {
+            throw new BookNotFoundException("The book is not available");
+        } else {
+            System.out.println(sa);
+        }
+
     }
 }
