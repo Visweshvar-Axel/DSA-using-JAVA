@@ -9,7 +9,6 @@ public class Vehicle {
         this.make = make;
         this.model = model;
     }
-
     public String getMake() {
         return make;
     }
