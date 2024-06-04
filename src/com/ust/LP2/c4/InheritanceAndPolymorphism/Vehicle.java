@@ -18,7 +18,6 @@ public class Vehicle {
     public void setMake(String make) {
         this.make = make;
     }
-
     public void setModel(String model) {
         this.model = model;
     }
