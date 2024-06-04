@@ -14,6 +14,10 @@ public class Vehicle {
         return make;
     }
 
+    public String getModel() {
+        return model;
+    }
+
     public void startEngine() {
         System.out.println("worrr... worrr...");
     }
