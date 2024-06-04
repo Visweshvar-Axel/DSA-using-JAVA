@@ -18,6 +18,10 @@ public class Vehicle {
         return model;
     }
 
+    public void setMake(String make) {
+        this.make = make;
+    }
+
     public void startEngine() {
         System.out.println("worrr... worrr...");
     }
