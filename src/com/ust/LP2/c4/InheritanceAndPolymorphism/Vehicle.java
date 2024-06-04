@@ -22,6 +22,10 @@ public class Vehicle {
         this.make = make;
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     public void startEngine() {
         System.out.println("worrr... worrr...");
     }
