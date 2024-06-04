@@ -12,7 +12,6 @@ public class Vehicle {
     public String getMake() {
         return make;
     }
-
     public String getModel() {
         return model;
     }
