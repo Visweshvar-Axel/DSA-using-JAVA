@@ -6,7 +6,6 @@ public class Motorcycle extends Vehicle {
     public Motorcycle(String make, String model) {
         super(make, model);
     }
-
     @Override
     public void startEngine() {
         System.out.println("troom... troom...");
