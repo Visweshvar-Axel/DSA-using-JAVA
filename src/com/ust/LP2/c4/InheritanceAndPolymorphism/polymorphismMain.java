@@ -8,7 +8,7 @@ public class polymorphismMain {
         System.out.println(toyota.toString());
         toyota.startEngine();
         System.out.println(ford.toString());
-        System.out.println(ford.startEngine());
+        ford.startEngine();
         System.out.println(honda.toString());
         System.out.println(honda.startEngine(););
     }
