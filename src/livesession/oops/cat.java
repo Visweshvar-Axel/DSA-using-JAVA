@@ -7,4 +7,15 @@ public class cat extends pet{
         super(name, breed, age, legs);
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "cat{" +
+                "color='" + color + '\'' +
+                '}';
+    }
+
+    public static void main(String[] args) {
+
+    }
 }
