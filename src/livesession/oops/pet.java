@@ -6,6 +6,10 @@ public class pet {
     private int age;
     private int legs;
 
+    public String getName() {
+        return name;
+    }
+
     public pet(String name, String breed, int age, int legs) {
         this.name = name;
         this.breed = breed;
