@@ -19,5 +19,8 @@ public class cat extends pet{
         cat obj1 = new cat("Atiya","indian",2,4,"white");
         cat obj2 = new cat("Ax","indian",3,4,"white");
         System.out.println(obj1.toString());
+        System.out.println(obj1.getName());
+        System.out.println(obj2.toString());
+        System.out.println(obj2.getName());
     }
 }
