@@ -7,14 +7,12 @@ public class cat extends pet{
         super(name, breed, age, legs);
         this.color = color;
     }
-
     @Override
     public String toString() {
         return "cat{" +
                 "color='" + color + '\'' +
                 '}';
     }
-
     public static void main(String[] args) {
         cat obj1 = new cat("Atiya","indian",2,4,"white");
         cat obj2 = new cat("Ax","indian",3,4,"white");
