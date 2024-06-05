@@ -17,5 +17,6 @@ public class cat extends pet{
 
     public static void main(String[] args) {
         cat obj1 = new cat("Atiya","indian",2,4,"white");
+        cat obj2 = new cat("Atiya","indian",2,4,"white");
     }
 }
