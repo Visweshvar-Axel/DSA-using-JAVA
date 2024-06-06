@@ -9,7 +9,7 @@ public class cat extends pet{
     }
     @Override
     public String toString() {
-        return "cat{" +
+        return super.toString()+"cat{" +
                 "color='" + color + '\'' +
                 '}';
     }
