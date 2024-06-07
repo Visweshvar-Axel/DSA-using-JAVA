@@ -10,6 +10,7 @@ public class ALExample {
         al.add("Viswa");
         al.add("Sarankumar");
         al.add("Axel");
+        al.add("Dinesh");
         al.add("janani");
         al.add("jeswin");
         Iterator<String> it = al.iterator();
