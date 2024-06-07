@@ -12,7 +12,8 @@ public class ALExample {
         al.add("Axel");
         al.add("janani");
         al.add("jeswin");
-        for (Iterator<String> it = al.iterator(); it.hasNext(); ) {
+        Iterator<String> it = al.iterator();
+        while (it.hasNext() ) {
             System.out.print(it.next()+", ");
         }
     }
