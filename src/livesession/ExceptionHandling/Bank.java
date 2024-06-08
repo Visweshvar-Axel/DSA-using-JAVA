@@ -13,6 +13,8 @@ public class Bank {
     void withdrawn(double amount) throws MinimumBalance {
         if(balance < amount){
             throw new MinimumBalance();
+        } else {
+
         }
     }
 }
