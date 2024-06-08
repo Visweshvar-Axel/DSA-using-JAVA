@@ -29,5 +29,7 @@ public class Bank {
     public static void main(String[] args) {
         Bank b = new Bank(500);
         System.out.println(b.checkBalance());
+        System.out.println(b.checkBalance());
+
     }
 }
