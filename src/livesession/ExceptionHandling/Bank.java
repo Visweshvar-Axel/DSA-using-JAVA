@@ -38,6 +38,7 @@ public class Bank {
         } catch (MinimumBalance m) {
             System.out.println(m);
         }
+        System.out.println(b.checkBalance());
 
     }
 }
