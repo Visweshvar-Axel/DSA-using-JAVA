@@ -17,5 +17,7 @@ public class Bank {
             balance -= amount;
         }
     }
-    String
+    String checkBalance(){
+        System.out.println();
+    }
 }
