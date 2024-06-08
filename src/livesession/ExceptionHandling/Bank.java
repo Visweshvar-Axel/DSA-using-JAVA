@@ -1,7 +1,7 @@
 package livesession.ExceptionHandling;
 class MinimumBalance extends Exception {
     MinimumBalance(){
-        super("Minimum Balance");
+        super("Minimum Balance from exception");
         System.out.println("minimum ");
     }
 }
