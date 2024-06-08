@@ -18,6 +18,6 @@ public class Bank {
         }
     }
     String checkBalance(){
-        System.out.println();
+        System.out.println("balance: "+balance);
     }
 }
