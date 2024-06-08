@@ -14,7 +14,8 @@ public class Bank {
         if(balance < amount){
             throw new MinimumBalance();
         } else {
-
+            balance -= amount;
         }
     }
+
 }
