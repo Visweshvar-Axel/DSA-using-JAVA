@@ -35,7 +35,9 @@ public class Bank {
         System.out.println(b.checkBalance());
         try{
 
-        } catch (MinimumBalance)
+        } catch (MinimumBalance m) {
+            
+        }
 
     }
 }
