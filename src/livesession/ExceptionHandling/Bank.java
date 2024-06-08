@@ -30,6 +30,7 @@ public class Bank {
         Bank b = new Bank(500);
         System.out.println(b.checkBalance());
         System.out.println(b.checkBalance());
+        System.out.println(b.checkBalance());
 
     }
 }
