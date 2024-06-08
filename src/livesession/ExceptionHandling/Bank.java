@@ -31,7 +31,7 @@ public class Bank {
         System.out.println(b.checkBalance());
         b.deposit(400);
         System.out.println(b.checkBalance());
-        b.withdrawn();
+        b.withdrawn(800);
         System.out.println(b.checkBalance());
 
     }
