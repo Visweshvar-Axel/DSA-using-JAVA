@@ -36,7 +36,7 @@ public class Bank {
         try{
 
         } catch (MinimumBalance m) {
-            
+            System.out.println();
         }
 
     }
