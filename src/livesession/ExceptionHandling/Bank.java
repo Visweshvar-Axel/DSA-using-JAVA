@@ -10,9 +10,9 @@ public class Bank {
     void deposit(double amount){
         balance += amount;
     }
-    void withdrawn(double amount){
+    void withdrawn(double amount) throws MinimumBalance {
         if(balance < amount){
-            throw n
+            throw new MinimumBalance();
         }
     }
 }
