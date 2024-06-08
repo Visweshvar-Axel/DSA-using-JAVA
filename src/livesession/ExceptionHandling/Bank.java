@@ -23,7 +23,7 @@ public class Bank {
         }
     }
     String checkBalance(){
-        System.out.println("balance: "+balance);
+        return "balance: "+balance;
     }
 
     public static void main(String[] args) throws MinimumBalance {
@@ -39,6 +39,5 @@ public class Bank {
             System.out.println(m);
         }
         System.out.println(b.checkBalance("thank you........."));
-
     }
 }
