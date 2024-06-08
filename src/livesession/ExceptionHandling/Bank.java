@@ -38,6 +38,6 @@ public class Bank {
         } catch (MinimumBalance m) {
             System.out.println(m);
         }
-        System.out.println("thank you.........");
+        System.out.println("thank you........");
     }
 }
