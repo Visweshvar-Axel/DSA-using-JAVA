@@ -26,7 +26,7 @@ public class Bank {
         System.out.println("balance: "+balance);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MinimumBalance {
         Bank b = new Bank(500);
         System.out.println(b.checkBalance());
         b.deposit(400);
