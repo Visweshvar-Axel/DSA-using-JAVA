@@ -20,4 +20,8 @@ public class Bank {
     String checkBalance(){
         System.out.println("balance: "+balance);
     }
+
+    public static void main(String[] args) {
+
+    }
 }
