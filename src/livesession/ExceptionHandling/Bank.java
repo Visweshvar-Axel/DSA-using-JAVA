@@ -7,6 +7,11 @@ class MinimumBalance extends Exception {
 }
 public class Bank {
     private double balance;
+
+    public Bank(double balance) {
+        this.balance = balance;
+    }
+
     void deposit(double amount){
         balance += amount;
     }
