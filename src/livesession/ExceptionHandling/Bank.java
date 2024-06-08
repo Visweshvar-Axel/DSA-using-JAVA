@@ -34,7 +34,7 @@ public class Bank {
         b.withdrawn(800.0);
         System.out.println(b.checkBalance());
         try{
-            
+            b.withdrawn();
         } catch (MinimumBalance m) {
             System.out.println(m);
         }
