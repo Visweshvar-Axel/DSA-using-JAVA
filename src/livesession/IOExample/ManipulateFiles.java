@@ -21,11 +21,10 @@ public class ManipulateFiles {
     }
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        
+        int choice;
         String user = "User list:\nviswa,\nsaran,\njeswin,\njanani";
         insert("team.txt",user);
         viewUser("team.txt");
-
         do{
             System.out.println("Enter your choice 1 - insert user, 2 - view user, 3 - exit");
             choice = sc.nextInt();
