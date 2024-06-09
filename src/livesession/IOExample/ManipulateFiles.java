@@ -32,7 +32,7 @@ public class ManipulateFiles {
                 String temp = sc.nextLine();
                 insert("team.txt",temp);
             } else if (choice == 2) {
-
+                viewUser("team.txt");
             }
         }
         insert("team.txt","dinesh");
