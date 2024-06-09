@@ -29,7 +29,10 @@ public class ManipulateFiles {
             int choice = sc.nextInt();
             if(choice == 1){
                 System.out.println("enter user:");
-                String temp = sc.nextLine()
+                String temp = sc.nextLine();
+                insert("team.txt",temp);
+            } else if () {
+
             }
         }
         insert("team.txt","dinesh");
