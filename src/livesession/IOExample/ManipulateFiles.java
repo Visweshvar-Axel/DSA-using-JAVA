@@ -28,6 +28,7 @@ public class ManipulateFiles {
         do{
             System.out.println("Enter your choice 1 - insert user, 2 - view user, 3 - exit");
             choice = sc.nextInt();
+            sc.nextLine();
             if(choice == 1){
                 System.out.println("enter user:");
                 String temp = sc.nextLine();
