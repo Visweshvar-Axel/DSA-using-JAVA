@@ -21,11 +21,11 @@ public class ManipulateFiles {
     }
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        String fileName = "C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt"
+        String fileName = "C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt";
         int choice = 1;
         String user = "User list:\nViswa,\nSaran,\nJeswin,\nJanani";
-        insert("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt",user);
-        viewUser("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt");
+        insert(fileName,user);
+        viewUser(fileName);
         do{
             System.out.println("Enter your choice \n1 - insert user \n2 - view user\n3 - exit");
             choice = sc.nextInt();
@@ -33,16 +33,16 @@ public class ManipulateFiles {
             if(choice == 1){
                 System.out.println("enter user:");
                 String temp = sc.nextLine();
-                insert("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt",temp);
+                insert(fileName,temp);
             } else if (choice == 2) {
-                viewUser("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt");
+                viewUser(fileName);
             } else {
                 System.out.println("Invalid");
                 break;
             }
         } while (choice != 0);
-        insert("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt","Dinesh");
-        viewUser("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\livesession\\IOExample\\team.txt");
+        insert(fileName,"Dinesh");
+        viewUser(fileName);
 //        File f = new File("team.txt");
 //        FileWriter fw = new FileWriter(f);
 //        String user = "User list:\nviswa,\nsaran,\njeswin,\njanani";
