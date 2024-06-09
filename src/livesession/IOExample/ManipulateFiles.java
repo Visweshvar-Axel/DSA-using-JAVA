@@ -34,7 +34,7 @@ public class ManipulateFiles {
             } else if (choice == 2) {
                 viewUser("team.txt");
             } else break;
-        }
+        } while ()
         insert("team.txt","dinesh");
         viewUser("team.txt");
 //        File f = new File("team.txt");
