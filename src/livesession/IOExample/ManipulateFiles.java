@@ -21,7 +21,7 @@ public class ManipulateFiles {
     }
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int choice;
+        int choice = 1;
         String user = "User list:\nviswa,\nsaran,\njeswin,\njanani";
         insert("team.txt",user);
         viewUser("team.txt");
@@ -38,7 +38,7 @@ public class ManipulateFiles {
                 System.out.println("Invalid");
                 break;
             }
-        } while (choice != 0)
+        } while (choice != 0);
         insert("team.txt","dinesh");
         viewUser("team.txt");
 //        File f = new File("team.txt");
