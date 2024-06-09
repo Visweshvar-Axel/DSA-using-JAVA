@@ -22,11 +22,11 @@ public class ManipulateFiles {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int choice = 1;
-        String user = "User list:\nviswa,\nsaran,\njeswin,\njanani";
+        String user = "User list:\nViswa,\nSaran,\nJeswin,\nJanani";
         insert("team.txt",user);
         viewUser("team.txt");
         do{
-            System.out.println("Enter your choice 1 - insert user, 2 - view user, 3 - exit");
+            System.out.println("Enter your choice \n1 - insert user \n2 - view user\n3 - exit");
             choice = sc.nextInt();
             sc.nextLine();
             if(choice == 1){
@@ -40,7 +40,7 @@ public class ManipulateFiles {
                 break;
             }
         } while (choice != 0);
-        insert("team.txt","dinesh");
+        insert("team.txt","Dinesh");
         viewUser("team.txt");
 //        File f = new File("team.txt");
 //        FileWriter fw = new FileWriter(f);
