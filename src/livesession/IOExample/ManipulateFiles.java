@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ManipulateFiles {
     static void insert(String fname,String userList) throws IOException {
         File f = new File(fname);
-        FileWriter fw = new FileWriter(f);
+        FileWriter fw = new FileWriter(f,true);
         fw.append(userList);
         fw.close();
     }
