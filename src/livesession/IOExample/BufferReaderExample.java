@@ -10,5 +10,6 @@ public class BufferReaderExample {
         String t;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         c = (char) br.read();
+        t = br.readLine();
     }
 }
