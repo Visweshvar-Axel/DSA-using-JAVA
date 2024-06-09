@@ -36,6 +36,7 @@ public class ManipulateFiles {
                 viewUser("team.txt");
             } else {
                 System.out.println("Invalid");
+                break;
             }
         } while (choice != 0)
         insert("team.txt","dinesh");
