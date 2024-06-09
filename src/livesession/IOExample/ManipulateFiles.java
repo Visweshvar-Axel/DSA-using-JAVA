@@ -31,7 +31,7 @@ public class ManipulateFiles {
                 System.out.println("enter user:");
                 String temp = sc.nextLine();
                 insert("team.txt",temp);
-            } else if () {
+            } else if (choice == 2) {
 
             }
         }
