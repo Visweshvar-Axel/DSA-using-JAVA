@@ -7,7 +7,7 @@ public class ManipulateFiles {
     static void insert(String fname,String userList) throws IOException {
         File f = new File(fname);
         FileWriter fw = new FileWriter(f,true);
-        fw.append(",\n"+userList);
+        fw.append(userList);
         fw.close();
     }
     static void viewUser(String fname) throws IOException {
@@ -33,7 +33,7 @@ public class ManipulateFiles {
             if(choice == 1){
                 System.out.println("enter user:");
                 String temp = sc.nextLine();
-                insert(fileName,temp);
+                insert(fileName,",\n"+temp);
             } else if (choice == 2) {
                 viewUser(fileName);
             } else {
