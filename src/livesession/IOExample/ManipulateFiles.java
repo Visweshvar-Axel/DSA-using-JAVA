@@ -33,7 +33,7 @@ public class ManipulateFiles {
                 insert("team.txt",temp);
             } else if (choice == 2) {
                 viewUser("team.txt");
-            }
+            } else break;
         }
         insert("team.txt","dinesh");
         viewUser("team.txt");
