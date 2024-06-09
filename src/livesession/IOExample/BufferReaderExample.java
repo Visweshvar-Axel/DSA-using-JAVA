@@ -8,5 +8,6 @@ public class BufferReaderExample {
         char c;
         String t;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        c = (char) br.read();
     }
 }
