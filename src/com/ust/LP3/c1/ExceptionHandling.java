@@ -10,6 +10,8 @@ public class ExceptionHandling {
             e.getMessage();
         } catch (ArrayIndexOutOfBoundsException e) {
             e.getMessage();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+
+        }
     }
 }
