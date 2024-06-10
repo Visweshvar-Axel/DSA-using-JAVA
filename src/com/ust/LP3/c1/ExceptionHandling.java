@@ -6,6 +6,8 @@ public class ExceptionHandling {
         int b = 0;
         try {
             a=a/b;
-        } catch (ArithmeticException a) {}
+        } catch (ArithmeticException e) {
+            e.getMessage();
+        }
     }
 }
