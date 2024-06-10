@@ -5,7 +5,7 @@ public class ExceptionHandling {
         int a = 10;
         int b = 0;
         try {
-            int arr[] = new
+            int arr[] = new int[3];
             a=a/b;
         } catch (ArithmeticException e) {
             e.getMessage();
