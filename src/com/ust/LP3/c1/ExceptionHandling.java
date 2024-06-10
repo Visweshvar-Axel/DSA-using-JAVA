@@ -11,7 +11,7 @@ public class ExceptionHandling {
         } catch (ArrayIndexOutOfBoundsException e) {
             e.getMessage();
         } catch (Exception e) {
-            e.getMessage()
+            e.getMessage();
         }
     }
 }
