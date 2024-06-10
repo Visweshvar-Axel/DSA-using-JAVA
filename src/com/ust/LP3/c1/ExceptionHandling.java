@@ -8,6 +8,6 @@ public class ExceptionHandling {
             a=a/b;
         } catch (ArithmeticException e) {
             e.getMessage();
-        } catch (ArrayIndexOutOfBoundsException)
+        } catch (ArrayIndexOutOfBoundsException e) {}
     }
 }
