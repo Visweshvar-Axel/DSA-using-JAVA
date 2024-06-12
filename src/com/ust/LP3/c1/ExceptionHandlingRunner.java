@@ -7,7 +7,6 @@ public class ExceptionHandlingRunner {
     private static void method1() {
         method2();
     }
-
     private static void method2() {
         method3();
     }
