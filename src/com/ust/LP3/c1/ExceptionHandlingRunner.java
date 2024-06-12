@@ -9,6 +9,10 @@ public class ExceptionHandlingRunner {
     }
 
     private static void method2() {
+        method3();
+    }
+
+    private static void method3() {
         String s = null;
         s.length();
     }
