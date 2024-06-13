@@ -15,7 +15,9 @@ public class ExceptionHandlingRunner2 {
     }
     private static void method3() {
         String s = null;
+        try {
         s.length();
+        }
         System.out.println("Method3");
     }
 }
