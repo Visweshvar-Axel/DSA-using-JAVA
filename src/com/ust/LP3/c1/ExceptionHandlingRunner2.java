@@ -7,11 +7,11 @@ public class ExceptionHandlingRunner2 {
     }
     private static void method1() {
         method2();
-        System.out.println("Method2");
+        System.out.println("Method1");
     }
     private static void method2() {
         method3();
-        System.out.println("Method3");
+        System.out.println("Method2");
     }
     private static void method3() {
         String s = null;
