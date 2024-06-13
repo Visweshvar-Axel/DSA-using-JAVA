@@ -11,6 +11,7 @@ public class ExceptionHandlingRunner2 {
     }
     private static void method2() {
         method3();
+        System.out.println("Method2");
     }
     private static void method3() {
         String s = null;
