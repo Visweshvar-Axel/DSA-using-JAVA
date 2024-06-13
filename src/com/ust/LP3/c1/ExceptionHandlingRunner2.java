@@ -17,7 +17,9 @@ public class ExceptionHandlingRunner2 {
         String s = null;
         try {
         s.length();
-        } catch (Exception e)
+        } catch (Exception e) {
+            System.out.println(e);
+        }
         System.out.println("Method3");
     }
 }
