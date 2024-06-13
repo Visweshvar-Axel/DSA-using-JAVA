@@ -7,6 +7,7 @@ public class ExceptionHandlingRunner2 {
     }
     private static void method1() {
         method2();
+        System.out.println("Method2");
     }
     private static void method2() {
         method3();
