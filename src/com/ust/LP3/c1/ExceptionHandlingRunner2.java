@@ -3,6 +3,7 @@ package com.ust.LP3.c1;
 public class ExceptionHandlingRunner2 {
     public static void main(String[] args) {
         method1();
+        System.out.println("Main");
     }
     private static void method1() {
         method2();
