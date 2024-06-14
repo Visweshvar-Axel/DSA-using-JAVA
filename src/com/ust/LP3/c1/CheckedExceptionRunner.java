@@ -14,7 +14,6 @@ public class CheckedExceptionRunner {
         String str = null;
         str.length();
     }
-
     private static void someOtherMethod1() throws InterruptedException {
         Thread.sleep(2000);
     }
