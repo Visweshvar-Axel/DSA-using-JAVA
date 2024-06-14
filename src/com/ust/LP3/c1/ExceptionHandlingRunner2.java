@@ -19,9 +19,11 @@ public class ExceptionHandlingRunner2 {
         try {
             int num = a[2];
             s.length();
-        } catch (Exception e) {
+        } catch (NullPointerException e) {
+            System.out.println("Matched NullPointerException");
             System.out.println(e);
-        } catch (Exception e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Matched ArrayIndexOutOfBoundsException");
             System.out.println(e);
         } catch (Exception e) {
             System.out.println(e);
