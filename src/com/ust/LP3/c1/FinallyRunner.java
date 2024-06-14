@@ -14,5 +14,6 @@ public class FinallyRunner {
             System.out.println("Scanner closed");
             scanner.close();
         }
+        System.out.println("tata");
     }
 }
