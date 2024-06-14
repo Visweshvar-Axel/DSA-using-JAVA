@@ -21,6 +21,10 @@ public class ExceptionHandlingRunner2 {
             s.length();
         } catch (Exception e) {
             System.out.println(e);
+        } catch (Exception e) {
+            System.out.println(e);
+        } catch (Exception e) {
+            System.out.println(e);
         }
         System.out.println("Method3");
     }
