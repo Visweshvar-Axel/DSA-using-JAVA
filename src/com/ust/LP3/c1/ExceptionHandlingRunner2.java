@@ -15,8 +15,10 @@ public class ExceptionHandlingRunner2 {
     }
     private static void method3() {
         String s = null;
+        int[] a = {1,2};
         try {
-        s.length();
+            int num = a[2];
+            s.length();
         } catch (Exception e) {
             System.out.println(e);
         }
