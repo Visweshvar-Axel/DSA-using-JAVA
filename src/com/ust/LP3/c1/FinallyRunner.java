@@ -13,7 +13,8 @@ public class FinallyRunner {
             e.printStackTrace();
         } finally {
             System.out.println("Scanner closed");
-            scanner.close();
+            if (scanner!=null)
+                scanner.close();
         }
         System.out.println("tata");
     }
