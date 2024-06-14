@@ -11,6 +11,7 @@ public class FinallyRunner {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+            System.out.println("Scanner closed");
             scanner.close();
         }
     }
