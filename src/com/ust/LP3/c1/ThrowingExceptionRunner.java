@@ -7,8 +7,8 @@ class Amount {
         this.currency = currency;
         this.amount = amount;
     }
-    public void add () {
-
+    public void add (Amount that) {
+        this.amount = this.amount + that.amount;
     }
     @Override
     public String toString() {
