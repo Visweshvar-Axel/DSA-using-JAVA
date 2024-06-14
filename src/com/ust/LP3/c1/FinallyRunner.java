@@ -8,6 +8,10 @@ public class FinallyRunner {
         try {
             int[] arr = {1,2,3};
             int num = arr[3];
-        } catch (Exception)
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            scanner.close();
+        }
     }
 }
