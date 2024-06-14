@@ -7,7 +7,9 @@ class Amount {
         this.currency = currency;
         this.amount = amount;
     }
-    public void add
+    public void add () {
+
+    }
     @Override
     public String toString() {
         return "Amount{" +
