@@ -20,6 +20,6 @@ public class ExceptionHandlingRunner2 {
         } catch (Exception e) {
             System.out.println(e);
         }
-        System.out.println("Method3");
+        System.out.println("Method");
     }
 }
