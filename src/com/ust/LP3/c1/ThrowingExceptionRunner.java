@@ -7,6 +7,8 @@ class Amount {
         this.amount = amount;
     }
     public void add (Amount that) {
+        if (!that.currency.equals(this.currency))
+            throw new RuntimeException("currency not match");
         this.amount = this.amount + that.amount;
     }
     @Override
