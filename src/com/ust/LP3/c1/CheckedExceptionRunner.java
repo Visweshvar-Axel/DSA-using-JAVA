@@ -10,7 +10,6 @@ public class CheckedExceptionRunner {
             e.printStackTrace();
         }
     }
-
     private static void someOtherMethod2() throws RuntimeException {
         String str = null;
         str.length();
