@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class FinallyRunner {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = null;
         try {
             scanner = new Scanner(System.in);
             int[] arr = {1,2,3};
