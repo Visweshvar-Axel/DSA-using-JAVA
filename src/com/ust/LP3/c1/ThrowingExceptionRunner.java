@@ -13,9 +13,7 @@ class Amount {
     }
     @Override
     public String toString() {
-        return "Amount{" +  "currency='" + currency + '\'' +
-                ", amount=" + amount +
-                '}';
+        return "Amount{" +  "currency='" + currency + '\'' + ", amount=" + amount + '}';
     }
 }
 public class ThrowingExceptionRunner {
