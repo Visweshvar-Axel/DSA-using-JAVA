@@ -1,6 +1,8 @@
 package com.ust.LP3.c1;
 class CurrencyDoNotMatchException extends Exception {
-
+    public CurrencyDoNotMatchException(String message) {
+        super(message);
+    }
 }
 class Amount {
     private String currency;
@@ -12,7 +14,7 @@ class Amount {
     public void add (Amount that) throws CurrencyDoNotMatchException {
         if (!that.currency.equals(this.currency))
 //            throw new Exception("currency not match "+this.currency+" & "+that.currency);
-            throw new  CurrencyDoNotMatchException();
+            throw new  CurrencyDoNotMatchException("currency not match "+this.currency+" & "+that.currency);
         this.amount = this.amount + that.amount;
     }
     @Override
