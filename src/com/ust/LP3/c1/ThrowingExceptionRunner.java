@@ -1,4 +1,7 @@
 package com.ust.LP3.c1;
+class CurrencyDoNotMatchException extends Exception {
+
+}
 class Amount {
     private String currency;
     private int amount;
