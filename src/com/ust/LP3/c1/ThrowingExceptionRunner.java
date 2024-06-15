@@ -13,8 +13,7 @@ class Amount {
     }
     @Override
     public String toString() {
-        return "Amount{" +
-                "currency='" + currency + '\'' +
+        return "Amount{" +  "currency='" + currency + '\'' +
                 ", amount=" + amount +
                 '}';
     }
