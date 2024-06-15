@@ -8,7 +8,8 @@ class Amount {
     }
     public void add (Amount that) throws Exception {
         if (!that.currency.equals(this.currency))
-            throw new Exception("currency not match "+this.currency+" & "+that.currency);
+//            throw new Exception("currency not match "+this.currency+" & "+that.currency);
+            throw new  CurrencyDoNotMatchException();
         this.amount = this.amount + that.amount;
     }
     @Override
