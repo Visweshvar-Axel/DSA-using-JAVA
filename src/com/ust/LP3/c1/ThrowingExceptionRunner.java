@@ -1,5 +1,5 @@
 package com.ust.LP3.c1;
-class CurrencyDoNotMatchException extends Exception {
+class CurrencyDoNotMatchException extends RuntimeException {
     public CurrencyDoNotMatchException(String message) {
         super(message);
     }
