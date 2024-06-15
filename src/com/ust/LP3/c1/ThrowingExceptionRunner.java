@@ -6,9 +6,9 @@ class Amount {
         this.currency = currency;
         this.amount = amount;
     }
-    public void add (Amount that) {
+    public void add (Amount that) throws Exception {
         if (!that.currency.equals(this.currency))
-            throw new RuntimeException("currency not match");
+            throw new Exception("currency not match");
         this.amount = this.amount + that.amount;
     }
     @Override
@@ -17,7 +17,7 @@ class Amount {
     }
 }
 public class ThrowingExceptionRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Amount amount1 = new Amount("USD",10);
         Amount amount2 = new Amount("ERO",20);
         amount1.add(amount2);
