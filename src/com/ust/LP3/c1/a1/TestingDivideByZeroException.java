@@ -1,5 +1,7 @@
 package com.ust.LP3.c1.a1;
 class DivideByZeroException extends Exception {
+    private static final long serialVersionUID = -970355221119941777L;
+
     public DivideByZeroException() {
     }
     public DivideByZeroException(String message) {
@@ -14,7 +16,7 @@ public class TestingDivideByZeroException {
         try {
             int result = divideNumbers(numerator, denominator);
             System.out.println("Result: " + result);
-        } catch (Exception e){
+        } catch (DivideByZeroException e){
             e.printStackTrace();
         }
     }
