@@ -1,5 +1,7 @@
 package com.ust.LP3.c1.a3;
+class CustomException{
 
+}
 public class TestCustomExceptionExample {
     public static void main(String[] args) {
         int userInput = -5;
