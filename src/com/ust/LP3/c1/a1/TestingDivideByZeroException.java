@@ -13,7 +13,12 @@ public class TestingDivideByZeroException {
         int numerator = 10;
         int denominator = 0;
         // TODO: Implement exception handling for divide by zero
-        int result = divideNumbers(numerator, denominator);
+        int result = 0;
+        try {
+            result = divideNumbers(numerator, denominator);
+        } catch (DivideByZeroException e) {
+            e.printStackTrace();
+        }
         System.out.println("Result: " + result);
     }
     private static int divideNumbers(int numerator, int denominator) throws DivideByZeroException {
