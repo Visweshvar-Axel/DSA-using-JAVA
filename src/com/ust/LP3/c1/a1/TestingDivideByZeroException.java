@@ -1,5 +1,11 @@
 package com.ust.LP3.c1.a1;
-class DivideByZeroException extends Exception {}
+class DivideByZeroException extends Exception {
+    public DivideByZeroException() {
+    }
+    public DivideByZeroException(String message) {
+        super(message);
+    }
+}
 public class TestingDivideByZeroException {
     public static void main(String[] args) {
         int numerator = 10;
