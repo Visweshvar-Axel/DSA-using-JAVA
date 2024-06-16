@@ -1,6 +1,5 @@
 package com.ust.LP3.c1.a3;
-class CustomException{
-
+class CustomException extends Exception{
 }
 public class TestCustomExceptionExample {
     public static void main(String[] args) {
