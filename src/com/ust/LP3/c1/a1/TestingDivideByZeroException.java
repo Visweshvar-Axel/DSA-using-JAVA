@@ -1,5 +1,5 @@
 package com.ust.LP3.c1.a1;
-class DivideByZeroException extends Exception {
+class DivideByZeroException extends InterruptedException {
     private static final long serialVersionUID = -970355221119941777L;
 
     public DivideByZeroException() {
@@ -13,15 +13,15 @@ public class TestingDivideByZeroException {
         int numerator = 10;
         int denominator = 0;
         // TODO: Implement exception handling for divide by zero
-        try {
-            int result = divideNumbers(numerator, denominator);
-            System.out.println("Result: " + result);
-        } catch (DivideByZeroException e){
-            e.printStackTrace();
-        }
+        int result = divideNumbers(numerator, denominator);
+        System.out.println("Result: " + result);
     }
-    private static int divideNumbers(int numerator, int denominator) {
+    private static int divideNumbers(int numerator, int denominator) throws DivideByZeroException {
         // TODO: Implement exception handling for divide by zero
-        return numerator / denominator;
+        try {
+            return numerator / denominator;
+        } catch (ArithmeticException e) {
+            throw new DivideByZeroException("0 can be numerator");
+        }
     }
 }
