@@ -1,5 +1,8 @@
 package com.ust.LP3.c1.a3;
 class CustomException extends Exception{
+    public CustomException(String message) {
+        super(message);
+    }
 }
 public class TestCustomExceptionExample {
     public static void main(String[] args) {
