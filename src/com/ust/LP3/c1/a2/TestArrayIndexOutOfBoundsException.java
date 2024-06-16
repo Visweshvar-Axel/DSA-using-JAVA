@@ -4,7 +4,7 @@ public class TestArrayIndexOutOfBoundsException {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
         try {
-            int result = accessArrayElement(numbers, 10);
+            int result = accessArrayElement(numbers, 20);
             System.out.println("Result: " + result);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBoundsException caught: " + e.getMessage());
