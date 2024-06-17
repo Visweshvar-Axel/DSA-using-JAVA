@@ -29,7 +29,8 @@ public class PickFruitsWithRecursiveTask {
             PickFruitTask leftSum = new PickFruitTask(appleTrees, startInclusive, midpoint);
             PickFruitTask rightSum = new PickFruitTask(appleTrees, midpoint+1, endInclusive);
 
-            rightSum.fork()
+            rightSum.fork();
+            return leftSum.compute() + rightSum.join();
         }
         protected Integer deCompute() {
             return IntStream.rangeClosed(startInclusive,endInclusive)//
