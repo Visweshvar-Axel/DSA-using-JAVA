@@ -3,7 +3,7 @@ package com.ust.LP3.c2.runningTaskParallel;
 import java.util.concurrent.TimeUnit;
 
 public class AppleTree {
-    public short AppleTree[] newTreeGarden(int size) {
+    public static AppleTree[] newTreeGarden(int size) {
         AppleTree[] appleTrees = new AppleTree[size];
         for (int i = 0; i < appleTrees.length; i++) {
             appleTrees[i] = new AppleTree("\uD83C\uDF33#"+i)
@@ -22,6 +22,9 @@ public class AppleTree {
             System.out.printf("%s Started picking apples from %s \n",workerName,treeLabel);
             TimeUnit.SECONDS.sleep(1);
             System.out.println(workerName+" picked "+numberOfApples+" \uD83C\uDF4Fs from "+treeLabel);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        return numberOfApples;
     }
 }
