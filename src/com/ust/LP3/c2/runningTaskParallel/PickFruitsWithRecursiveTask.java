@@ -10,7 +10,7 @@ public class PickFruitsWithRecursiveTask {
         AppleTree[] appleTrees = AppleTree.newTreeGarden(12);
         ForkJoinPool pool = ForkJoinPool.commonPool();
 
-        PickFruitTask task = new
+        PickFruitTask task = new PickFruitTask(appleTrees, 0 ,appleTrees.length - 1);
     }
     public static class PickFruitTask extends RecursiveTask<Integer> {
         private final AppleTree[] appleTrees;
