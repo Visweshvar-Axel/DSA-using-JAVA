@@ -15,5 +15,10 @@ public class PickFruitsWithRecursiveTask {
         private final int endInclusive;
         private final int taskThreadsHold = 4;
 
+        public PickFruitTask(AppleTree[] appleTrees, int startInclusive, int endInclusive) {
+            this.appleTrees = appleTrees;
+            this.startInclusive = startInclusive;
+            this.endInclusive = endInclusive;
+        }
     }
 }
