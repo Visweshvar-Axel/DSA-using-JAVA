@@ -21,7 +21,7 @@ public class AppleTree {
         try {
             System.out.printf("%s Started picking apples from %s \n",workerName,treeLabel);
             TimeUnit.SECONDS.sleep(1);
-            System.out.println(workerName+" picked "+numberOfApples+" s from "+treeLabel);
+            System.out.println(workerName+" picked "+numberOfApples+" \uD83C\uDF4Fs from "+treeLabel);
         }
     }
 }
