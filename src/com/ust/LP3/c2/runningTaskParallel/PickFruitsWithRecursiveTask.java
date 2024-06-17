@@ -6,5 +6,14 @@ public class PickFruitsWithRecursiveTask {
     public static void main(String[] args) {
         AppleTree[] appleTrees = AppleTree.newTreeGarden(12);
         ForkJoinPool pool = ForkJoinPool.commonPool();
+
+        PickFruitTask task = new
+    }
+    public static class PickFruitTask {
+        private final AppleTree[] appleTrees;
+        private final int startInclusive;
+        private final int endInclusive;
+        private final int taskThreadsHold = 4;
+
     }
 }
