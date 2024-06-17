@@ -1,5 +1,7 @@
 package com.ust.LP3.c2.runningTaskParallel;
 
+import java.util.concurrent.TimeUnit;
+
 public class AppleTree {
     public short AppleTree[] newTreeGarden(int size) {
         AppleTree[] appleTrees = new AppleTree[size];
@@ -18,6 +20,8 @@ public class AppleTree {
     public int pickApples(String workerName) {
         try {
             System.out.printf("%s Started picking apples from %s \n",workerName,treeLabel);
+            TimeUnit.SECONDS.sleep(1);
+            System.out.println(workerName+" picked "+numberOfApples+" s from "+treeLabel);
         }
     }
 }
