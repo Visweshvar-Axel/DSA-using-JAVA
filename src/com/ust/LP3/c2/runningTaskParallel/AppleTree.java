@@ -27,4 +27,15 @@ public class AppleTree {
         }
         return numberOfApples;
     }
+    public int pickApples() {
+        String workerName = "Viswa";
+        try {
+            System.out.printf("%s Started picking apples from %s \n",workerName,treeLabel);
+            TimeUnit.SECONDS.sleep(1);
+            System.out.println(workerName+" picked "+numberOfApples+" \uD83C\uDF4Fs from "+treeLabel);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return numberOfApples;
+    }
 }
