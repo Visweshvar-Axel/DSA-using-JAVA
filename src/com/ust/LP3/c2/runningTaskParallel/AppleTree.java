@@ -6,7 +6,7 @@ public class AppleTree {
     public static AppleTree[] newTreeGarden(int size) {
         AppleTree[] appleTrees = new AppleTree[size];
         for (int i = 0; i < appleTrees.length; i++) {
-            appleTrees[i] = new AppleTree("\uD83C\uDF33#"+i)
+            appleTrees[i] = new AppleTree("\uD83C\uDF33#"+i);
         }
         return appleTrees;
     }
