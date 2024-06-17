@@ -15,5 +15,9 @@ public class AppleTree {
         this.treeLabel = treeLabel;
         numberOfApples = 3;
     }
-
+    public int pickApples(String workerName) {
+        try {
+            System.out.printf("%s Started picking apples from %s \n",workerName,treeLabel);
+        }
+    }
 }
