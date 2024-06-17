@@ -28,6 +28,9 @@ public class PickFruitsWithRecursiveTask {
         }
         @Override
         protected Integer compute() {
+            if (endInclusive - startInclusive < taskThreadsHold){
+                return deCompute();
+            }
             int midpoint = startInclusive + (endInclusive - startInclusive) / 2;
 
             PickFruitTask leftSum = new PickFruitTask(appleTrees, startInclusive, midpoint);
@@ -41,6 +44,5 @@ public class PickFruitsWithRecursiveTask {
                     .map(i -> appleTrees[i].pickApples())
                     .sum();
         }
-
     }
 }
