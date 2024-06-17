@@ -13,7 +13,7 @@ public class PickFruitsWithInvokeAll {
         Callable<Void> applePicker2 = createApplePicker(appleTrees, 2, 4, "Axel");
         Callable<Void> applePicker3 = createApplePicker(appleTrees, 4, 6, "anu");
 
-        ForkJoinPool.commonPool().invokeAll(asList(applePicker1,applePicker2,applePicker2));
+        ForkJoinPool.commonPool().invokeAll(asList(applePicker1,applePicker2,applePicker2)); // forkJoinPool and common pool
         /*ForkJoinPool.invokeAll(asList(applePicker1,applePicker2,applePicker2));// in efficient */
 
         System.out.println();
@@ -22,6 +22,9 @@ public class PickFruitsWithInvokeAll {
 
     public static Callable<Void> createApplePicker(AppleTree[] appleTrees, int fromIndexInclusive, int toIndexExclusive, String workerName) {
         return () -> {
+            for (int i = fromIndexInclusive; i < toIndexExclusive; i++) {
+                appleTrees[i].pickApples(workerName);
+            }
             return null;
         };
     }
