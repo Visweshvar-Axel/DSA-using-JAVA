@@ -12,6 +12,10 @@ public class ForkJoinPoolTester {
             "Task: do exercise",
             "Task: Review code"
     );
+
+    public static void main(String[] args) {
+        doingTask doTask = new doingTask(ToDo)
+    }
     static class doingTask extends RecursiveAction {
         private static final int tsize = 2;
         private final List<String> tasks;
