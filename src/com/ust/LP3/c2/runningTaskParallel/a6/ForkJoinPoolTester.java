@@ -14,7 +14,8 @@ public class ForkJoinPoolTester {
     );
 
     public static void main(String[] args) {
-        doingTask doTask = new doingTask(ToDo)
+        doingTask doTask = new doingTask(ToDo);
+        pool.invoke(doTask);
     }
     static class doingTask extends RecursiveAction {
         private static final int tsize = 2;
@@ -28,6 +29,11 @@ public class ForkJoinPoolTester {
         protected void compute() {
             if (tasks.size() <- tsize) {
                 tasks.forEach(this::processTask);
+            } else {
+                int mid = tasks.size() / 2;
+                doingTask firstSubtask = new doingTask(tasks.subList(0, mid));
+                doingTask secondSubtask = new doingTask(tasks.subList(mid, tasks.size()));
+                invokeAll(firstSubtask, secondSubtask);
             }
         }
 
