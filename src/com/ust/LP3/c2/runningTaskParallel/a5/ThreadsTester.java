@@ -25,7 +25,12 @@ public class ThreadsTester {
         seqThread.start();
         paraThread.start();
 
-
+        try {
+            seqThread.join();
+            paraThread.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
     public static void SequentialStream(List<String> tasks) {
         tasks.stream().forEach(task -> {
