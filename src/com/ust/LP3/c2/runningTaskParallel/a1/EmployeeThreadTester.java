@@ -65,8 +65,19 @@ public class EmployeeThreadTester {
             System.out.println("Enter details for employee "+(i+1)+":");
 
             System.out.println("Name: ");
+            String name = sc.nextLine();
             System.out.println("Age: ");
-            System.out.println("Name: ");
+            int age = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Department: ");
+            String department = sc.nextLine();
+
+            employees.add(new Employee(name,age,department));
         }
+        for (Employee e : employees) {
+            Thread thread = new Thread(new EmployeeRunnable(e));
+            thread.start();
+        }
+        sc.close();
     }
 }
