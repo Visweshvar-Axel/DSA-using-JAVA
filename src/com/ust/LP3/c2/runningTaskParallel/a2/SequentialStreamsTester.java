@@ -9,7 +9,11 @@ public class SequentialStreamsTester {
             "Task: Face wash",
             "Task: Drink water",
             "Task: do exercise"
-    ) ;
+    );
+
+    public static void main(String[] args) {
+        SequentialStream(ToDo);
+    }
     public static void SequentialStream(List<String> tasks) {
         tasks.stream().forEach(task -> {
             System.out.println("started: "+task);
@@ -26,5 +30,12 @@ public class SequentialStreamsTester {
             throw new RuntimeException(e);
         }
     }
-
+/* *
+ * started: Task: Face wash
+ * Task: Face wash completed ✅
+ * started: Task: Drink water
+ * Task: Drink water completed ✅
+ * started: Task: do exercise
+ * Task: do exercise completed ✅
+* */
 }
