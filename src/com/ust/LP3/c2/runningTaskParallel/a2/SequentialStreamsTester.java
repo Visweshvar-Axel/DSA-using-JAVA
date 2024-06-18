@@ -11,7 +11,9 @@ public class SequentialStreamsTester {
             "Task: do exercise"
     ) ;
     public static void SequentialStream(List<String> task) {
-        task.stream().forEach(t -> {});
+        task.stream().forEach(t -> {
+            System.out.println("started: "+t);
+        });
     }
 
 }
