@@ -31,12 +31,17 @@ public class ThreadsTester {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
+        System.out.println("All tasks completed.");
     }
     public static void SequentialStream(List<String> tasks) {
-        tasks.stream().forEach(task -> {
-            System.out.println("started: "+task);
-            completed(task);
-        });
+        synchronized (lock) {
+            tasks.stream().forEach(task -> {
+                System.out.println("started: " + task);
+                completed(task);
+            });
+            isSecComplete = true;
+        }
     }
     public static void parallelStream(List<String> tasks) {
         tasks.stream().forEach(task -> {
