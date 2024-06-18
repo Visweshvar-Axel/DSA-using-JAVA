@@ -1,12 +1,13 @@
 package livesession.L14_16;
 
 public class RunnableTester implements Runnable{
-    static int visitCount= 0;
+    static int visitCount = 0;
     @Override
     public void run(){
         System.out.println("hi i'm from "+Thread.currentThread().getName());
         try {
             Thread.sleep(1000);
+            visitCount++;
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
