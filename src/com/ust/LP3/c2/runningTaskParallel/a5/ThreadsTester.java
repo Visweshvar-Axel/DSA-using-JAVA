@@ -11,9 +11,6 @@ public class ThreadsTester {
             "Task: do exercise",
             "Task: Review code"
     );
-    private static final Object lock = new Object();
-    private static boolean isSecComplete = false;
-    private static boolean isParaComplete = false;
     public static void main(String[] args) {
         Thread seqThread = new Thread(() -> SequentialStream(ToDo));
         Thread paraThread = new Thread(() -> parallelStream(ToDo));
