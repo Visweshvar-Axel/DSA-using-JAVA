@@ -10,11 +10,14 @@ public class SequentialStreamsTester {
             "Task: Drink water",
             "Task: do exercise"
     ) ;
-    public static void SequentialStream(List<String> task) {
-        task.stream().forEach(t -> {
-            System.out.println("started: "+t);
-            completed(t);
+    public static void SequentialStream(List<String> tasks) {
+        tasks.stream().forEach(task -> {
+            System.out.println("started: "+task);
+            completed(task);
         });
+    }
+
+    private static void completed(String t) {
     }
 
 }
