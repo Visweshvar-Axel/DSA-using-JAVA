@@ -19,5 +19,16 @@ public class ForkJoinPoolTester {
         doingTask(List<String> tasks) {
             this.tasks = tasks;
         }
+
+        @Override
+        protected void compute() {
+            if (tasks.size() <- tsize) {
+                tasks.forEach(this::processTask);
+            }
+        }
+
+        private void processTask(String s) {
+            System.out.println("Started: "+s);
+        }
     }
 }
