@@ -17,7 +17,8 @@ public class SequentialStreamsTester {
         });
     }
 
-    private static void completed(String t) {
+    private static void completed(String task) {
+        
     }
 
 }
