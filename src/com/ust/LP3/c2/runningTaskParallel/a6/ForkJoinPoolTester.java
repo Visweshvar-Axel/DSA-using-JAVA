@@ -14,37 +14,38 @@ public class ForkJoinPoolTester {
     );
 
     public static void main(String[] args) {
-        doingTask doTask = new doingTask(ToDo);
+        DoingTask doTask = new DoingTask(ToDo);
         pool.invoke(doTask);
     }
-    static class doingTask extends RecursiveAction {
-        private static final int tsize = 2;
+
+    static class DoingTask extends RecursiveAction {
+        private static final int THRESHOLD = 2;
         private final List<String> tasks;
 
-        doingTask(List<String> tasks) {
+        DoingTask(List<String> tasks) {
             this.tasks = tasks;
         }
 
         @Override
         protected void compute() {
-            if (tasks.size() <- tsize) {
+            if (tasks.size() <= THRESHOLD) {
                 tasks.forEach(this::processTask);
             } else {
                 int mid = tasks.size() / 2;
-                doingTask firstSubtask = new doingTask(tasks.subList(0, mid));
-                doingTask secondSubtask = new doingTask(tasks.subList(mid, tasks.size()));
+                DoingTask firstSubtask = new DoingTask(tasks.subList(0, mid));
+                DoingTask secondSubtask = new DoingTask(tasks.subList(mid, tasks.size()));
                 invokeAll(firstSubtask, secondSubtask);
             }
         }
 
         private void processTask(String task) {
-            System.out.println("Started: "+task);
+            System.out.println("Started: " + task);
             try {
-                Thread.sleep(400);
-                System.out.println(task+" completed ✅");
+                Thread.sleep(400); // Simulate task completion time
+                System.out.println(task + " completed ✅");
             } catch (InterruptedException e) {
-                System.out.println(task+" cant be completed ❌");
-                throw new RuntimeException(e);
+                System.out.println(task + " can't be completed ❌");
+                Thread.currentThread().interrupt();
             }
         }
     }
