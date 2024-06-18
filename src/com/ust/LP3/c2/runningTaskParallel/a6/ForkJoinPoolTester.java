@@ -27,8 +27,15 @@ public class ForkJoinPoolTester {
             }
         }
 
-        private void processTask(String s) {
-            System.out.println("Started: "+s);
+        private void processTask(String task) {
+            System.out.println("Started: "+task);
+            try {
+                Thread.sleep(400);
+                System.out.println(task+" completed ✅");
+            } catch (InterruptedException e) {
+                System.out.println(task+" cant be completed ❌");
+                throw new RuntimeException(e);
+            }
         }
     }
 }
