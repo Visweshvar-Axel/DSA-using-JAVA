@@ -4,7 +4,7 @@ public class RunnableTester implements Runnable{
     static int visitCount = 0;
     @Override
     public void run(){
-        System.out.println("hi i'm from "+Thread.currentThread().getName());
+        System.out.println("\nhi i'm from "+Thread.currentThread().getName());
         try {
             Thread.sleep(1000);
             visitCount++;
@@ -16,6 +16,7 @@ public class RunnableTester implements Runnable{
         for (int i = 0 ; i < 10; i++ ) {
             Thread hi = new Thread(new RunnableTester());
             hi.start();
+            System.out.println(visitCount+" threads are visited");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
