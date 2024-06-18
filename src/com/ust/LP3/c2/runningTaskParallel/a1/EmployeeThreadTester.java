@@ -1,4 +1,9 @@
 package com.ust.LP3.c2.runningTaskParallel.a1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 class Employee {
     private String name;
     private int age;
@@ -49,6 +54,9 @@ class EmployeeRunnable implements Runnable {
 }
 public class EmployeeThreadTester {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        List<Employee> employees = new ArrayList<>();
 
+        System.out.println("Enter the number of employee:");
     }
 }
