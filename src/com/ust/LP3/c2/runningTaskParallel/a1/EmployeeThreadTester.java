@@ -48,4 +48,7 @@ class EmployeeRunnable implements Runnable {
     }
 }
 public class EmployeeThreadTester {
+    public static void main(String[] args) {
+
+    }
 }
