@@ -20,8 +20,9 @@ public class SequentialStreamsTester {
     private static void completed(String task) {
         try {
             Thread.sleep(400);
-            System.out.println("started: "+task);
+            System.out.println(task+" completed");
         } catch (InterruptedException e) {
+            System.out.println(task+" completed");
             throw new RuntimeException(e);
         }
     }
