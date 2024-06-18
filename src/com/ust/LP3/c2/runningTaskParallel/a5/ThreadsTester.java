@@ -70,4 +70,25 @@ public class ThreadsTester {
             throw new RuntimeException(e);
         }
     }
+/* *
+ * started: Task: Face wash
+ * Task: Face wash completed ✅
+ * started: Task: Drink water
+ * Task: Drink water completed ✅
+ * started: Task: do exercise
+ * Task: do exercise completed ✅
+ * started: Task: Review code
+ * Task: Review code completed ✅
+ * started: Task: Face wash
+ * Task: Face wash completed ✅
+ * started: Task: Drink water
+ * Task: Drink water completed ✅
+ * started: Task: do exercise
+ * Task: do exercise completed ✅
+ * started: Task: Review code
+ * Task: Review code completed ✅
+ * All tasks completed.
+ *
+ * Process finished with exit code 0
+ * */
 }
