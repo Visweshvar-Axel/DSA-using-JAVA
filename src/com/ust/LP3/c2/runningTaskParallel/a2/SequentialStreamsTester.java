@@ -10,6 +10,8 @@ public class SequentialStreamsTester {
             "Task: Drink water",
             "Task: do exercise"
     ) ;
-    public static void SequentialStream(List<String> task) {}
+    public static void SequentialStream(List<String> task) {
+        task.stream().forEach(t -> {});
+    }
 
 }
