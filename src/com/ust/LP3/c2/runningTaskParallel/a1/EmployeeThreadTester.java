@@ -58,5 +58,15 @@ public class EmployeeThreadTester {
         List<Employee> employees = new ArrayList<>();
 
         System.out.println("Enter the number of employee:");
+        int numberOfEmployee = sc.nextInt();
+        sc.nextLine();
+
+        for (int i = 0; i < numberOfEmployee; i++) {
+            System.out.println("Enter details for employee "+(i+1)+":");
+
+            System.out.println("Name: ");
+            System.out.println("Age: ");
+            System.out.println("Name: ");
+        }
     }
 }
