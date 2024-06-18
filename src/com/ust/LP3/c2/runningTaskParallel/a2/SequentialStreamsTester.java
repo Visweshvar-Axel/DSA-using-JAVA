@@ -10,5 +10,6 @@ public class SequentialStreamsTester {
             "Task: Drink water",
             "Task: do exercise"
     ) ;
+    public static void SequentialStream(List<String> task) {}
 
 }
