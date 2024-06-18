@@ -15,7 +15,8 @@ public class SequentialStreamsTester {
         SequentialStream(ToDo);
     }
     public static void SequentialStream(List<String> tasks) {
-        tasks.stream().forEach(task -> {
+//        tasks.stream().forEach(task -> {
+        tasks.parallelStream().forEach(task -> {
             System.out.println("started: "+task);
             completed(task);
         });
@@ -30,12 +31,20 @@ public class SequentialStreamsTester {
             throw new RuntimeException(e);
         }
     }
-/* *
+/* * stream
  * started: Task: Face wash
  * Task: Face wash completed ✅
  * started: Task: Drink water
  * Task: Drink water completed ✅
  * started: Task: do exercise
  * Task: do exercise completed ✅
+* */
+/* * parallelStream
+* started: Task: Drink water
+* started: Task: do exercise
+* started: Task: Face wash
+* Task: Drink water completed ✅
+* Task: Face wash completed ✅
+* Task: do exercise completed ✅
 * */
 }
