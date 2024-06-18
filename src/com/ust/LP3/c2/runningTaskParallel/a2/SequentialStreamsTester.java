@@ -18,7 +18,7 @@ public class SequentialStreamsTester {
     }
 
     private static void completed(String task) {
-        
+        Thread.sleep();
     }
 
 }
