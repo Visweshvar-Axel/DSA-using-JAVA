@@ -18,7 +18,11 @@ public class SequentialStreamsTester {
     }
 
     private static void completed(String task) {
-        Thread.sleep();
+        try {
+            Thread.sleep(400);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
