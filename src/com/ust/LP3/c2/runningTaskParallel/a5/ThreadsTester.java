@@ -41,6 +41,7 @@ public class ThreadsTester {
                 completed(task);
             });
             isSecComplete = true;
+            lock.notifyAll();
         }
     }
     public static void parallelStream(List<String> tasks) {
