@@ -20,9 +20,9 @@ public class SequentialStreamsTester {
     private static void completed(String task) {
         try {
             Thread.sleep(400);
-            System.out.println(task+" completed ");
+            System.out.println(task+" completed ✅");
         } catch (InterruptedException e) {
-            System.out.println(task+" cant be completed");
+            System.out.println(task+" cant be completed ❌");
             throw new RuntimeException(e);
         }
     }
