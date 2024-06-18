@@ -13,6 +13,7 @@ public class SequentialStreamsTester {
     public static void SequentialStream(List<String> task) {
         task.stream().forEach(t -> {
             System.out.println("started: "+t);
+            completed(t);
         });
     }
 
