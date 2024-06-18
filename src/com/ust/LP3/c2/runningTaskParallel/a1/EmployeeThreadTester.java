@@ -35,5 +35,17 @@ class Employee {
                 '}';
     }
 }
+class EmployeeRunnable implements Runnable {
+    private Employee employee;
+
+    public EmployeeRunnable(Employee employee) {
+        this.employee = employee;
+    }
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread().getName()+" : "+employee);
+    }
+}
 public class EmployeeThreadTester {
 }
