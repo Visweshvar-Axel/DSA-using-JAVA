@@ -46,6 +46,7 @@ public class ThreadsTester {
     }
     public static void parallelStream(List<String> tasks) {
         synchronized (lock) {
+            while ()
             tasks.stream().forEach(task -> {
                 System.out.println("started: " + task);
                 completed(task);
