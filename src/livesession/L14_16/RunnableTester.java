@@ -3,8 +3,8 @@ package livesession.L14_16;
 public class RunnableTester implements Runnable{
     @Override
     public void run(){
-        try {
         System.out.println("hi i'm from"+Thread.currentThread().getName());
+        try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
@@ -15,6 +15,11 @@ public class RunnableTester implements Runnable{
         for (int i = 0 ; i < 10; i++ ) {
             Thread hi = new Thread(new RunnableTester());
             hi.start();
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
