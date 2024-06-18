@@ -45,10 +45,14 @@ public class ThreadsTester {
         }
     }
     public static void parallelStream(List<String> tasks) {
-        tasks.stream().forEach(task -> {
-            System.out.println("started: "+task);
-            completed(task);
-        });
+        synchronized (lock) {
+            tasks.stream().forEach(task -> {
+                System.out.println("started: " + task);
+                completed(task);
+            });
+            isParaComplete = true;
+            lock.notifyAll();
+        }
     }
     private static void completed(String task) {
         try {
