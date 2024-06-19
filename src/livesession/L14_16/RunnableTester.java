@@ -4,7 +4,7 @@ public class RunnableTester implements Runnable{
     static int visitCount = 0;
     @Override
     public void run(){
-        System.out.println("\nhi i'm from "+Thread.currentThread().getName());
+        System.out.println("\n\uD83D\uDC4B\uD83C\uDFFBhi i'm from "+Thread.currentThread().getName());
         try {
             Thread.sleep(1000);
             visitCount++;
