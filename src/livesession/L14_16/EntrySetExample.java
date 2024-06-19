@@ -8,11 +8,14 @@ public class EntrySetExample {
         Map<Integer,String> ids = new HashMap<>();
         ids.put(1001,"Viswa");
         ids.put(1002,"Axel");
-        ids.put(1003,"anu");
+        ids.put(1003,"Axel");
+        ids.put(1004,"anu");
+        ids.put(1004,"anu");
+        ids.put(1004,"anu");
         System.out.println("keys: "+ids.keySet());
         System.out.println("keys: "+ids.values());
         for(Map.Entry i: ids.entrySet()){
-            System.out.println(i.getKey()+" : "+e.);
+            System.out.println(i.getKey()+" : "+i.getValue());
         }
     }
 }
