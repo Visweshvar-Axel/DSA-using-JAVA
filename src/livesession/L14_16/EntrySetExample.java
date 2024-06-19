@@ -6,12 +6,14 @@ import java.util.Map;
 public class EntrySetExample {
     public static void main(String[] args) {
         Map<Integer,String> ids = new HashMap<>();
-        ids.put(1001,"Viswa");
-        ids.put(1002,"Axel");
-        ids.put(1003,"Axel");
-        ids.put(1004,"anu");
-        ids.put(1004,"anu");
-        ids.put(1004,"anu");
+        int autoIds = 1000;
+        ids.put(autoIds,"Viswa");
+        ids.put(autoIds,"Axel");
+        ids.put(autoIds,"Anu");
+        ids.put(autoIds,"Jeswin");
+        ids.put(autoIds,"Janani");
+        ids.put(autoIds,"Saran");
+        ids.put(autoIds,"Dinesh");
         System.out.println("keys: "+ids.keySet());
         System.out.println("keys: "+ids.values());
         for(Map.Entry i: ids.entrySet()){
