@@ -10,6 +10,8 @@ public class vectorExample {
         mainList.add(2);
         mainList.add(3);
         List<Integer> tempList = new Vector<>();
-        tempList.add(5)
+        tempList.add(5);
+        tempList.add(5);
+        tempList.add(5);
     }
 }
