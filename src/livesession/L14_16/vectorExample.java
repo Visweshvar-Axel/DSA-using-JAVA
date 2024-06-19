@@ -17,6 +17,8 @@ public class vectorExample {
         System.out.println(mainList);
         mainList.addAll(4,tempList);
         System.out.println(mainList);
+        mainList.remove(mainList.size()-1);
+        System.out.println(mainList);
 
     }
 }
