@@ -5,17 +5,26 @@
         <author>James Clear</author>
         <publication_year>2018</publication_year>
         <genre>Self-help</genre>
+        <publisher>Avery</publisher>
     </book>
     <book>
         <title>The Power of Habit</title>
         <author>Charles Duhigg</author>
         <publication_year>2012</publication_year>
         <genre>Self-help</genre>
+        <publisher>Random House</publisher>
     </book>
     <book>
         <title>The Alchemist</title>
         <author>Paulo Coelho</author>
         <publication_year>1988</publication_year>
         <genre>Fiction</genre>
+        <publisher>HarperOne</publisher>
+        <characters>
+            <character>Santiago</character>
+            <character>The Alchemist</character>
+            <character>Melchizedek</character>
+            <character>Fatima</character>
+        </characters>
     </book>
 </books>
