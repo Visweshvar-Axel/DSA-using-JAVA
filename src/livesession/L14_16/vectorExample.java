@@ -14,6 +14,6 @@ public class vectorExample {
         tempList.add(6);
         tempList.add(7);
         mainList.addAll(3,tempList);
-        
+        System.out.println(mainList);
     }
 }
