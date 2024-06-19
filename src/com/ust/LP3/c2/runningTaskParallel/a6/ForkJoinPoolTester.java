@@ -49,4 +49,14 @@ public class ForkJoinPoolTester {
             }
         }
     }
+    /* *
+     * Started: Task: Face wash
+     * Started: Task: do exercise
+     * Task: Face wash completed ✅
+     * Started: Task: Drink water
+     * Task: do exercise completed ✅
+     * Started: Task: Review code
+     * Task: Drink water completed ✅
+     * Task: Review code completed ✅
+     * */
 }
