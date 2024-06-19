@@ -11,7 +11,9 @@ public class vectorExample {
         mainList.add(3);
         List<Integer> tempList = new Vector<>();
         tempList.add(5);
-        tempList.add(5);
-        tempList.add(5);
+        tempList.add(6);
+        tempList.add(7);
+        mainList.addAll(3,tempList);
+        
     }
 }
