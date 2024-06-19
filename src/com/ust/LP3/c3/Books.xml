@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>
-    <book>
+    <book isbn="9780735211292">
         <title>Atomic Habits</title>
         <author>James Clear</author>
         <publication_year>2018</publication_year>
         <genre>Self-help</genre>
         <publisher>Avery</publisher>
     </book>
-    <book>
+    <book isbn="9780812981605">
         <title>The Power of Habit</title>
         <author>Charles Duhigg</author>
         <publication_year>2012</publication_year>
         <genre>Self-help</genre>
         <publisher>Random House</publisher>
     </book>
-    <book>
+    <book isbn="9780062315007">
         <title>The Alchemist</title>
         <author>Paulo Coelho</author>
         <publication_year>1988</publication_year>
