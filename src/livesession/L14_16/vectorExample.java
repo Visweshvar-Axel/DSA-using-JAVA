@@ -9,11 +9,14 @@ public class vectorExample {
         mainList.add(1);
         mainList.add(2);
         mainList.add(3);
+        mainList.add(4);
         List<Integer> tempList = new Vector<>();
         tempList.add(5);
         tempList.add(6);
         tempList.add(7);
-        mainList.addAll(3,tempList);
         System.out.println(mainList);
+        mainList.addAll(4,tempList);
+        System.out.println(mainList);
+
     }
 }
