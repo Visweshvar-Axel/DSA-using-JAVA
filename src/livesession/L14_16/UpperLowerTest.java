@@ -16,15 +16,13 @@ public class UpperLowerTest {
         }
     }
     static void lower(List<? super String> l) {
-        l.add("Added String");
         System.out.println(l);
     }
     public static void main(String[] args) {
         List<String> s = new ArrayList<>();
         s.add("Viswa");
         s.add("Axel");
-        s.add(5);
-        List<Integer> i = Arrays.asList(1,2,3);
+        List<Object> i = Arrays.asList("viswa",2,3);
         upper(s);
         lower(i);
     }
