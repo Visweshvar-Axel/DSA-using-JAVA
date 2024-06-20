@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    
+    <div class="show_record"></div>
+    <!-- <script>
+        $(document).ready(function() {
+            const jsonString = '[{"companyName":"UST Global","location":"California","employees":5000},{"companyName":"TCS","location":"Mumbai","employees":450000}]';
+            console.log(jsonString);
+            const data = JSON.parse(jsonString);
+            $.each(data, function(index, company) {
+                const companyName = company.companyName;
+                const location = "<li>Location: " + company.location + "</li>";
+                const employees = "<li>Employees: " + company.employees + "</li>";
+                const html = "<ul><h2>" + companyName + "</h2>" + location + employees + "</ul>";
+                $(".show_record").append(html);
+            });
+        });
+    </script> -->
+    <script>
+        const jsonString = '[{"companyName":"UST Global","location":"California","employees":5000},{"companyName":"TCS","location":"Mumbai","employees":450000}]';
+        console.log(jsonString);
+            $(document).ready(function() {
+                $.getJSON("test.json", function(data) {
+                    $.each(data, function(k,v) {
+                    company = v.company;
+                    location = "<li>location: "+v.location+"</li>";
+                    employees = "<li>employees: "+v.location+"</li>";
+                    html="<ul><h2>"+v.employees+"</h2>"+location+employees+"</ul>";
+                    $(".show_record").append(html);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
