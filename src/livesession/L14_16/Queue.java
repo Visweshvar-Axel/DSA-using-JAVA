@@ -42,8 +42,10 @@ public class Queue {
         } else if (front == back) {
             front = back = -1;
         } else {
-            while ()
-            back--;
+//            int temp = 1;
+//            while (temp<queueLength-2) {items[temp-1] = items[temp-];}
+//            back--;
+            front++;
         }
     }
 
