@@ -42,7 +42,8 @@ public class Queue {
         } else if (front == back) {
             front = back = -1;
         } else {
-            front++;
+            while ()
+            back--;
         }
     }
 
