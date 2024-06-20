@@ -15,6 +15,7 @@ public class QueueInBuild {
         System.out.println(chars.poll());
         System.out.println(chars.peek());
         System.out.println(chars);
+        System.out.println(chars);
         chars.remove();
         System.out.println(chars);
         chars.remove();
