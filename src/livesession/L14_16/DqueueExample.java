@@ -10,6 +10,7 @@ public class DqueueExample {
         names.add("Jeswin");
         names.add("Janani");
         names.add("Dinesh");
+        System.out.println(names);
         
     }
 }
