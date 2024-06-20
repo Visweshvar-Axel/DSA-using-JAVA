@@ -8,7 +8,8 @@ public class DqueueExample {
         names.add("Viswa");
         names.add("Saran");
         names.add("Jeswin");
-        names.add("Jeswin");
         names.add("Janani");
+        names.add("Dinesh");
+        
     }
 }
