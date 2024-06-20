@@ -11,7 +11,13 @@ public class DqueueExample {
         names.add("Janani");
         names.add("Dinesh");
         System.out.println(names);
-        names.re();
+        names.add("Dinesh");
+        System.out.println(names);
+        names.removeFirst();
+        System.out.println(names);
+        names.removeFirst();
+        System.out.println(names);
+        names.removeFirst();
         System.out.println(names);
     }
 }
