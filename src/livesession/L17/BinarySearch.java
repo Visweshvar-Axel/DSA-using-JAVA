@@ -15,8 +15,8 @@ public class BinarySearch {
         }
         return -1;
     }
-
     public static void main(String[] args) {
+        Sca
         int[] arr = new int[]{5, 6, 2, 7, 3, 9};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
