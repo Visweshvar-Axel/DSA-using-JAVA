@@ -42,17 +42,33 @@ public class BinaryTreeExample {
             inorderRec(root.right);
         }
     }
-}
+    void getRoot(){
+        if (root!=null) System.out.println("Root value: "+root.value);
+        else System.out.println("Root is null");
+    }
 
     public static void main(String[] args) {
         BinaryTreeExample tree = new BinaryTreeExample();
-        tree.insert(50);
-        tree.insert(30);
-        tree.insert(20);
-        tree.insert(40);
-        tree.insert(70);
-        tree.insert(60);
-        tree.insert(80);
+        tree.insert(6);
+        tree.insert(3);
+        tree.insert(2);
+        tree.insert(4);
+        tree.insert(7);
+        tree.insert(5);
+        tree.insert(8);
+        tree.insert(1);
+        tree.getRoot();
+        /* *
+        *                  6
+        *                /   \
+        *               3      7
+        *             /   \   /   \
+        *            2     4  5     8
+        *          /   \
+        *         1    NULL
+        *
+        *
+        * */
 
         tree.inorder();
     }
