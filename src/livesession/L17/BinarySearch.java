@@ -17,8 +17,9 @@ public class BinarySearch {
         return -1;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(Sy)
+        Scanner sc = new Scanner(System.in);
         int[] arr = new int[]{5, 6, 2, 7, 3, 9};
+//        int[] arr = new int[]{5, 6, 2, 7, 3, 9};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
         int index = search(arr,6);
