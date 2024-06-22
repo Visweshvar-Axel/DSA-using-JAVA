@@ -57,7 +57,6 @@ public class BinaryTreeExample {
         tree.insert(5);
         tree.insert(8);
         tree.insert(1);
-        tree.getRoot();
         /* *
         *                  6
         *                /   \
@@ -69,7 +68,7 @@ public class BinaryTreeExample {
         *
         *
         * */
-
+        tree.getRoot();
         tree.inorder();
     }
 
