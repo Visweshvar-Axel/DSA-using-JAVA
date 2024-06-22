@@ -10,8 +10,8 @@ public class BinarySearch {
         while (beg<=end) {
             int mid = beg + (end - beg) /2;
             if (arr[mid] == key) return mid;
-            else if (arr[mid] < key) end = mid-1;
-            else end = mid-1;
+            else if (arr[mid] > key) end = mid-1;
+            else beg = mid+1;
         }
         return -1;
     }
