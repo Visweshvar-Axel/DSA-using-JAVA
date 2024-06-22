@@ -69,6 +69,7 @@ public class BinaryTreeExample {
         *
         * */
         tree.getRoot();
+        System.out.println(tree.root.value);
         tree.inorder();
     }
 
