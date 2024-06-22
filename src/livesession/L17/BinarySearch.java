@@ -18,11 +18,14 @@ public class BinarySearch {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] arr = Arrays.stream(sc.nextLine().split("\\s+"))
 //        int[] arr = new int[]{5, 6, 2, 7, 3, 9};
+        System.out.print("Enter the array values: ");
+        int[] arr = Arrays.stream(sc.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
+        System.out.print("Enter the target values: ");
+        int key = sc.nextInt();
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
-        int index = search(arr,6);
+        int index = search(arr,key);
         if(index!=-1){
             System.out.println("the element "+arr[index]+" is found as: "+index);
         } else {
