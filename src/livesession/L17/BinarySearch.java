@@ -13,8 +13,7 @@ public class BinarySearch {
             if (arr[mid] == key) return mid;
             else if (arr[mid] > key) end = mid-1;
             else beg = mid+1;
-        }
-        return -1;
+        }        return -1;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
