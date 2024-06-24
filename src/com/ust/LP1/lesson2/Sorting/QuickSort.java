@@ -2,7 +2,7 @@ package com.ust.LP1.lesson2.Sorting;
 
 import java.util.Arrays;
 
-public class QuickSort {
+public class  QuickSort {
     public void sort(int[] num){sort(num,0,num.length-1);}
     public void sort(int[] num,int beg,int end){
         if(beg<end) {
