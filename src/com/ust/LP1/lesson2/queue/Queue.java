@@ -5,7 +5,6 @@ import com.ust.LP1.lesson2.LinkedList.DbLinkedList;
 import java.util.Optional;
 
 public class Queue<V> {
-
     private DbLinkedList<V> head;
     private DbLinkedList<V> tail;
     private Queue(){
