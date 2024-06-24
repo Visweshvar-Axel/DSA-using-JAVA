@@ -18,7 +18,6 @@ public class BinarySearch {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
 //        int[] arr = new int[]{5, 6, 2, 7, 3, 9};
         System.out.print("Enter the array values: ");
         int[] arr = Arrays.stream(sc.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
