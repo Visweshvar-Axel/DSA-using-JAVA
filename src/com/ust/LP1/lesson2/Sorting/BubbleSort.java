@@ -19,6 +19,7 @@ public class BubbleSort {
             }
         }
     }
+
     public void sBubbleSort(int[] num){
         for(int i=0;i<num.length;i++){
             for(int j=0;j<num.length-i-1;j++){ //I
