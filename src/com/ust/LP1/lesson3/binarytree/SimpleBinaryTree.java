@@ -1,5 +1,4 @@
 package com.ust.LP1.lesson3.binarytree;
-
 public class SimpleBinaryTree{
 //public class SimpleBinaryTree<K, V> implements BinaryTree<K, V>{
 //    protected BinaryTreeNode<K, V> root;
@@ -22,5 +21,5 @@ public class SimpleBinaryTree{
 //            else
 //                node.setRight(new BinaryTreeNode<>(key, value));
 //        }
-//    }
+    }
 }
