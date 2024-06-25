@@ -1,6 +1,6 @@
 package com.ust.LP1.lesson3.binarytree;
 public class SimpleBinaryTree{
-public class SimpleBinaryTree<K, V> implements BinaryTree<K, V>{
+//public class SimpleBinaryTree<K, V> implements BinaryTree<K, V>{
 //    protected BinaryTreeNode<K, V> root;
 //    public void put(K key,V value){
 //        if(root == null) root = new BinaryTreeNode<>(key,value);
