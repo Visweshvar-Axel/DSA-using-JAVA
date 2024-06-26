@@ -153,4 +153,15 @@ public class MuseumTour {
         }
         System.out.println("total tour time: " + totalTourTime + " minutes");
     }
+    /* *
+     * efficient tour sequence:
+     * monet's water lilies
+     * michelangelo's pieta
+     * egyptian sarcophagi
+     * picasso's guernica
+     * van Gogh's sunflowers
+     * monet's water lilies
+     * total tour time: 55 minutes
+     * Process finished with exit code 0
+     * */
 }
