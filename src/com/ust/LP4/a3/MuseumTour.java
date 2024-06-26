@@ -119,11 +119,11 @@ public class MuseumTour {
     public static void main(String[] args) {
         Museum museum = new Museum(5);
 
-        Exhibit e1 = new Exhibit("Monet's Water Lilies", 0);
-        Exhibit e2 = new Exhibit("Michelangelo's Pieta", 1);
-        Exhibit e3 = new Exhibit("Egyptian Sarcophagi", 2);
-        Exhibit e4 = new Exhibit("Picasso's Guernica", 3);
-        Exhibit e5 = new Exhibit("Van Gogh's Sunflowers", 4);
+        Exhibit e1 = new Exhibit("monet's water lilies", 0);
+        Exhibit e2 = new Exhibit("michelangelo's pieta", 1);
+        Exhibit e3 = new Exhibit("egyptian sarcophagi", 2);
+        Exhibit e4 = new Exhibit("picasso's guernica", 3);
+        Exhibit e5 = new Exhibit("van Gogh's sunflowers", 4);
 
         museum.addExhibit(e1);
         museum.addExhibit(e2);
@@ -142,7 +142,7 @@ public class MuseumTour {
         List<Integer> targets = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
         List<Integer> path = Dijkstra.findShortestPath(graph, 0, targets);
 
-        System.out.println("Most efficient tour sequence:");
+        System.out.println("efficient tour sequence:");
         for (int id : path) {
             System.out.println(museum.getExhibits().get(id).getName());
         }
@@ -151,6 +151,6 @@ public class MuseumTour {
         for (int i = 0; i < path.size() - 1; i++) {
             totalTourTime += graph[path.get(i)][path.get(i + 1)];
         }
-        System.out.println("Total tour time: " + totalTourTime + " minutes");
+        System.out.println("total tour time: " + totalTourTime + " minutes");
     }
 }
