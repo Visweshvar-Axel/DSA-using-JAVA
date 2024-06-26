@@ -51,11 +51,22 @@ public class BubbleSort {
         int[] num = new int[]{2,5,7,2,4,2,8,1,0};
         int[] num1 = new int[]{2,5,7,2,4,2,8,1,0};
         int[] num2 = new int[]{2,5,7,2,4,2,8,1,0};
+        System.out.println("Before Sorting: "+Arrays.toString(num));
         bubbleSort.sort(num);
+        System.out.println("After Sorting: "+Arrays.toString(num));
+        System.out.println("Before Sorting: "+Arrays.toString(num1));
         bubbleSort.sBubbleSort(num1);
+        System.out.println("After Sorting: "+Arrays.toString(num1));
+        System.out.println("Before Sorting: "+Arrays.toString(num2));
         bubbleSort.sortImproved(num2);
-        System.out.println(Arrays.toString(num));
-        System.out.println(Arrays.toString(num1));
-        System.out.println(Arrays.toString(num2));
+        System.out.println("After Sorting: "+Arrays.toString(num2));
     }
+    /* *
+     * Before Sorting: [2, 5, 7, 2, 4, 2, 8, 1, 0]
+     * After Sorting: [0, 1, 2, 2, 2, 4, 5, 7, 8]
+     * Before Sorting: [2, 5, 7, 2, 4, 2, 8, 1, 0]
+     * After Sorting: [0, 1, 2, 2, 2, 4, 5, 7, 8]
+     * Before Sorting: [2, 5, 7, 2, 4, 2, 8, 1, 0]
+     * After Sorting: [0, 1, 2, 2, 2, 4, 5, 7, 8]
+     * */
 }
