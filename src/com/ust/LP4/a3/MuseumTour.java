@@ -139,7 +139,7 @@ public class MuseumTour {
         museum.addConnection(3, 4, 10);
 
         int[][] graph = museum.getAdjacencyMatrix();
-        List<Integer> targets = Arrays.asList(1, 2, 3, 4);
+        List<Integer> targets = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
         List<Integer> path = Dijkstra.findShortestPath(graph, 0, targets);
 
         System.out.println("Most efficient tour sequence:");
