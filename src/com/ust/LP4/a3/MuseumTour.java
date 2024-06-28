@@ -154,6 +154,7 @@ public class MuseumTour {
         System.out.println("total tour time: " + totalTourTime + " minutes");
     }
     /* *
+     *
      * efficient tour sequence:
      * monet's water lilies
      * michelangelo's pieta
