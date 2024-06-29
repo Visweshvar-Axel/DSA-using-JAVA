@@ -27,5 +27,9 @@ public class LinkedList<E> implements Iterable<E> {
         protected Node next;
     }
 
-    protected Node<E>
+    protected Node<E> getNewNode(){
+        Node<E> node = new Node<>();
+        lastModifiedNode = new Node[]{node};
+        return node;
+    }
 }
