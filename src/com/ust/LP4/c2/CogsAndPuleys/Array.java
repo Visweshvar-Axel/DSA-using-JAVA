@@ -21,7 +21,7 @@ public class Array {
         }
         array[targetIndex] = value;
     }
-    public static int[] insertElementAtIndex(int[] array,int index, int value) {
+    public static int[] insertNewElementAtIndex(int[] array,int index, int value) {
         int[] newArray = new int[array.length+1];
         for (int i = 0; i < index; i++) {
             newArray[i] = array[i];
@@ -30,6 +30,7 @@ public class Array {
         for (int i = index+1; i <newArray.length ; i++) {
             newArray[i] = array[i-1];
         }
-        return 
+        return newArray;
     }
+    public 
 }
