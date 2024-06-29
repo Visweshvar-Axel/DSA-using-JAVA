@@ -60,4 +60,5 @@ public class LinkedList<E> implements Iterable<E> {
         lastModifiedNode = new Node[]{node};
         return node;
     }
+    //insert function ref vdo
 }
