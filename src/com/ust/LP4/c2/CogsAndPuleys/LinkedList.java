@@ -33,6 +33,15 @@ public class LinkedList<E> implements Iterable<E> {
                     '}';
         }
     }
+    public Node<E> appendFirst(E value){
+        Node node = getNewNode();
+        node.value = value;
+        node.next = first;
+        first = node;
+        if(length==0) last = node;
+        length++;
+        return node;
+    }
     public Node<E> appendLast(E value) {
         Node node = getNewNode();
         node.value = value;
