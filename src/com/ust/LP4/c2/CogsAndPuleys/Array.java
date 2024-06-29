@@ -33,6 +33,10 @@ public class Array {
         return newArray;
     }
     public static int[] appendElement(int[] array, int value){
-        return insertNewElementAtIndex()
+        return insertNewElementAtIndex(array,array.length,value);
+    }
+
+    public static void main(String[] args) {
+        int[] elements = {}
     }
 }
