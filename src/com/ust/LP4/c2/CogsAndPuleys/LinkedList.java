@@ -1,10 +1,18 @@
 package com.ust.LP4.c2.CogsAndPuleys;
 
+import java.util.Iterator;
+
 public class LinkedList<E> implements Iterable<E> {
     int length = 0;
     Node<E>[] lastModifiedNode;
     Node<E> first;
     Node<E> last;
+
+    @Override
+    public Iterator<E> iterator() {
+        return null;
+    }
+
     public static class Node<E>{
         protected E value;
         protected Node next;
