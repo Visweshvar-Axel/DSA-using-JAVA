@@ -43,7 +43,7 @@ public class Array {
         printAllElements(elements);
         elements=insertNewElementAtIndex(elements,5,-1);
         printAllElements(elements);
-        elements=appendElement(elements,5000)
+        elements=appendElement(elements,5000);
         printAllElements(elements);
     }
 }
