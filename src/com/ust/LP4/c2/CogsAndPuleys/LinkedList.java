@@ -7,6 +7,7 @@ public class LinkedList<E> implements Iterable<E> {
     Node<E> last;
     public static class Node<E>{
         protected E value;
+        protected Node next;
 
         public E getValue() {
             return value;
@@ -24,9 +25,27 @@ public class LinkedList<E> implements Iterable<E> {
             this.next = next;
         }
 
-        protected Node next;
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "value=" + value +
+                    ", next=" + next +
+                    '}';
+        }
     }
-
+    public Node<E> appendLast(E value) {
+        Node node = getNewNode();
+        node.value = value;
+        if (last!=null){
+            last.next=node;
+            last=node;
+        }
+        if (first==null){
+            first=node;
+        }
+        length++;
+        return node;
+    }
     protected Node<E> getNewNode(){
         Node<E> node = new Node<>();
         lastModifiedNode = new Node[]{node};
