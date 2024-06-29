@@ -62,4 +62,5 @@ public class LinkedList<E> implements Iterable<E> {
     }
     //insert function ref vdo
     //findAt function ref vdo
+    //removeAt function ref vdo
 }
