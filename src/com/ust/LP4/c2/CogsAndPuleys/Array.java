@@ -41,8 +41,9 @@ public class Array {
         printAllElements(elements);
         insertElementAtIndex(elements,2,5);
         printAllElements(elements);
-        insertNewElementAtIndex(elements,5,-1);
+        elements=insertNewElementAtIndex(elements,5,-1);
         printAllElements(elements);
+        elements=appendElement(elements,5000)
         printAllElements(elements);
     }
 }
