@@ -27,5 +27,6 @@ public class Array {
             newArray[i] = array[i];
         }
         newArray[index] = value;
+        fo
     }
 }
