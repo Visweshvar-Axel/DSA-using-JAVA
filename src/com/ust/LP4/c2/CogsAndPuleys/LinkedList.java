@@ -63,4 +63,6 @@ public class LinkedList<E> implements Iterable<E> {
     //insert function ref vdo
     //findAt function ref vdo
     //removeAt function ref vdo
+    //ListIterator function ref vdo
+    /*try on own*/
 }
