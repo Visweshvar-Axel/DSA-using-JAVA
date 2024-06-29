@@ -41,7 +41,7 @@ public class Array {
         printAllElements(elements);
         insertElementAtIndex(elements,2,5);
         printAllElements(elements);
-        in
+        insertNewElementAtIndex(elements,5,-1);
         printAllElements(elements);
         printAllElements(elements);
     }
