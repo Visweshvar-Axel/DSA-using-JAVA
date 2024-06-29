@@ -28,7 +28,8 @@ public class Array {
         }
         newArray[index] = value;
         for (int i = index+1; i <newArray.length ; i++) {
-            newArray
+            newArray[i] = array[i-1];
         }
+        return 
     }
 }
