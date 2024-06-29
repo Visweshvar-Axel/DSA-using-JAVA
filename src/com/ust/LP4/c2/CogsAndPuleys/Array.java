@@ -32,5 +32,5 @@ public class Array {
         }
         return newArray;
     }
-    public 
+    public static int[] appendElement(int)
 }
