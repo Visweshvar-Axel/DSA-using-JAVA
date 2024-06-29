@@ -32,5 +32,7 @@ public class Array {
         }
         return newArray;
     }
-    public static int[] appendElement(int)
+    public static int[] appendElement(int[] array, int value){
+        return insertNewElementAtIndex()
+    }
 }
