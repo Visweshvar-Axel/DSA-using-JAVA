@@ -39,5 +39,9 @@ public class Array {
     public static void main(String[] args) {
         int[] elements = {1,3,45,3,4,6,5,34,65,7,8,89,65,4,2};
         printAllElements(elements);
+        insertElementAtIndex();
+        printAllElements(elements);
+        printAllElements(elements);
+        printAllElements(elements);
     }
 }
