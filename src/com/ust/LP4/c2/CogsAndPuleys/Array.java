@@ -27,6 +27,8 @@ public class Array {
             newArray[i] = array[i];
         }
         newArray[index] = value;
-        fo
+        for (int i = index; i < ; i++) {
+
+        }
     }
 }
