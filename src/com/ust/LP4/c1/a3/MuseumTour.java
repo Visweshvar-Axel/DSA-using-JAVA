@@ -1,4 +1,4 @@
-package com.ust.LP4.a3;
+package com.ust.LP4.c1.a3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
