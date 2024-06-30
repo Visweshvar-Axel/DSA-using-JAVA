@@ -30,7 +30,6 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
                     '}';
         }
     }
-
     public static void main(String[] args) {
         Node<Integer> a = new
     }
