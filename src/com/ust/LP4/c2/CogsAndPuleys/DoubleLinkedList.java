@@ -14,6 +14,10 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
         public Node(E value) {
             this.value = value;
         }
+        public Node(E value, Node next) {
+            this.value = value;
+            this.next = next;
+        }
 
         public Node(E value, Node next, Node previous) {
             this.value = value;
@@ -37,6 +41,10 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
             this.next = next;
         }
 
+        public void setPrevious(Node previous) {
+            this.previous = previous;
+        }
+
         @Override
         public String toString() {
             return "Node{" +
@@ -46,12 +54,16 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
         }
     }
     public static void main(String[] args) {
-        Node<Integer> a = new Node<>(5,new Node<>(4),null);
-        Node<Integer> b = new Node<>(5,new Node<>(3),a);
-        Node<Integer> c = new Node<>(5,new Node<>(3),b);
+        Node<Integer> a = new Node<>(5,new Node(6,new Node(7)));
+        Node<Integer> b = new Node<>(4);
+        Node<Integer> c = new Node<>(3);
+        Node<Integer> d = new Node<>(2);
+        Node<Integer> e = new Node<>(1);
+
         Node<Integer> temp = a;
         while(temp != null){
-            System.out.println();
+            System.out.println(temp.value);
+            temp = temp.next;
         }
     }
 }
