@@ -57,6 +57,20 @@ public class StackImplLinkedList<E> implements Stack<E> {
         return list.value;
     }
     public static void main(String[] args) {
+        Stack<Integer> store = new StackImplLinkedList<>();
 
+        store.push(4);
+        store.push(5);
+        store.push(6);
+        store.push(7);
+
+        System.out.println(store.pop());
+        System.out.println(store.pop());
+        System.out.println(store.pop());
+        System.out.println(store.pop());
+
+        store.push(2000);
+
+        System.out.println(store.peek());
     }
 }
