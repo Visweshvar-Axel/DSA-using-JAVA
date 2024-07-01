@@ -22,6 +22,22 @@ public class StackImplArray<E> implements Stack<E> {
 
     @Override
     public E peek() {
+        if (top == -1) {throw new RuntimeException("The stack is empty");}
         return array[top];
+    }
+
+    public static void main(String[] args) {
+        Stack<Integer> store = new StackImplArray<>(4);
+        store.push(4);
+        store.push(6);
+        store.push(1);
+        store.push(9);
+
+        System.out.println(store.pop());
+        System.out.println(store.pop());
+        System.out.println(store.pop());
+        System.out.println(store.pop());
+
+        System.out.println(store.peek());
     }
 }
