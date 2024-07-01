@@ -56,7 +56,6 @@ public class StackImplLinkedList<E> implements Stack<E> {
         if (head == null) return null;
         return list.value;
     }
-
     public static void main(String[] args) {
 
     }
