@@ -22,5 +22,7 @@ public class CircularLinkedList<E> extends LinkedList<E>{
         linkedList.appendLast(7);
         linkedList.appendLast(18);
         linkedList.appendLast(18);
+        for (int i = 0; i < 15; i++) {
+        }
     }
 }
