@@ -41,8 +41,9 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
             this.next = next;
         }
 
-        public void setPrevious(Node previous) {
+        public Node setPrevious(Node previous) {
             this.previous = previous;
+            return previous;
         }
 
         @Override
@@ -59,8 +60,8 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
         Node<Integer> c = new Node<>(3);
         Node<Integer> d = new Node<>(2);
         Node<Integer> e = new Node<>(1);
-
-        Node<Integer> temp = a;
+        a.setPrevious(b.setPrevious(c.setPrevious(d.setPrevious(e.setNext(d.setNext(c.setNext(b.setNext(a))))))));
+        Node<Integer> temp = e;
         while(temp != null){
             System.out.println(temp.value);
             temp = temp.next;
