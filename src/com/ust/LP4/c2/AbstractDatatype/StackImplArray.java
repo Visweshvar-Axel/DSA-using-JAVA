@@ -36,8 +36,9 @@ public class StackImplArray<E> implements Stack<E> {
         System.out.println(store.pop());
         System.out.println(store.pop());
         System.out.println(store.pop());
-//        System.out.println(store.pop());
+        System.out.println(store.pop());
 
+        store.push(99);
         System.out.println(store.peek());
     }
 }
