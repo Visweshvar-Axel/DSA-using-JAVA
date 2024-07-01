@@ -37,8 +37,9 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
             return next;
         }
 
-        public void setNext(Node next) {
+        public Node setNext(Node next) {
             this.next = next;
+            return next;
         }
 
         public Node setPrevious(Node previous) {
