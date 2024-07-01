@@ -39,12 +39,12 @@ public class DoubleLinkedList<E> extends LinkedList<E> {
 
         public Node setNext(Node next) {
             this.next = next;
-            return next;
+            return this;
         }
 
         public Node setPrevious(Node previous) {
             this.previous = previous;
-            return previous;
+            return this;
         }
 
         @Override
