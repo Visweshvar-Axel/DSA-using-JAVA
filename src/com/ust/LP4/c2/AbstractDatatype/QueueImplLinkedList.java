@@ -1,6 +1,10 @@
 package com.ust.LP4.c2.AbstractDatatype;
 
 public class QueueImplLinkedList<E> implements Queue<E> {
+    /**
+     * to implement own
+     *
+     * */
     public class LinkedListNode<E> {
         private E value;
         private StackImplLinkedList.LinkedListNode next;
