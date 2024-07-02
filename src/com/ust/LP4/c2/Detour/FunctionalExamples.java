@@ -8,5 +8,7 @@ public class FunctionalExamples {
         }
         return s;
     }
-    public static int sunUnto(int n) {
+    public static int sunUntoFunctional(int n) {
+        return (n==0)
+    }
 }
