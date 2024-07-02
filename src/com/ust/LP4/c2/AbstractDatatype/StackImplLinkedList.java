@@ -68,7 +68,6 @@ public class StackImplLinkedList<E> implements Stack<E> {
         System.out.println(store.pop());
         System.out.println(store.pop());
         System.out.println(store.pop());
-
         store.push(2000);
 
         System.out.println(store.peek());
