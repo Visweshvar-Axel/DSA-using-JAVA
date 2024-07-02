@@ -4,8 +4,9 @@ public class FunctionalExamples {
     public static int sunUnto(int n) {
         int s=0;
         for (int i = 0; i <= n; i++) {
-
-
+            s+=i;
         }
+        return s;
     }
+    public static int sunUnto(int n) {
 }
