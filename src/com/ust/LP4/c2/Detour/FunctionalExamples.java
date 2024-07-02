@@ -9,6 +9,6 @@ public class FunctionalExamples {
         return s;
     }
     public static int sunUntoFunctional(int n) {
-        return (n==0)
+        return n==0 ? 0 : s
     }
 }
