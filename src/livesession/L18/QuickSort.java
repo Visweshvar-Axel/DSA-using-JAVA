@@ -9,7 +9,16 @@ public class QuickSort {
         if(p<q){
             iter++;
             int j = partition(num,p,q);
-
+            System.out.println("iter "+iter+":"+Arrays.toString(num));
+            System.out.print("left: ");
+            for (int i = p; i < j-1; i++) {
+                System.out.print(num[i]+", ");
+            }
+            System.out.print("right: ");
+            for (int i = j+1; i < q; i++) {
+                System.out.print(num[i]+", ");
+            }
+            System.out.println();
             QuickSort(num, p, j-1);
             System.out.println();
             QuickSort(num, j+1, q);
@@ -18,16 +27,6 @@ public class QuickSort {
     public int partition(int[] num,int p,int q){
         int v = num[(p+q) / 2];
         System.out.println("pivot : "+v+" at :"+(p+q) / 2);
-        System.out.println("iter "+iter+":"+Arrays.toString(num));
-        System.out.print("left: ");
-        for (int i = p; i < j-1; i++) {
-            System.out.print(num[i]+", ");
-        }
-        System.out.print("right: ");
-        for (int i = j+1; i < q; i++) {
-            System.out.print(num[i]+", ");
-        }
-        System.out.println();
         int i = p;
         int j = q;
         while(i <= j){
