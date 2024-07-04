@@ -56,12 +56,13 @@ public class MergeSort {
 
                 // Sort first and second
                 count = sort(arr, l, m,count);
-                count =sort(arr, m + 1, r,count);
+                count = sort(arr, m + 1, r,count);
 
                 // Merge the sorted halves
                 merge(arr, l, m, r);
-                return count+1;
             }
+            return count+1;
+
         }
 
         // print method
