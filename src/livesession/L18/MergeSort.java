@@ -62,9 +62,8 @@ public class MergeSort {
 
                 // Merge the sorted halves
                 merge(arr, l, m, r);
-                return count+1;
             }
-            return count;
+            return count+1;
         }
 
         // print method
@@ -82,8 +81,8 @@ public class MergeSort {
             printArray(arr);
 
             MergeSort ob = new MergeSort();
-            System.out.println("invoking count: "+ob.sort(arr, 0, arr.length - 1,0));
-            System.out.println("");
+            System.out.println("invoking count of sort: "+ob.sort(arr, 0, arr.length - 1,0));
+            System.out.println("invoking count of merge: "+c);
 
             System.out.println("\nSorted array");
             printArray(arr);
