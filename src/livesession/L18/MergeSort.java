@@ -1,10 +1,11 @@
 package livesession.L18;
 
 public class MergeSort {
-        static c=0;
+        static int c=0;
         // Merges two subarrays of arr[]
         void merge(int arr[], int l, int m, int r)
         {
+            c++;
             // Find sizes of two subarrays to be merged
             int n1 = m - l + 1;
             int n2 = r - m;
@@ -82,6 +83,7 @@ public class MergeSort {
 
             MergeSort ob = new MergeSort();
             System.out.println("invoking count: "+ob.sort(arr, 0, arr.length - 1,0));
+            System.out.println("");
 
             System.out.println("\nSorted array");
             printArray(arr);
