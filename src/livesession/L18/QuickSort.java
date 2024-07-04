@@ -7,6 +7,7 @@ public class QuickSort {
     public void QuickSort(int[] num){QuickSort(num,0,num.length-1);}
     public void QuickSort(int[] num,int p, int q){
         if(p<q){
+            
             int j = partition(num,p,q);
             System.out.println("iter "+iter+":"+Arrays.toString(num));
             System.out.print("left:");
