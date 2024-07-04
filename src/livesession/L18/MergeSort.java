@@ -1,6 +1,7 @@
 package livesession.L18;
 
 public class MergeSort {
+    
         // Merges two subarrays of arr[]
         void merge(int arr[], int l, int m, int r)
         {
@@ -52,7 +53,7 @@ public class MergeSort {
             if (l < r) {
                 // Find the middle point
                 int m = (l + r) / 2;
-                System.out.println(m);
+                System.out.println("mid :"+m);
 
                 // Sort first and second
                 count = sort(arr, l, m,count);
