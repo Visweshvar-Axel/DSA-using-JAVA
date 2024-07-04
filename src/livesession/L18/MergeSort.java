@@ -60,9 +60,8 @@ public class MergeSort {
 
                 // Merge the sorted halves
                 merge(arr, l, m, r);
+                return count+1;
             }
-            return count+1;
-
         }
 
         // print method
@@ -75,7 +74,7 @@ public class MergeSort {
 
         // Main method
         public static void main(String args[]) {
-            int arr[] = {2, 34, 21, 54, 1, 234, 5, 6, 0, 12, 11, 13, 5, 6, 7 };
+            int arr[] = {/*2, 34, 21, 54, 1, 234, 5, 6, 0,*/ 12, 11, 13, 5, 6, 7 };
             System.out.println("Given Array");
             printArray(arr);
 
