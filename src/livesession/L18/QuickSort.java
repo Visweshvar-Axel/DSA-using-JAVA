@@ -10,11 +10,11 @@ public class QuickSort {
             iter++;
             int j = partition(num,p,q);
             System.out.println("iter "+iter+":"+Arrays.toString(num));
-            System.out.print("left:");
+            System.out.print("left: ");
             for (int i = p; i < j-1; i++) {
                 System.out.print(num[i]+", ");
             }
-            System.out.print("right:");
+            System.out.print("right: ");
             for (int i = j+1; i < q; i++) {
                 System.out.print(num[i]+", ");
             }
@@ -52,8 +52,8 @@ public class QuickSort {
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort();
         int[] num = new int[]{/*2,5,7,2,4,2,8,*/1,0,9,3,6};
-        System.out.println(Arrays.toString(num));
+        System.out.println("Before: "+Arrays.toString(num));
         quickSort.QuickSort(num);
-        System.out.println(Arrays.toString(num));
+        System.out.println("After: "+Arrays.toString(num));
     }
 }
