@@ -62,6 +62,7 @@ public class MergeSort {
                 count++;
                 merge(arr, l, m, r);
             }
+            return count;
         }
 
         // print method
