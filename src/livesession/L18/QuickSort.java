@@ -7,7 +7,7 @@ public class QuickSort {
     public void QuickSort(int[] num){QuickSort(num,0,num.length-1);}
     public void QuickSort(int[] num,int p, int q){
         if(p<q){
-            
+            iter++;
             int j = partition(num,p,q);
             System.out.println("iter "+iter+":"+Arrays.toString(num));
             System.out.print("left:");
@@ -20,7 +20,6 @@ public class QuickSort {
             }
             System.out.println();
             QuickSort(num, p, j-1);
-
             System.out.println();
             QuickSort(num, j+1, q);
         }
@@ -52,7 +51,7 @@ public class QuickSort {
     }
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort();
-        int[] num = new int[]{2,5,7,2,4,2,8,1,0,9,3,6};
+        int[] num = new int[]{/*2,5,7,2,4,2,8,*/1,0,9,3,6};
         System.out.println(Arrays.toString(num));
         quickSort.QuickSort(num);
         System.out.println(Arrays.toString(num));
