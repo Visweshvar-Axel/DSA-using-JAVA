@@ -48,17 +48,18 @@ public class MergeSort {
         }
 
         // Main function that sorts arr[l..r] using merge()
-        void sort(int arr[], int l, int r,int count = 0) {
+        void sort(int arr[], int l, int r,int count) {
             if (l < r) {
                 // Find the middle point
                 int m = (l + r) / 2;
                 System.out.println(m);
 
                 // Sort first and second
-                sort(arr, l, m);
+                sort(arr, l, m,c);
                 sort(arr, m + 1, r);
 
                 // Merge the sorted halves
+                count++;
                 merge(arr, l, m, r);
             }
         }
@@ -78,7 +79,7 @@ public class MergeSort {
             printArray(arr);
 
             MergeSort ob = new MergeSort();
-            ob.sort(arr, 0, arr.length - 1);
+            ob.sort(arr, 0, arr.length - 1,0);
 
             System.out.println("\nSorted array");
             printArray(arr);
