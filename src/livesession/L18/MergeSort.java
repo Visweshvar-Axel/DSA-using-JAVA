@@ -75,12 +75,12 @@ public class MergeSort {
 
         // Main method
         public static void main(String args[]) {
-            int arr[] = { 12, 11, 13, 5, 6, 7 };
+            int arr[] = {2,34,21,54,1,234,5,6,0, 12, 11, 13, 5, 6, 7 };
             System.out.println("Given Array");
             printArray(arr);
 
             MergeSort ob = new MergeSort();
-            ob.sort(arr, 0, arr.length - 1,0);
+            System.out.println("invoking count: "+ob.sort(arr, 0, arr.length - 1,0));
 
             System.out.println("\nSorted array");
             printArray(arr);
