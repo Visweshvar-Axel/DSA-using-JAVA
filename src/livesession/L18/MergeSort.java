@@ -55,12 +55,12 @@ public class MergeSort {
                 System.out.println(m);
 
                 // Sort first and second
-                sort(arr, l, m,count);
-                sort(arr, m + 1, r,count);
+                count = sort(arr, l, m,count);
+                count =sort(arr, m + 1, r,count);
 
                 // Merge the sorted halves
                 merge(arr, l, m, r);
-
+                return count+1;
             }
         }
 
