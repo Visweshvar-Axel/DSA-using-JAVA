@@ -1,7 +1,7 @@
 package livesession.L18;
 
 public class MergeSort {
-    
+        static c=0;
         // Merges two subarrays of arr[]
         void merge(int arr[], int l, int m, int r)
         {
