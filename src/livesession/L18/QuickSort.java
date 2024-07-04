@@ -8,7 +8,7 @@ public class QuickSort {
     public void QuickSort(int[] num,int p, int q){
         if(p<q){
             int j = partition(num,p,q);
-            System.out.println("iter ++:"+Arrays.toString(num));
+            System.out.println("iter "+iter+":"+Arrays.toString(num));
             System.out.print("left:");
             for (int i = p; i < j-1; i++) {
                 System.out.print(num[i]+", ");
