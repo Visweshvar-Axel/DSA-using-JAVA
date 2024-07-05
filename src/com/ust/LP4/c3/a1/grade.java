@@ -30,7 +30,6 @@ public class grade {
                 grade = 'F';
             }
             System.out.println("total:"+tot+"\n"+"average:"+avg+"\n"+"grade:"+grade);
-
         }
     }
 }
