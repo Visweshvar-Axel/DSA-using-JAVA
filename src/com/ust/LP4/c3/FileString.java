@@ -17,5 +17,8 @@ public class FileString {
         String file = "";
         while(sc.hasNextLine()) file += sc.nextLine();
         System.out.println(file);
+        if (file.contains("viswa")) {
+            System.out.println("viswa found at index: "+file.indexOf("viswa"));
+        } else System.out.println("Not Found");
     }
 }
