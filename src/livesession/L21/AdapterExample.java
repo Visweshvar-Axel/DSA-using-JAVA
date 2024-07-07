@@ -41,7 +41,6 @@ class SocketAdapterImpl extends Socket implements SocketAdapter{
     public Volt get12Volt() {
         return modify(Socket.getVolt(),12);
     }
-
     @Override
     public Volt get3Volt() {
         return modify(Socket.getVolt(),3);
