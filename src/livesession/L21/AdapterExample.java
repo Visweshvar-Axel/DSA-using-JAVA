@@ -30,17 +30,18 @@ class SocketAdapterImpl extends Socket implements SocketAdapter{
         return Socket.getVolt();
     }
 
-    @Override
-    public Volt get12Volt() {
-        Volt v =
-    }
-
-    @Override
-    public Volt get3Volt() {
-
-    }
+//    @Override
+//    public Volt get12Volt() {
+//        return modify();
+//    }
+//
+//    @Override
+//    public Volt get3Volt() {
+//
+//    }
     private Volt modify(Volt v, int val){
-        return v.setVolt();
+        v.setVolt(val);
+        return v;
     }
 }
 public class AdapterExample {
