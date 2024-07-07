@@ -51,6 +51,7 @@ class SocketAdapterImpl extends Socket implements SocketAdapter{
         return v;
     }
 }
+// Socket -> 120 SocketAdapterImpl -> (120,12,3)
 public class AdapterExample {
     public static void main(String[] args) {
         SocketAdapterImpl socketAdapter = new SocketAdapterImpl();
