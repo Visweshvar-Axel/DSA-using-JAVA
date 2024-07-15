@@ -8,6 +8,7 @@ public class StreamsAndPipesExample {
                 .map(name -> name.toUpperCase())
                 .filter(s -> s.length() > 3)
                 .sorted()
+                .distinct()
                 .forEach(System.out::println);
     }
 }
