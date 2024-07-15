@@ -9,7 +9,9 @@ public class LambdaExample {
             System.out.println("viswa");
             System.out.println("axel");
         });
-        IntFunction c =  (int a, int b) -> a * b;
-        (a, b) -> a * b;
+        t1.start();
+        t2.start();
+//        IntFunction c =  (int a, int b) -> a * b;
+//        (a, b) -> a * b;
     }
 }
