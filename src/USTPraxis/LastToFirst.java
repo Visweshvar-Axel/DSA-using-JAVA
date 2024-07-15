@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class LastToFirst {
     public static String[] lastFist(String[] str){
+        if (str.length == 0) return new String[]{"-1"};
         for (int i = 0 ; i < str.length ; i++) {
             int n = str[i].length();
             str[i] = str[i].charAt(n-1) + str[i].substring(0,n-1);
