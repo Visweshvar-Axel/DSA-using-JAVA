@@ -13,7 +13,7 @@ public class LambdaExample {
         t1.start();
         t2.start();
         r.run();
-        Runnable c =  (int a, int b) -> a * b;
-        (a, b) -> a * b;
+//        Runnable c =  (int a, int b) -> a * b;
+//        (a, b) -> a * b;
     }
 }
