@@ -11,6 +11,7 @@ public class StreamsAndPipesExample {
                 .distinct()
                 .forEach(System.out::println);
     }
+
     /*
     * collectors toSet, toList
     * allMatch(), anyMatch(), noneMatch()
