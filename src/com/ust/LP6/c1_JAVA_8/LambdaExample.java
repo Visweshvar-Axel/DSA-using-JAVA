@@ -20,6 +20,9 @@ public class LambdaExample {
         StringRunnable usingCustom = name -> System.out.println("viswa"+name);
         oneArgument.accept("AXEL");
         usingCustom.run("Axel");
+
+
+
         IntBinaryOperator c =  (int a, int b) -> a * b;
         IntBinaryOperator d = (a, b) -> a * b;
         System.out.println(c.applyAsInt(5,5));
