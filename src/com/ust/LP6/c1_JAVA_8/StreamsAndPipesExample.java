@@ -2,6 +2,7 @@ package com.ust.LP6.c1_JAVA_8;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Stream;
 
 public class StreamsAndPipesExample {
@@ -43,6 +44,19 @@ public class StreamsAndPipesExample {
             this.roundedPersentage = roundedPersentage;
             this.name = name;
             this.exam = exam;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            StudentExamResult that = (StudentExamResult) o;
+            return roundedPersentage == that.roundedPersentage && Objects.equals(name, that.name) && Objects.equals(exam, that.exam);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(roundedPersentage, name, exam);
         }
 
         @Override
