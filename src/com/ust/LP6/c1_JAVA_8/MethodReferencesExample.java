@@ -6,10 +6,12 @@ import java.util.function.Consumer;
 
 public class MethodReferencesExample {
     public static void main(String[] args) {
-        Consumer<String> fun1 = System.out::println;
+        Consumer<String> fun1 = System.out::println;  //bounded instance static reference
         fun1.accept("viswa");
 
-        BiConsumer<PrintStream, String> printStreamBiConsumer = PrintStream::print;
-        printStreamBiConsumer.accept("HI..!");
+        BiConsumer<PrintStream, String> printStreamBiConsumer = PrintStream::print; //unbound there instance should pass as parameter
+        printStreamBiConsumer.accept(System.out,"hiiii");
+
+
     }
 }
