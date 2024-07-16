@@ -27,6 +27,11 @@ public class optionalExample {
         Optional<String> cap = m.map(n -> n.toUpperCase());
         System.out.println(cap.get());
 
+        Optional<Integer> age = Optional.of(15);
+        boolean is = age
+                .filter(n -> n <= 15).isPresent();
+
+
         /* *
          *         e2.isPresent();
          *         e2.isEmpty();
