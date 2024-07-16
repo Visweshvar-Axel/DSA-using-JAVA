@@ -14,6 +14,7 @@ public class StreamsAndPipesExample {
                 .filter(obj -> obj.roundedPersentage >= 70)
 //                .map(obj -> obj.getName())
                 .map(StudentExamResult::getName)
+                .distinct()
                 .sorted()
                 .collect(Collectors.toList());
 
