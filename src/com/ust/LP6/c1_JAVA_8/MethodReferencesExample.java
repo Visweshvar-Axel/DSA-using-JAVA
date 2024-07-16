@@ -17,7 +17,6 @@ public class MethodReferencesExample {
 
         Supplier<Thread> currentThread = Thread::currentThread; //Static method
         System.out.println("current thread "+currentThread.get());
-
         Supplier<Calendar> calendarSupplier = GregorianCalendar::new; // constructor method reference
         Calendar cal = calendarSupplier.get();
         System.out.println("Calendar = "+cal);
