@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class StreamsAndPipesExample {
     public static void main(String[] args) {
         List<StudentExamResult> results = getStudentResult();
-        results.stream().filter(obj -> obj.roundedPersentage > 70).collect(Collectors.toList());
+        results.stream().filter(obj -> obj.roundedPersentage >= 70).collect(Collectors.toList());
 
 //        System.out.println(results);
 
