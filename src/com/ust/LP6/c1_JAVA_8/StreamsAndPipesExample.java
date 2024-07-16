@@ -3,13 +3,32 @@ package com.ust.LP6.c1_JAVA_8;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamsAndPipesExample {
     public static void main(String[] args) {
         List<StudentExamResult> results = getStudentResult();
-        results.stream().filter(obj -> obj.roundedPersentage >= 70).map(obj -> obj.name)
+        List<String> topStudents =  results.stream()
+                .filter(obj -> obj.roundedPersentage >= 70)
+//                .map(obj -> obj.getName())
+                .map(StudentExamResult::getName)
+                .sorted()
+                .collect(Collectors.toList());
+
+        System.out.println("Top student are: ");
+        topStudents.forEach(System.out::println);
+
+//        Set<String> topStudents =  results.stream()
+//                .filter(obj -> obj.roundedPersentage >= 70)
+////                .map(obj -> obj.getName())
+//                .map(StudentExamResult::getName)
+//                .sorted()
+//                .collect(Collectors.toSet());
+//
+//        System.out.println("Top student are: ");
+//        topStudents.forEach(System.out::println);
 
 //        System.out.println(results);
 
