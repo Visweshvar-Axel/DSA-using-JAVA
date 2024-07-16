@@ -1,6 +1,8 @@
 package com.ust.LP6.c1_JAVA_8;
 
 import java.io.PrintStream;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -16,6 +18,8 @@ public class MethodReferencesExample {
         Supplier<Thread> currentThread = Thread::currentThread; //Static method
         System.out.println("current thread "+currentThread.get());
 
-        // constructor method reference
+        Supplier<Calendar> calendarSupplier = GregorianCalendar::new; // constructor method reference
+        Calendar cal = calendarSupplier.get();
+        System.out.println("Calendar = "+cal);
     }
 }
