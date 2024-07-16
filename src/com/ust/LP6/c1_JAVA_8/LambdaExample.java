@@ -23,6 +23,9 @@ public class LambdaExample {
         Function<String,Integer> fun = name -> name.length();
         System.out.println(fun.apply("Viswa"));
 
+        Predicate<String> predicate = name -> name.length() > 5;
+        if(predicate.test("viswaaxel")) System.out.println("*************YES*************");
+
         IntBinaryOperator c =  (int a, int b) -> a * b;
         IntBinaryOperator d = (a, b) -> a * b;
         System.out.println(c.applyAsInt(5,5));
