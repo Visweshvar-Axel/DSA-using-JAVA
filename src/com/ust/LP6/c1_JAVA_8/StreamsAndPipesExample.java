@@ -76,6 +76,19 @@ public class StreamsAndPipesExample {
         }
 
         @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Exam exam = (Exam) o;
+            return Objects.equals(name, exam.name);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(name);
+        }
+
+        @Override
         public String toString() {
             return "Exam{" +
                     "name='" + name + '\'' +
