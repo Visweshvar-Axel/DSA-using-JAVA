@@ -22,7 +22,6 @@ public class LambdaExample {
         usingCustom.run("Axel");
 
 
-
         IntBinaryOperator c =  (int a, int b) -> a * b;
         IntBinaryOperator d = (a, b) -> a * b;
         System.out.println(c.applyAsInt(5,5));
