@@ -1,9 +1,6 @@
 package com.ust.LP6.c1_JAVA_8;
 
-import java.util.function.Consumer;
-import java.util.function.IntBinaryOperator;
-import java.util.function.IntFunction;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class LambdaExample {
     public static void main(String[] args) {
@@ -23,6 +20,8 @@ public class LambdaExample {
         Supplier<String> supplier = () -> "Viswa";
         System.out.println(supplier.get());
 
+        Function<String,Integer> fun = name -> name.length();
+        System.out.println(fun.apply("Viswa"));
 
         IntBinaryOperator c =  (int a, int b) -> a * b;
         IntBinaryOperator d = (a, b) -> a * b;
