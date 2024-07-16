@@ -21,6 +21,20 @@ public class optionalExample {
         if(e1 != null) System.out.println(e1.getName());
         Optional<Employee> e2 = Optional.ofNullable(GetEmployeeOfTheMonthNull());
         e2.ifPresent((emp) -> System.out.println(emp.getName()));
+
+        //map
+        Optional<String> m = Optional.of("viswa");
+        Optional<String> cap = m.map(n -> n.toUpperCase());
+        System.out.println(cap.get());
+
+        /* *
+         *         e2.isPresent();
+         *         e2.isEmpty();
+         *         e2.ifPresent();
+         *         e2.orElse();
+         *         e2.orElseGet();
+         *         e2.orElseThrow();
+        * */
     }
 
     private static Employee GetEmployeeOfTheMonthNull() {
