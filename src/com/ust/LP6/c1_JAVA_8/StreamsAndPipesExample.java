@@ -3,12 +3,15 @@ package com.ust.LP6.c1_JAVA_8;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamsAndPipesExample {
     public static void main(String[] args) {
         List<StudentExamResult> results = getStudentResult();
-        System.out.println(results);
+        results.stream().filter(obj -> obj.roundedPersentage > 70).collect(Collectors.toList());
+
+//        System.out.println(results);
 
         Stream.of("viswa","axel","janani","anu","saran")
                 .map(name -> name.toUpperCase())
