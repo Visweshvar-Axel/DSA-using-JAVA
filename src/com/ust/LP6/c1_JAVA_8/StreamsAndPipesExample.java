@@ -49,6 +49,10 @@ public class StreamsAndPipesExample {
             this.exam = exam;
         }
 
+        public String getName() {
+            return name;
+        }
+
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
