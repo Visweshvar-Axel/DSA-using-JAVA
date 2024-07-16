@@ -25,6 +25,9 @@ public class LambdaExample {
 
         Predicate<String> predicate = name -> name.length() > 5;// person class example
         if(predicate.test("viswaaxel")) System.out.println("*************YES*************");
+        Predicate<Integer> isEligible = age -> age >= 18;// person class example
+        System.out.println("is 5 eligible "+isEligible.test(5));
+        System.out.println("is 20 eligible "+isEligible.test(20));
 
         IntBinaryOperator c =  (int a, int b) -> a * b;
         IntBinaryOperator d = (a, b) -> a * b;
