@@ -11,7 +11,24 @@ public class StreamsAndPipesExample {
                 .distinct()
                 .forEach(System.out::println);
     }
+    static class Student{
+        int roundedPersentage;
+        String name;
+        Exam exam;
 
+        public Student(int roundedPersentage, String name, Exam exam) {
+            this.roundedPersentage = roundedPersentage;
+            this.name = name;
+            this.exam = exam;
+        }
+    }
+    static class Exam {
+        String name;
+
+        public Exam(String name) {
+            this.name = name;
+        }
+    }
     /*
     * collectors toSet, toList
     * allMatch(), anyMatch(), noneMatch()
