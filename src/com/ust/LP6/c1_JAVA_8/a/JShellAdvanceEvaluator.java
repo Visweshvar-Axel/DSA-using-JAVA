@@ -52,4 +52,17 @@ public class JShellAdvanceEvaluator {
         jshell.close();
         sc.close();
     }
+    /* *
+     * Enter a mathematical expression (or type 'exit' to quit, 'history' to view past expressions): Math.pow(5, 2)
+     * Result: 25.0
+     * Enter a mathematical expression (or type 'exit' to quit, 'history' to view past expressions):  Math.sqrt(25)
+     * Result: 5.0
+     * Enter a mathematical expression (or type 'exit' to quit, 'history' to view past expressions): history
+     * History of expressions:
+     * Math.pow(5, 2) = 25.0
+     * Math.sqrt(25) = 5.0
+     * Enter a mathematical expression (or type 'exit' to quit, 'history' to view past expressions): exit
+     *
+     * Process finished with exit code 0
+     * */
 }
