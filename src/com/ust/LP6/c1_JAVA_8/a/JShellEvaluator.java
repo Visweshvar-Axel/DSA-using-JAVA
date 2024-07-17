@@ -9,13 +9,13 @@ import java.util.Scanner;
 
 public class JShellEvaluator {
     public static void main(String[] args) {
-        JShell jShell = JShell.create();
+        JShell jshell = JShell.create();
         Scanner sc = new Scanner(System.in);
 
         while (true) {
             System.out.print("Enter a mathematical expression (or type 'exit' to quit): ");
             String input = sc.nextLine();
-            List<SnippetEvent> events = jShell.eval(input);
+            List<SnippetEvent> events = jshell.eval(input);
 
             if (input.equalsIgnoreCase("exit")) break;
 
@@ -31,11 +31,11 @@ public class JShellEvaluator {
             }
 
             if (!validExpression) {
-                System.out.println("Please enter a valid mathematical expression.");
+                System.out.println("Please enter a valid expression");
             }
         }
 
-        jShell.close();
+        jshell.close();
         sc.close();
     }
     /* *
