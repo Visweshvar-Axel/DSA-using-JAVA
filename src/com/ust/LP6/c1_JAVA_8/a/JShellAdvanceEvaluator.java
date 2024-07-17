@@ -9,48 +9,47 @@ import java.util.List;
 import java.util.Scanner;
 public class JShellAdvanceEvaluator {
     public static void main(String[] args) {
-        // Create a JShell instance
         JShell jshell = JShell.create();
-        Scanner scanner = new Scanner(System.in);
-        List<String> history = new ArrayList<>();
-        String input;
+        Scanner sc = new Scanner(System.in);
+        List<String> his = new ArrayList<>();
+        String inp;
 
         while (true) {
             System.out.print("Enter a mathematical expression (or type 'exit' to quit, 'history' to view past expressions): ");
-            input = scanner.nextLine().trim();
+            inp = sc.nextLine().trim();
 
-            if (input.equalsIgnoreCase("exit")) {
+            if (inp.equalsIgnoreCase("exit")) {
                 break;
             }
 
-            if (input.equalsIgnoreCase("history")) {
+            if (inp.equalsIgnoreCase("history")) {
                 System.out.println("History of expressions:");
-                for (String entry : history) {
+                for (String entry : his) {
                     System.out.println(entry);
                 }
                 continue;
             }
 
-            List<SnippetEvent> events = jshell.eval(input);
+            List<SnippetEvent> events = jshell.eval(inp);
 
             boolean validExpression = false;
             for (SnippetEvent event : events) {
                 if (event.status() == Status.VALID) {
                     System.out.println("Result: " + event.value());
-                    history.add(input + " = " + event.value());
+                    his.add(inp + " = " + event.value());
                     validExpression = true;
                 } else {
-                    System.out.println("Invalid expression: " + input);
+                    System.out.println("Invalid expression: " + inp);
                     break;
                 }
             }
 
             if (!validExpression) {
-                System.out.println("Please enter a valid mathematical expression.");
+                System.out.println("Please enter a valid expression.");
             }
         }
 
         jshell.close();
-        scanner.close();
+        sc.close();
     }
 }
