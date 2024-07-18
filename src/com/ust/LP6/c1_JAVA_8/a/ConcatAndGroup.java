@@ -12,6 +12,7 @@ public class ConcatAndGroup {
 
         List<String> words2 = Arrays.asList("apple", "banana", "orange", "grape", "kiwi");
         Map<Integer, List<String>> groupedByLength = words2.stream().collect(Collectors.groupingBy(String::length));
+
         System.out.println(groupedByLength);
     }
 }
