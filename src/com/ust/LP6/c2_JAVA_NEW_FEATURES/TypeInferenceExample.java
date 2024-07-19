@@ -22,7 +22,7 @@ public class TypeInferenceExample {
                     List<String> description = c.getValue();
                 }).collect(Collectors.toList());
 
-        catObject.forEach(c -> System.out.println(cat+" : "+cat));
+        catObject.forEach(c -> System.out.println(c.name+" : "+c.description));
 
         for (var i = 0; i < 10; i++) {
             System.out.println(i);
