@@ -6,7 +6,7 @@ import java.nio.file.Path;
 
 public class FilesDemo {
     public static void main(String[] args) throws IOException {
-        Path path = Path.of("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\com\\ust\\LP6\\c2_JAVA_NEW_FEATURES\\FilesDemolnput.txt";
+        Path path = Path.of("C:\\Users\\VISWA\\IdeaProjects\\JAVA_UST\\src\\com\\ust\\LP6\\c2_JAVA_NEW_FEATURES\\FilesDemolnput.txt");
         //old way: java 8
         Files.lines(path).forEach(line -> System.out.println(line));
 
