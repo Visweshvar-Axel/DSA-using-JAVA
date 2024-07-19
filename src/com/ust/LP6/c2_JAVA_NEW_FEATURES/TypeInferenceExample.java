@@ -19,7 +19,10 @@ public class TypeInferenceExample {
             System.out.println(i);
         }
 
-
+//        Object notAccess = new Object() { String name = "viswa";};
+//        System.out.println(notAccess.name);
+        var Access = new Object() { String name = "viswa";};
+        System.out.println(Access.name);
 
 //        try with resources also var can be used
 
