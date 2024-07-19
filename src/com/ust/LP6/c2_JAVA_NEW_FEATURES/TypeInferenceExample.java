@@ -26,6 +26,7 @@ public class TypeInferenceExample {
 
         catObject.forEach(c -> System.out.println(c.name+" : "+c.description)); // can access using var
 
+
         // var lambda java 8
         IntBinaryOperator fun2 = (a, b) -> a * b;
 
