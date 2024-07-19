@@ -2,6 +2,7 @@ package com.ust.LP6.c2_JAVA_NEW_FEATURES;
 
 import java.util.List;
 import java.util.Map;
+import java.util.function.IntBinaryOperator;
 import java.util.stream.Collectors;
 
 public class TypeInferenceExample {
@@ -24,8 +25,11 @@ public class TypeInferenceExample {
 
         catObject.forEach(c -> System.out.println(c.name+" : "+c.description)); // can access using var
 
-        // var lambda
+        // var lambda java 8
+        IntBinaryOperator fun2 = (a, b) -> a * b;
 
+        // var lambda java 11
+        IntBinaryOperator fun2 = (a, b) -> a * b;
 
 
         for (var i = 0; i < 10; i++) {
