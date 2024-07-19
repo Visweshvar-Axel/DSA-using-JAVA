@@ -2,6 +2,7 @@ package com.ust.LP6.c2_JAVA_NEW_FEATURES;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class TypeInferenceExample {
     public static void main(String[] args) {
@@ -14,6 +15,14 @@ public class TypeInferenceExample {
                 "jack", List.of("Super—fluffy "," Sleeps all day long. "),
                 "Ella", List.of("Black Bombay cat.", "Playful, fast, and agile.")
         );
+
+        var catObject = catWithDescription.entrySet().stream()
+                .map(c -> new Object() {
+                    String name = c.getKey();
+                    List<String> description = c.getValue();
+                }).collect(Collectors.toList());
+
+        catObject.forEach(c -> System.out.println(cat+" : "+cat));
 
         for (var i = 0; i < 10; i++) {
             System.out.println(i);
