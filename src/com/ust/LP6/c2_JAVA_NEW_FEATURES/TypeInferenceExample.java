@@ -30,7 +30,7 @@ public class TypeInferenceExample {
         IntBinaryOperator fun2 = (a, b) -> a * b;
 
         // var lambda java 11
-        IntBinaryOperator fun2 = ( var a, var b) -> a * b;
+//        IntBinaryOperator fun2 = (@Nullable var a, @Nullable var b) -> a * b;
 
 
         for (var i = 0; i < 10; i++) {
