@@ -23,5 +23,16 @@ public class StringDemo {
         demo = "\t    \t\u2003";
         System.out.printf("'%s'.isBlank(): %b\n",demo,demo.isBlank());
 
+        System.out.println();
+        System.out.printf("String repeat()");
+        System.out.println();
+        System.out.println("\uD83D\uDc08".repeat(5));
+
+        str = " Eclair is a kind Bengal cat.\n Give her a coconut cake. Now\r\n please...";
+        str.lines()
+                .map(String::strip)
+                .map(line -> (line.contains("please") ? "\uD83D\uDE3B".repeat(5)+line : line))
+                .forEach(System.out::println);
+
     }
 }
