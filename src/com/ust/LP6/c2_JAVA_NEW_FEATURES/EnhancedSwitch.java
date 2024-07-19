@@ -27,5 +27,6 @@ public class EnhancedSwitch {
             case 3 -> "three";
             default -> "invalid";
         };
+        System.out.println(ans);
     }
 }
