@@ -43,6 +43,6 @@ public class CollectionsDemo {
 
 //        dogs3.put("snoop","like swim"); // fails runtime
 
-        Map<String,String> dog4 = Map.ofEntries(Map.Entry("snoop","like swim"));
+        Map<String,String> dog4 = Map.ofEntries(Map.entry("snoop","like swim"));
     }
 }
