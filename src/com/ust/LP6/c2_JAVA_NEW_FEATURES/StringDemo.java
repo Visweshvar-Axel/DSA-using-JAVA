@@ -34,5 +34,23 @@ public class StringDemo {
                 .map(line -> (line.contains("please") ? "\uD83D\uDE3B".repeat(5)+line : line))
                 .forEach(System.out::println);
 
+
+        System.out.println("Demo: operations with whitespace in java 12");
+        System.out.println();
+        System.out.println(" java 12: String.indent()");
+        str = "one\ntwo\nthree";
+        str.lines().forEach(line -> System.out.println(line.indent(7)));
+
+        System.out.println();
+        System.out.println(" java 12: String.transform()");
+        str = "Eclair is a very fluffy Persian cat.\n";
+        System.out.println(str);
+        System.out.println(str.transform(StringDemo::fixCatDescription));
+        System.out.println();
+
+    }
+
+    public static String fixCatDescription(String s){
+        return s.replaceAll("Eclair","jelly").replaceAll("fluffy Persian","Kind Bengal");
     }
 }
