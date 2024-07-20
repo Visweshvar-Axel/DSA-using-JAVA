@@ -21,7 +21,7 @@ class Students{
 public class StudentStreams {
     public static void main(String[] args) {
         List<Students> sList = new ArrayList<>();
-        sl
+        sList.add(new Students("vis")
     }
 
 }
