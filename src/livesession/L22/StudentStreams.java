@@ -26,7 +26,8 @@ public class StudentStreams {
         sList.add(new Students("jeswin"));
         sList.add(new Students("janani"));
         sList.add(new Students("srini"));
-        
+
+        var startsWiths = sList.s
     }
 
 }
