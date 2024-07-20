@@ -24,8 +24,9 @@ public class StudentStreams {
         sList.add(new Students("viswa"));
         sList.add(new Students("saran"));
         sList.add(new Students("jeswin"));
-        sList.add(new Students(""));
-        sList.add(new Students("viswa"));
+        sList.add(new Students("janani"));
+        sList.add(new Students("srini"));
+        
     }
 
 }
