@@ -23,13 +23,16 @@ public class StudentStreams {
     public static void main(String[] args) {
         List<Students> sList = new ArrayList<>();
         sList.add(new Students("viswa"));
+        sList.add(new Students("srini"));
         sList.add(new Students("saran"));
         sList.add(new Students("jeswin"));
         sList.add(new Students("janani"));
-        sList.add(new Students("srini"));
 
         var startsWiths = sList.stream()
-                .map(obj -> obj.name).filter(name -> name.startsWith("s")).collect(Collectors.toList());
+                .map(obj -> obj.name)
+                .filter(name -> name.startsWith("s"))
+                .sorted()
+                .collect(Collectors.toList());
         System.out.println("names starts with 's'");
         startsWiths.forEach(System.out::println);
     }
