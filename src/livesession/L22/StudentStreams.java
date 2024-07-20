@@ -30,6 +30,7 @@ public class StudentStreams {
 
         var startsWiths = sList.stream().map(obj -> obj.name).filter(name -> name.startsWith("s")).collect(Collectors.toList());
         System.out.println("names starts with 's'");
+        startsWiths.forEach();
     }
 
 }
