@@ -22,9 +22,9 @@ public class StudentStreams {
     public static void main(String[] args) {
         List<Students> sList = new ArrayList<>();
         sList.add(new Students("viswa"));
-        sList.add(new Students("viswa"));
+        sList.add(new Students("saran"));
         sList.add(new Students("jeswin"));
-        sList.add(new Students("viswa"));
+        sList.add(new Students(""));
         sList.add(new Students("viswa"));
     }
 
