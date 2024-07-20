@@ -27,7 +27,7 @@ public class StudentStreams {
         sList.add(new Students("janani"));
         sList.add(new Students("srini"));
 
-        var startsWiths = sList.s
+        var startsWiths = sList.stream().map(obj -> obj.name).fil
     }
 
 }
