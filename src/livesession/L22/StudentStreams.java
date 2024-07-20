@@ -19,6 +19,7 @@ class Students{
     }
 }
 public class StudentStreams {
+    ma
     List<Students> sList = new ArrayList<>();
 
 }
