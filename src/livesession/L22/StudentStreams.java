@@ -30,7 +30,7 @@ public class StudentStreams {
 
         var startsWiths = sList.stream()
                 .map(obj -> obj.getName())
-                .filter(name -> name.toLowerCase().startsWith("s"))
+                .filter(name -> name.toLowerCase().startsWith("v"))
                 .sorted()
                 .collect(Collectors.toList());
         System.out.println("names starts with 's'");
