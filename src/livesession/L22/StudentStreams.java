@@ -29,12 +29,11 @@ public class StudentStreams {
         sList.add(new Students("janani"));
 
         var startsWiths = sList.stream()
-                .map(obj -> obj.name)
-                .filter(name -> name.startsWith("s"))
+                .map(obj -> obj.getName())
+                .filter(name -> name.toLowerCase().startsWith("s"))
                 .sorted()
                 .collect(Collectors.toList());
         System.out.println("names starts with 's'");
         startsWiths.forEach(System.out::println);
     }
-
 }
