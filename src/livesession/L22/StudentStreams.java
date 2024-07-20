@@ -19,7 +19,9 @@ class Students{
     }
 }
 public class StudentStreams {
-    ma
-    List<Students> sList = new ArrayList<>();
+    public static void main(String[] args) {
+        List<Students> sList = new ArrayList<>();
+        sl
+    }
 
 }
