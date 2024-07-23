@@ -25,6 +25,7 @@ public class StudentStreams {
         sList.add(new Students("saran"));
         sList.add(new Students("jeswin"));
         sList.add(new Students("janani"));
+
         var startsWiths = sList.stream()
                 .map(obj -> obj.getName())
                 .filter(name -> name.toLowerCase().startsWith("v"))
