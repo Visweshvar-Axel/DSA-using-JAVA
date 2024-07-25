@@ -1,4 +1,4 @@
-package com.ust.LP6.c3_DESIGN_PATTERN;
+package com.ust.LP6.c3_DESIGN_PATTERN.Decorator;
 
 public class DemoSubscribeServices {
     public static void main(String[] args) {
@@ -11,10 +11,10 @@ public class DemoSubscribeServices {
 
         System.out.println("Guest details :\n" +
                 guset.getDescription() +
-                "Cost" + guset.getCost());
+                "Cost: " + guset.getCost());
 
         System.out.println("member details :\n" +
                 member.getDescription() +
-                "Cost" + member.getCost());
+                "Cost: " + member.getCost());
     }
 }
