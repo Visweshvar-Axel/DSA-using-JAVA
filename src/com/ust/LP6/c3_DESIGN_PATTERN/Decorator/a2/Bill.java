@@ -21,7 +21,7 @@ public class Bill {
     }
 
     public void calculateBillAmount() {
-        billAmount = orderList.stream().mapToDouble(order -> order.getPrice() * order.getOrderedQuantity()).sum();
+//        billAmount = orderList.stream().mapToDouble(order -> order.getPrice() * order.getOrderedQuantity()).sum();
     }
 
     public void applyPaymentStrategy(PaymentStrategy paymentStrategy) {
