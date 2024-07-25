@@ -13,5 +13,35 @@ public class Course {
         this.duration = duration;
     }
 
+    public Integer getCourseId() {
+        return courseId;
+    }
 
+    public void setCourseId(Integer courseId) {
+        this.courseId = courseId;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public Double getCourseFee() {
+        return courseFee;
+    }
+
+    public void setCourseFee(Double courseFee) {
+        this.courseFee = courseFee;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Integer duration) {
+        this.duration = duration;
+    }
 }
