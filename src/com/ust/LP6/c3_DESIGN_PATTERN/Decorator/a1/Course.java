@@ -44,4 +44,14 @@ public class Course {
     public void setDuration(Integer duration) {
         this.duration = duration;
     }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "courseId=" + courseId +
+                ", courseName='" + courseName + '\'' +
+                ", courseFee=" + courseFee +
+                ", duration=" + duration +
+                '}';
+    }
 }
