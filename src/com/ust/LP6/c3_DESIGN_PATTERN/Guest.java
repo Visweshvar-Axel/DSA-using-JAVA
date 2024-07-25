@@ -8,6 +8,6 @@ public class Guest implements Service{
 
     @Override
     public int getCost() {
-        return 0;
+        return 15;
     }
 }
