@@ -1,4 +1,4 @@
-package com.ust.LP6.c3_DESIGN_PATTERN;
+package com.ust.LP6.c3_DESIGN_PATTERN.Decorator;
 
 public class ProjectSupport extends ServiceDecorator{
     public ProjectSupport(Service service) {
