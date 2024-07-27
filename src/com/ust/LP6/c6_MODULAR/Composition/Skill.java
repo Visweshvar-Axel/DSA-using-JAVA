@@ -34,4 +34,13 @@ public class Skill {
     public void setSkillRank(int skillRank) {
         this.skillRank = skillRank;
     }
+
+    @Override
+    public String toString() {
+        return "Skill{" +
+                "skillName='" + skillName + '\'' +
+                ", skillCategory='" + skillCategory + '\'' +
+                ", skillRank=" + skillRank +
+                '}';
+    }
 }
