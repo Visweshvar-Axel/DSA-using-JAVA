@@ -2,14 +2,14 @@ package com.ust.LP6.c4_REACTIVE_JAVA_9;
 
 public class Main {
     public static void main(String[] args) {
-        TrendingHashtagsPublisher hashtagsPublisher = new TrendingHashtagsPublisher();
-        TrendingHashtagsProcessor hashtagsProcessor = new TrendingHashtagsProcessor();
-        hashtagsPublisher.subscribe(hashtagsProcessor);
-        hashtagsPublisher.publishHashtag("#Java");
-        hashtagsPublisher.publishHashtag("#ReactiveProgramming");
-        hashtagsPublisher.publishHashtag("#Java9");
-        hashtagsPublisher.publishHashtag("#Concurrency");
-        hashtagsPublisher.complete();
-        System.out.println("Top Trending Hashtags: " + hashtagsProcessor.getTopTrendingHashtags());
+        TrendingHashtagsPublisher Publisher = new TrendingHashtagsPublisher();
+        TrendingHashtagsProcessor Processor = new TrendingHashtagsProcessor();
+        Publisher.subscribe(Processor);
+        Publisher.publishHashtag("#Java");
+        Publisher.publishHashtag("#ReactiveProgramming");
+        Publisher.publishHashtag("#Java9");
+        Publisher.publishHashtag("#Concurrency");
+        Publisher.complete();
+        System.out.println("Top Trending Hashtags: " + Processor.getTopTrendingHashtags());
     }
 }
