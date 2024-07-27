@@ -10,4 +10,28 @@ public class Skill {
         this.skillCategory = skillCategory;
         this.skillRank = skillRank;
     }
+
+    public String getSkillName() {
+        return skillName;
+    }
+
+    public void setSkillName(String skillName) {
+        this.skillName = skillName;
+    }
+
+    public String getSkillCategory() {
+        return skillCategory;
+    }
+
+    public void setSkillCategory(String skillCategory) {
+        this.skillCategory = skillCategory;
+    }
+
+    public int getSkillRank() {
+        return skillRank;
+    }
+
+    public void setSkillRank(int skillRank) {
+        this.skillRank = skillRank;
+    }
 }
