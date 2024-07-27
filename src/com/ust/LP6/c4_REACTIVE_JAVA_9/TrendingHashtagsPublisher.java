@@ -5,30 +5,30 @@ import java.util.List;
 import java.util.concurrent.Flow.*;
 
 class TrendingHashtagsPublisher implements Publisher<String> {
-    private final List<Subscriber<? super String>> subscribers = new ArrayList<>();
+    private final List<Subscriber<? super String>> sub = new ArrayList<>();
 
     @Override
     public void subscribe(Subscriber<? super String> subscriber) {
-        subscribers.add(subscriber);
+        sub.add(subscriber);
         subscriber.onSubscribe(new Subscription() {
             @Override
             public void request(long n) {}
 
             @Override
             public void cancel() {
-                subscribers.remove(subscriber);
+                sub.remove(subscriber);
             }
         });
     }
 
     public void publishHashtag(String hashtag) {
-        for (Subscriber<? super String> subscriber : subscribers) {
+        for (Subscriber<? super String> subscriber : sub) {
             subscriber.onNext(hashtag);
         }
     }
 
     public void complete() {
-        for (Subscriber<? super String> subscriber : subscribers) {
+        for (Subscriber<? super String> subscriber : sub) {
             subscriber.onComplete();
         }
     }
