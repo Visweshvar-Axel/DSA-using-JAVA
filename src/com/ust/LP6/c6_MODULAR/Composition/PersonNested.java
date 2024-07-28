@@ -37,4 +37,10 @@ public class PersonNested {
     public void setSkills(List<Skill> skills) {
         this.skills = skills;
     }
+
+    class Job {
+        private String role;
+        private long salary;
+        private int id;
+    }
 }
