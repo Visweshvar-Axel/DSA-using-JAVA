@@ -1,4 +1,4 @@
-package com.ust.LP6.c6_MODULAR.Composition;
+package com.ust.LP6.c6_MODULAR.NestedClasses;
 
 import java.util.ArrayList;
 import java.util.List;
