@@ -13,7 +13,6 @@ public class PersonNested {
         skills.add(new Skill("java developer","IT",1));
         skills.add(new Skill("project manager","IT",1));
     }
-
     public Job getJob() {
         return job;
     }
