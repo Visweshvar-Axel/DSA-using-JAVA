@@ -117,7 +117,6 @@ public class PersonNested {
             this.skillRank = skillRank;
         }
 
-
         @Override
         public String toString() {
             return "Skill{" +
