@@ -75,6 +75,7 @@ public class PersonNested {
         @Override
         public String toString() {
             return "Job{" +
+
                     "role='" + role + '\'' +
                     ", salary=" + salary +
                     ", id=" + id +
