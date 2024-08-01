@@ -2,9 +2,8 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-/src/USTPraxis/*
-!/src/USTPraxis/LastToFirst.java
-!/src/USTPraxis/WordCountWithSemicolon.java
+/src/USTPraxis/
+
 
 
 ### Eclipse ###
