@@ -4,8 +4,8 @@ public class Main {
 //        for (;;) {
 //            System.out.println("viswa");
 //        }
-        do {
-
-        }while (0);
+//        do {
+//
+//        }while (0);
     }
 }
