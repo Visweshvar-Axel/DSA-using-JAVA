@@ -5,7 +5,7 @@ public class Main {
 //            System.out.println("viswa");
 //        }
         do {
-
-        }while (0);
+            System.out.println("viswa");
+        }while ();
     }
 }
