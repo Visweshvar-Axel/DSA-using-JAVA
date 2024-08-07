@@ -10,7 +10,7 @@ public class BinaryToDecimal {
         }
         return result;
     }
-    public int BtoDAlt(String b){
+    public int BtoDAlt$(String b){
         int res = 0;
         for (int i =1; i<=b.length();i++){
             if (b.charAt(b.length()-i)=='1')
@@ -21,6 +21,6 @@ public class BinaryToDecimal {
     public static void main(String[] args){
         BinaryToDecimal binaryToDecimal = new BinaryToDecimal();
         System.out.println(binaryToDecimal.BtoD("10110"));
-        System.out.println(binaryToDecimal.BtoDAlt("10110"));
+        System.out.println(binaryToDecimal.BtoDAlt$("10110"));
     }
 }
