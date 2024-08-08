@@ -1,0 +1,35 @@
+C:\Users\VISWA>mongo
+MongoDB shell version v5.0.28
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("ad6ddb5a-f599-4904-8271-ada55df1b6dc") }
+MongoDB server version: 5.0.28
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2024-08-09T01:21:58.992+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use viswadb
+switched to db viswadb
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> db.emp.insert({"empname":"Viswa","empage":22})
+WriteResult({ "nInserted" : 1 })
+> show dbs
+admin    0.000GB
+config   0.000GB
+local    0.000GB
+viswadb  0.000GB
+> show collections
+emp
