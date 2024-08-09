@@ -1,0 +1,37 @@
+> show dbs
+admin    0.000GB
+config   0.000GB
+local    0.000GB
+viswadb  0.000GB
+> use viswadb
+switched to db viswadb
+> use viswadrop
+switched to db viswadrop
+> show dbs
+admin    0.000GB
+config   0.000GB
+local    0.000GB
+viswadb  0.000GB
+> db.employee.insert({"empname":"viswa"})
+WriteResult({ "nInserted" : 1 })
+> show dbs
+admin      0.000GB
+config     0.000GB
+local      0.000GB
+viswadb    0.000GB
+viswadrop  0.000GB
+> db.department.insert({"deptname":"dev"})
+WriteResult({ "nInserted" : 1 })
+> show collections
+department
+employee
+> db.employee.find()
+{ "_id" : ObjectId("66b5c939f5bd5d690c544575"), "empname" : "viswa" }
+{ "_id" : ObjectId("66b5c959f5bd5d690c544576"), "deptname" : "dev" }
+> db.employee.drop()
+true
+> show collections
+department
+> db.department.drop()
+true
+> show collections
