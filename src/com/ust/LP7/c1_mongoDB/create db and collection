@@ -46,9 +46,6 @@ viswadb  0.000GB
 switched to db viswadb
 > show collections
 emp
-> db.createCollections("employee")
-uncaught exception: TypeError: db.createCollections is not a function :
-@(shell):1:1
 > db.createCollection("employee")
 { "ok" : 1 }
 > show collections
