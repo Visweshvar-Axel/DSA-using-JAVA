@@ -33,3 +33,39 @@ local    0.000GB
 viswadb  0.000GB
 > show collections
 emp
+
+
+--- create collections
+
+> show dbs
+admin    0.000GB
+config   0.000GB
+local    0.000GB
+viswadb  0.000GB
+> use viswadb
+switched to db viswadb
+> show collections
+emp
+> db.createCollections("employee")
+uncaught exception: TypeError: db.createCollections is not a function :
+@(shell):1:1
+> db.createCollection("employee")
+{ "ok" : 1 }
+> show collections
+emp
+employee
+> db.department.insert({"deptname":"Dev"})
+WriteResult({ "nInserted" : 1 })
+> show collections
+department
+emp
+employee
+> db.emp.find()
+{ "_id" : ObjectId("66b527a1be9fe9712a6111bf"), "empname" : "Viswa", "empage" : 22 }
+> db.emp.find().pretty()
+{
+        "_id" : ObjectId("66b527a1be9fe9712a6111bf"),
+        "empname" : "Viswa",
+        "empage" : 22
+}
+>
