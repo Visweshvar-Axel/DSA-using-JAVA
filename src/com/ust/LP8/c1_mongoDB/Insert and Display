@@ -1,0 +1,118 @@
+> show dbs
+admin    0.000GB
+config   0.000GB
+local    0.000GB
+viswadb  0.000GB
+> use demo
+switched to db demo
+> show collections
+> use viswadb
+switched to db viswadb
+> show collections
+department
+emp
+employee
+> db.emp.find()
+{ "_id" : ObjectId("66b527a1be9fe9712a6111bf"), "empname" : "Viswa", "empage" : 22 }
+> db.department.find()
+{ "_id" : ObjectId("66b5c7e5f5bd5d690c544574"), "deptname" : "Dev" }
+> db.department.find().pretty()
+{ "_id" : ObjectId("66b5c7e5f5bd5d690c544574"), "deptname" : "Dev" }
+> db.emp.find().pretty()
+{
+        "_id" : ObjectId("66b527a1be9fe9712a6111bf"),
+        "empname" : "Viswa",
+        "empage" : 22
+}
+>
+>
+>
+> use demo
+switched to db demo
+> db.employee.insert({
+... empname: "viswa",
+... empage: 22,
+... empzone: south,
+... empdept: "dev"
+... })
+uncaught exception: ReferenceError: south is not defined :
+@(shell):4:1
+> db.employee.insert({ empname: "viswa", empage: 22, empzone: "south", empdept: "dev" })
+WriteResult({ "nInserted" : 1 })
+> db.employee.find()
+{ "_id" : ObjectId("66b90a15aa8cdfce3122c79e"), "empname" : "viswa", "empage" : 22, "empzone" : "south", "empdept" : "dev" }
+> db.employee.insert({ empname: "axel", empage: 25, empzone: "south", empdept: "dev" })
+WriteResult({ "nInserted" : 1 })
+> db.employee.find()
+{ "_id" : ObjectId("66b90a15aa8cdfce3122c79e"), "empname" : "viswa", "empage" : 22, "empzone" : "south", "empdept" : "dev" }
+{ "_id" : ObjectId("66b90a3faa8cdfce3122c79f"), "empname" : "axel", "empage" : 25, "empzone" : "south", "empdept" : "dev" }
+> db.employee.find().pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+{
+        "_id" : ObjectId("66b90a3faa8cdfce3122c79f"),
+        "empname" : "axel",
+        "empage" : 25,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+>
+>
+> db.department.insertOne({"deptname":"dev","deptmanager":"viswa","deptrank":1})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("66b90aa3aa8cdfce3122c7a0")
+}
+> db.department.find()
+{ "_id" : ObjectId("66b90aa3aa8cdfce3122c7a0"), "deptname" : "dev", "deptmanager" : "viswa", "deptrank" : 1 }
+> show collections
+department
+employee
+>
+>
+> db.client.insertMany([{"clientname":"abc","clientcountry":"India"},{"clientname":"defgh","clientcountry":"India"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("66b90b92aa8cdfce3122c7a1"),
+                ObjectId("66b90b92aa8cdfce3122c7a2")
+        ]
+}
+> db.client.find()
+{ "_id" : ObjectId("66b90b92aa8cdfce3122c7a1"), "clientname" : "abc", "clientcountry" : "India" }
+{ "_id" : ObjectId("66b90b92aa8cdfce3122c7a2"), "clientname" : "defgh", "clientcountry" : "India" }
+> db.client.find().pretty()
+{
+        "_id" : ObjectId("66b90b92aa8cdfce3122c7a1"),
+        "clientname" : "abc",
+        "clientcountry" : "India"
+}
+{
+        "_id" : ObjectId("66b90b92aa8cdfce3122c7a2"),
+        "clientname" : "defgh",
+        "clientcountry" : "India"
+}
+> show collections
+client
+department
+employee
+>
+>
+>
+>
+> db.client.find().pretty()
+{
+        "_id" : ObjectId("66b90b92aa8cdfce3122c7a1"),
+        "clientname" : "abc",
+        "clientcountry" : "India"
+}
+{
+        "_id" : ObjectId("66b90b92aa8cdfce3122c7a2"),
+        "clientname" : "defgh",
+        "clientcountry" : "India"
+}
