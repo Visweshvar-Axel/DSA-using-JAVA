@@ -1,0 +1,90 @@
+> show dbs
+admin    0.000GB
+config   0.000GB
+demo     0.000GB
+local    0.000GB
+viswadb  0.000GB
+> use demo
+switched to db demo
+> show collections
+client
+department
+employee
+> db.employee.find().pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+{
+        "_id" : ObjectId("66b90a3faa8cdfce3122c79f"),
+        "empname" : "axel",
+        "empage" : 25,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+> db.employee.find({$and: [{"empage": 22},{"empdept":"dev"}]}).pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+> db.employee.find({$or: [{"empage": 22},{"empdept":"dev"}]}).pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+{
+        "_id" : ObjectId("66b90a3faa8cdfce3122c79f"),
+        "empname" : "axel",
+        "empage" : 25,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+> db.employee.find({$nor: [{"empage": 22},{"empdept":"dev"}]}).pretty()
+> db.employee.find({$nor: [{"empage": 21},{"empdept":"dev"}]}).pretty()
+> db.employee.find({$nor: [{"empage": 21},{"empdept":"de"}]}).pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+{
+        "_id" : ObjectId("66b90a3faa8cdfce3122c79f"),
+        "empname" : "axel",
+        "empage" : 25,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+> db.employee.find({$not: {"empage": 21}}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.employee.find({$not: [{"empage": 21}]}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.employee.find({"empage": {$not:{$eq: 25}}}).pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+>
