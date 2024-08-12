@@ -93,7 +93,6 @@ employee
 {
         "_id" : ObjectId("66b90b92aa8cdfce3122c7a1"),
         "clientname" : "abc",
-********************insertMany************************
         "clientcountry" : "India"
 }
 {
@@ -109,6 +108,7 @@ employee
 >
 >
 >
+********************insertMany************************
 > db.client.find().pretty()
 {
         "_id" : ObjectId("66b90b92aa8cdfce3122c7a1"),
