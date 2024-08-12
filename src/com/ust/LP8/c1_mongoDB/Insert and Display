@@ -76,12 +76,12 @@ WriteResult({ "nInserted" : 1 })
 department
 employee
 >
+********************insertMany************************
 >
 > db.client.insertMany([{"clientname":"abc","clientcountry":"India"},{"clientname":"defgh","clientcountry":"India"}])
 {
         "acknowledged" : true,
         "insertedIds" : [
-********************insertOne************************
                 ObjectId("66b90b92aa8cdfce3122c7a1"),
                 ObjectId("66b90b92aa8cdfce3122c7a2")
         ]
@@ -93,6 +93,7 @@ employee
 {
         "_id" : ObjectId("66b90b92aa8cdfce3122c7a1"),
         "clientname" : "abc",
+********************insertMany************************
         "clientcountry" : "India"
 }
 {
