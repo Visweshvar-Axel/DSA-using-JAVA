@@ -1,0 +1,57 @@
+> show dbs
+admin    0.000GB
+config   0.000GB
+demo     0.000GB
+local    0.000GB
+viswadb  0.000GB
+> use demo
+switched to db demo
+> show collections
+client
+department
+employee
+> db.employee.find().pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+{
+        "_id" : ObjectId("66b90a3faa8cdfce3122c79f"),
+        "empname" : "axel",
+        "empage" : 25,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+> db.employee.find().sort({"empname":1}).pretty()
+{
+        "_id" : ObjectId("66b90a3faa8cdfce3122c79f"),
+        "empname" : "axel",
+        "empage" : 25,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+> db.employee.find().sort({"empname":-1}).pretty()
+{
+        "_id" : ObjectId("66b90a15aa8cdfce3122c79e"),
+        "empname" : "viswa",
+        "empage" : 22,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
+{
+        "_id" : ObjectId("66b90a3faa8cdfce3122c79f"),
+        "empname" : "axel",
+        "empage" : 25,
+        "empzone" : "south",
+        "empdept" : "dev"
+}
