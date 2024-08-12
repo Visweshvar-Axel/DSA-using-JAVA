@@ -45,7 +45,6 @@ employee
 }
 >
 >
-
 >
 > db.employee.find().skip(1).pretty()
 {
