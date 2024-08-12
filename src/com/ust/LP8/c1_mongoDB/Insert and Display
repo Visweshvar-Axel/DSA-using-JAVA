@@ -63,11 +63,11 @@ WriteResult({ "nInserted" : 1 })
         "empdept" : "dev"
 }
 >
+********************insertOne************************
 >
 > db.department.insertOne({"deptname":"dev","deptmanager":"viswa","deptrank":1})
 {
         "acknowledged" : true,
-********************Display Documents************************
         "insertedId" : ObjectId("66b90aa3aa8cdfce3122c7a0")
 }
 > db.department.find()
@@ -81,6 +81,7 @@ employee
 {
         "acknowledged" : true,
         "insertedIds" : [
+********************insertOne************************
                 ObjectId("66b90b92aa8cdfce3122c7a1"),
                 ObjectId("66b90b92aa8cdfce3122c7a2")
         ]
