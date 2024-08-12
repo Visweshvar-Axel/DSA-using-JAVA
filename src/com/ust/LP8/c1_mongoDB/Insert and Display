@@ -26,6 +26,7 @@ employee
 }
 >
 >
+********************Display Documents************************
 >
 > use demo
 switched to db demo
@@ -66,6 +67,7 @@ WriteResult({ "nInserted" : 1 })
 > db.department.insertOne({"deptname":"dev","deptmanager":"viswa","deptrank":1})
 {
         "acknowledged" : true,
+********************Display Documents************************
         "insertedId" : ObjectId("66b90aa3aa8cdfce3122c7a0")
 }
 > db.department.find()
