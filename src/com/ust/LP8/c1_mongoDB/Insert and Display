@@ -106,9 +106,9 @@ department
 employee
 >
 >
+********************pretty************************
 >
 >
-********************insertMany************************
 > db.client.find().pretty()
 {
         "_id" : ObjectId("66b90b92aa8cdfce3122c7a1"),
