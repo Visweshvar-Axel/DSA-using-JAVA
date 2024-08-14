@@ -2,7 +2,6 @@ package livesession.array;
 
 public class frequent {
     public static void main(String[] args) {
-
 //        int [] marks = {1,2,3,44,5,5,6,7,7,8,88,8,8};
         int [] marks = {2,4,5,7,8,5,1};
         int n = marks.length-1;
