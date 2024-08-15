@@ -28,6 +28,7 @@ public class frequent {
         /*int*/ max = 0;
         int mostFreq = givenarry[0];
         int[] count = new int[givenarry.length + 1];
+
         for (int num : givenarry) {
             count[num]++;
             if (count[num] > max)
