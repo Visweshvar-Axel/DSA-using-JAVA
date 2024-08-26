@@ -20,6 +20,7 @@ public class frequent {
         if(maxc != 0) System.out.println(max+": frequency:"+(maxc+1));
         /**
           *
+         *
          * */
         int givenarry[]={3,4,5,6,4,4,6};
         /*int*/ max = 0;
