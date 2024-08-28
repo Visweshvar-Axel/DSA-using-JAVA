@@ -19,6 +19,10 @@ class Bar implements Foo {
 //    }
 }
 
+class Student {
+    public int marks;
+}
+
 public class Main {
     public static void main(String[] args) {
 
@@ -30,7 +34,8 @@ public class Main {
 //        do {
 //            System.out.println("viswa");
 //        }while (true);
-
+        Student s = new Student();
+        System.out.println(s.marks);
         Foo foo = new Bar(); // Line 2
         foo.print(); // Line 3
 
