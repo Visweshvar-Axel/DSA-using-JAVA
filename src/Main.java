@@ -1,6 +1,24 @@
 import java.util.ArrayList;
 import java.util.List;
 
+interface Foo {
+    String name = "Foo";
+    void print();
+}
+
+class Bar implements Foo {
+    String name = "Bar";
+
+    public void print() {
+        System.out.println(name); // Line 1
+    }
+
+//    public static void main(String[] args) {
+//        Foo foo = new Bar(); // Line 2
+//        foo.print(); // Line 3
+//    }
+}
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,16 +31,20 @@ public class Main {
 //            System.out.println("viswa");
 //        }while (true);
 
-        List<String> str = new ArrayList<String>();
-        str.add("Tom");
-        str.add("Harry");
-        str.add("John");
+//        Foo foo = new Bar(); // Line 2
+//        foo.print(); // Line 3
 
-        List<Object> obj = str;
-        obj.add(new Object());
 
-        String name = str.get(0);
-        System.out.println(name);
+//        List<String> str = new ArrayList<String>();
+//        str.add("Tom");
+//        str.add("Harry");
+//        str.add("John");
+//
+//        List<Object> obj = str;
+//        obj.add(new Object());
+//
+//        String name = str.get(0);
+//        System.out.println(name);
 
     }
 }
