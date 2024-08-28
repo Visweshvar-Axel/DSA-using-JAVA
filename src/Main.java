@@ -31,8 +31,8 @@ public class Main {
 //            System.out.println("viswa");
 //        }while (true);
 
-//        Foo foo = new Bar(); // Line 2
-//        foo.print(); // Line 3
+        Foo foo = new Bar(); // Line 2
+        foo.print(); // Line 3
 
 
 //        List<String> str = new ArrayList<String>();
