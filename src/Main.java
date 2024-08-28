@@ -22,7 +22,24 @@ class Bar implements Foo {
 class Student {
     public int marks;
 }
+class Class1 {
 
+    public static void show() {
+
+        System.out.println("In Class1::show()");
+
+    }
+
+}
+
+class Class2 extends Class1 {
+
+    public static void show() {
+
+        System.out.println("In Class2::show()");
+
+    }
+}
 public class Main {
     public static void main(String[] args) {
 
@@ -34,8 +51,16 @@ public class Main {
 //        do {
 //            System.out.println("viswa");
 //        }while (true);
+
+        Class1 b = new Class2();;
+
+        b.show();
+
         Student s = new Student();
         System.out.println(s.marks);
+
+        System.out.println(12_34_34);
+
         Foo foo = new Bar(); // Line 2
         foo.print(); // Line 3
 
