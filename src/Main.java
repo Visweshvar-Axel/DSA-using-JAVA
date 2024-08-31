@@ -17,6 +17,7 @@ class Bar implements Foo {
 //        Foo foo = new Bar(); // Line 2
 //        foo.print(); // Line 3
 //    }
+
 }
 
 class Student {
