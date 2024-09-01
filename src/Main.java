@@ -22,6 +22,7 @@ class Bar implements Foo {
 class Student {
     public int marks;
 }
+
 class Class1 {
 
     public static void show() {
