@@ -6,7 +6,6 @@ interface Foo {
     String name = "Foo";
     void print();
 }
-
 class Bar implements Foo {
     String name = "Bar";
 
