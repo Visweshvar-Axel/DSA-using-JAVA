@@ -8,7 +8,6 @@ interface Foo {
 }
 class Bar implements Foo {
     String name = "Bar";
-
     public void print() {
         System.out.println(name); // Line 1
     }
