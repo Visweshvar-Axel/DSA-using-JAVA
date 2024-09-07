@@ -64,6 +64,39 @@ class Test extends Product {
 //    }
 }
 
+abstract class School{
+    int i = 0;
+    public School(){
+        display();
+        i=2;
+    }
+    abstract void myMethod();
+    void display(){
+        System.out.println(i);
+    }
+}
+interface Students {
+    abstract void myMethod();
+}
+
+class Teacher extends School implements Students{
+    public Teacher(){
+        super();
+        i=1;
+    }
+    @Override
+    public void myMethod(){
+        new Teacher();
+    }
+}
+
+class Marks extends Teacher{
+    public Marks(){
+        i = 5;
+        myMethod();
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
 
@@ -125,6 +158,8 @@ public class Main {
         System.out.println(s1 == s2.toString());
 
         System.out.println(s1 == s3.toString());
+
+
 
 
 //        List<String> str = new ArrayList<String>();
