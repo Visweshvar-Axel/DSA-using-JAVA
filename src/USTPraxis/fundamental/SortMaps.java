@@ -38,6 +38,7 @@ public class SortMaps {
         for (String s : names) {
             linkedMapL.put(s, linkedMapL.getOrDefault(s, 0) + 1);
         }
+        
         System.out.println(linkedMapL);
         Map<String, Integer> treeMapL = new TreeMap<>();
         for (String s : names) {
