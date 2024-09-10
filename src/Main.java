@@ -150,6 +150,7 @@ public class Main {
         obj.setPrice(40);
         obj.getPrice();
 
+        
         String s1 = "James";
 
 
