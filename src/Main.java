@@ -147,6 +147,7 @@ public class Main {
         System.out.println(rollNumberList);
 
         Test obj = new Test();
+
         obj.setPrice(40);
 
         obj.getPrice();
