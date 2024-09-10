@@ -28,9 +28,7 @@ class Class1 {
     }
 }
 class Class2 extends Class1 {
-
     public static void show() {
-
         System.out.println("In Class2::show()");
     }
 }
