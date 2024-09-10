@@ -148,9 +148,10 @@ public class Main {
 
         Test obj = new Test();
         obj.setPrice(40);
+
         obj.getPrice();
 
-        
+
         String s1 = "James";
 
 
