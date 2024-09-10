@@ -142,6 +142,7 @@ public class Main {
         rollNumberList.add(8);
 
         rollNumberList.sort((Integer roll1, Integer roll2) -> -roll1.compareTo(roll2));
+
 //        rollNumberList.sort((roll1, roll2) -> {roll1.compareTo(roll2)});
 
         System.out.println(rollNumberList);
