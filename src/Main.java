@@ -12,6 +12,7 @@ class Bar implements Foo {
         System.out.println(name); // Line 1
     }
 
+
 //    public static void main(String[] args) {
 //        Foo foo = new Bar(); // Line 2
 //        foo.print(); // Line 3
