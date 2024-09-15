@@ -16,6 +16,7 @@ public class WordCountWithSemicolon {
         }
         return c;
     }
+
     public static void main(String[] args) {
         String[][] tests = {
                 {"visw;a ax;el       hafueb ksaj;;dhf a;x;e;l a;skdfeh askd;fj easd","axel"},
